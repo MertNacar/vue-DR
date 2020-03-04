@@ -1,0 +1,647 @@
+{
+  "Menu": [
+    {
+      "id": "Menu-1",
+      "source": "link",
+      "img": "link",
+      "title": "Kitap"
+    },
+    {
+      "id": "Menu-2",
+      "source": "#",
+      "img": "link",
+      "title": "E-Kitap"
+    },
+    {
+      "id": "Menu-3",
+      "source": "#",
+      "img": "link",
+      "title": "Elektronik"
+    },
+    {
+      "id": "Menu-4",
+      "source": "#",
+      "img": "link",
+      "title": "Hobi & Oyuncak"
+    },
+    {
+      "id": "Menu-5",
+      "source": "#",
+      "img": "link",
+      "title": "Kırtasiye"
+    },
+    {
+      "id": "Menu-6",
+      "source": "#",
+      "img": "link",
+      "title": "Hediyelik Eşyalar"
+    },
+    {
+      "id": "Menu-7",
+      "source": "#",
+      "img": "link",
+      "title": "Oyun & Konsol"
+    },
+    {
+      "id": "Menu-8",
+      "source": "#",
+      "img": "link",
+      "title": "Yeni Çıkan Kitaplar"
+    },
+    {
+      "id": "Menu-9",
+      "source": "#",
+      "img": "link",
+      "title": "Çok Satanlar"
+    },
+    {
+      "id": "Menu-10",
+      "source": "#",
+      "img": "link",
+      "title": "Spor & Outdoor"
+    },
+    {
+      "id": "Menu-11",
+      "source": "#",
+      "img": "link",
+      "title": "Film"
+    },
+    {
+      "id": "Menu-12",
+      "source": "#",
+      "img": "link",
+      "title": "Müzik"
+    },
+    {
+      "id": "Menu-13",
+      "source": "#",
+      "img": "link",
+      "title": "Kampanyalar"
+    },
+    {
+      "id": "Menu-14",
+      "source": "#",
+      "img": "link",
+      "title": "Mağaza Etkinlikleri"
+    }
+  ],
+  "PopularSearch": [
+    {
+      "id": "PopularSearch-1",
+      "title": "İngilizce Kitaplar"
+    },
+    {
+      "id": "PopularSearch-2",
+      "title": "Cep Telefonu"
+    },
+    {
+      "id": "PopularSearch-3",
+      "title": "Ajanda-Takvim"
+    },
+    {
+      "id": "PopularSearch-4",
+      "title": "Pikap"
+    },
+    {
+      "id": "PopularSearch-5",
+      "title": "Puzzle"
+    },
+    {
+      "id": "PopularSearch-6",
+      "title": "Ödüllü Kitaplar"
+    },
+    {
+      "id": "PopularSearch-7",
+      "title": "Harry Potter"
+    },
+    {
+      "id": "PopularSearch-8",
+      "title": "Can - Okurunu Bulan Kitaplar"
+    }
+  ],
+  "Categories": [
+    {
+      "id": "Categories-1",
+      "title": "Kitap",
+      "groupNo": "#"
+    },
+    {
+      "id": "Categories-2",
+      "title": "Edebiyat",
+      "groupNo": "0155"
+    },
+    {
+      "id": "Categories-3",
+      "title": "Çocuk ve Gençlik",
+      "groupNo": "0265"
+    },
+    {
+      "id": "Categories-4",
+      "title": "Eğitim Başvuru",
+      "groupNo": "0355"
+    },
+    {
+      "id": "Categories-5",
+      "title": "Araştırma - Tarih",
+      "groupNo": "0455"
+    },
+    {
+      "id": "Categories-6",
+      "title": "Din Tassavuf",
+      "groupNo": "0555"
+    },
+    {
+      "id": "Categories-7",
+      "title": "Foreign Languages",
+      "groupNo": "0685"
+    },
+    {
+      "id": "Categories-8",
+      "title": "Ders / Sınav Kitapları",
+      "groupNo": "0755"
+    },
+    {
+      "id": "Categories-9",
+      "title": "Sanat - Tasarım",
+      "groupNo": "0855"
+    },
+    {
+      "id": "Categories-10",
+      "title": "Felsefe",
+      "groupNo": "0955"
+    },
+    {
+      "id": "Categories-11",
+      "title": "Çizgi Roman",
+      "groupNo": "1055"
+    },
+    {
+      "id": "Categories-12",
+      "title": "Hobi",
+      "groupNo": "1155"
+    },
+    {
+      "id": "Categories-13",
+      "title": "Bilim",
+      "groupNo": "1255"
+    },
+    {
+      "id": "Categories-14",
+      "title": "Mizah",
+      "groupNo": "1355"
+    },
+    {
+      "id": "Categories-15",
+      "title": "Prestij Kitapları",
+      "groupNo": "1455"
+    },
+    {
+      "id": "Categories-16",
+      "title": "Mitoloji Efsane",
+      "groupNo": "1555"
+    },
+    {
+      "id": "Categories-17",
+      "title": "Sesli Kitaplar",
+      "groupNo": "1655"
+    }
+  ],
+  "Interested": [
+    {
+      "id": "Interested-1",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Vazgeçebilmek",
+      "author": "Guy Finley",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 28.00,
+      "discount": "32"
+    },
+    {
+      "id": "Interested-2",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Sevebilmek-İlişkilerin Büyüsü ve Beraber Uyanabilmek",
+      "author": "Guy Finley",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 24.00,
+      "discount": "32"
+    },
+    {
+      "id": "Interested-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hiç'likten Gelen Güç",
+      "author": "Tuğçe Işınsu",
+      "cover": "İnce Kapak",
+      "publisher": "Feniks Kitap",
+      "price": 32.00,
+      "discount": "37"
+    },
+    {
+      "id": "Interested-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hayır Diyebilme Sanatı",
+      "author": "Müthiş Psikoloji",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 23.00,
+      "discount": "35"
+    },
+    {
+      "id": "Interested-5",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Ustalık Gerektiren Kafaya Takmama Sanatı",
+      "author": "Mark Manson",
+      "cover": "İnce Kapak",
+      "publisher": "Butik",
+      "price": 29.00,
+      "discount": "40"
+    },
+    {
+      "id": "Interested-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hiçbir Karşılaşma Tesadüf Değildir",
+      "author": "Hakan Mengüç",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 26.00,
+      "discount": "32"
+    },
+    {
+      "id": "Interested-7",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Ömür Nasıl Yaşanır?",
+      "author": "İlber Ortaylı",
+      "cover": "İnce Kapak",
+      "publisher": "Kronik Kitap",
+      "price": 27.50,
+      "discount": "32"
+    },
+    {
+      "id": "Interested-8",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Ben Kirke",
+      "author": "Madeline Miller",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "price": 35.00,
+      "discount": "40"
+    },
+    {
+      "id": "Interested-9",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hayatın Değeri Uzun Yaşanmasında Değil, İyi Yaşanmasındadır.",
+      "author": "Michel de Montaigne",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 15.00,
+      "discount": "32"
+    },
+    {
+      "id": "Interested-10",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Gerçek Mucize Kendine İnanmaktır",
+      "author": "Ethem Emin Nemutlu",
+      "cover": "İnce Kapak",
+      "publisher": "Olimpos Yayınları",
+      "price": 35.00,
+      "discount": "40"
+    },
+    {
+      "id": "Interested-11",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Gör Beni-İki Devrin Hikayesi",
+      "author": "Akilah Azra Kohen",
+      "cover": "İnce Kapak",
+      "publisher": "Everest Yayınları",
+      "price": 39.00,
+      "discount": "40"
+    },
+    {
+      "id": "Interested-12",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hayat Cesurlara Torpil Geçer",
+      "author": "Bircan Yıldırım",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 23.00,
+      "discount": "35"
+    }
+  ],
+  "TopSale": [
+    {
+      "id": "TopSale-1",
+      "source": "link",
+      "img": "link",
+      "rate": 1.5,
+      "title": "Hiç'likten Gelen Güç",
+      "author": "Tuğçe Işınsu",
+      "cover": "İnce Kapak",
+      "publisher": "Feniks Kitap",
+      "publisherSource": "link",
+      "price": 32.00,
+      "discount": "37"
+    },
+    {
+      "id": "TopSale-2",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hiçbir Karşılaşma Tesadüf Değildir",
+      "author": "Hakan Mengüç",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "publisherSource": "link",
+      "price": 26.00,
+      "discount": "32"
+    },
+    {
+      "id": "TopSale-3",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Şeker Portakalı",
+      "author": "Jose Mauro De Vasconcelos",
+      "cover": "İnce Kapak",
+      "publisher": "Can Çocuk Yayınları",
+      "publisherSource": "link",
+      "price": 23.50,
+      "discount": "30"
+    },
+    {
+      "id": "TopSale-4",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Son Av",
+      "author": "Jean-Christophe Grange",
+      "cover": "İnce Kapak",
+      "publisher": "Doğan Kitap",
+      "publisherSource": "link",
+      "price": 36.00,
+      "discount": "30"
+    },
+    {
+      "id": "TopSale-5",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Dünyasızlar",
+      "author": "Kaan Murat Yanık",
+      "cover": "İnce Kapak",
+      "publisher": "Turkuvaz Kitap",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "30"
+    },
+    {
+      "id": "TopSale-6",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Hayat Cesurlara Torpil Geçer-Özel Baskı",
+      "author": "Bircan Yıldırım",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "publisherSource": "link",
+      "price": 28.00,
+      "discount": "35"
+    }
+  ],
+  "News": [
+    {
+      "id": "News-1",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Tenin Sınırlarının Ötesine",
+      "author": "Silvia Federici",
+      "cover": "İnce Kapak",
+      "publisher": "Otonom Yayıncılık",
+      "publisherSource": "link",
+      "price": 25.00,
+      "discount": "22"
+    },
+    {
+      "id": "News-2",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Her Yerde Kan Var",
+      "author": "Ayşe Kulin",
+      "cover": "Ciltli",
+      "publisher": "Everest Yayınları",
+      "publisherSource": "link",
+      "price": 42.00,
+      "discount": "35"
+    },
+    {
+      "id": "News-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Yanlış Cumhuriyet",
+      "author": "Sevan Nişanyan",
+      "cover": "İnce Kapak",
+      "publisher": "Liberus",
+      "publisherSource": "link",
+      "price": 59.00,
+      "discount": "33"
+    },
+    {
+      "id": "News-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Sevgi ile Bağlanma",
+      "author": "Stan Tatkin",
+      "cover": "İnce Kapak",
+      "publisher": "Diyojen Yayıncılık",
+      "publisherSource": "link",
+      "price": 29.00,
+      "discount": "38"
+    },
+    {
+      "id": "News-5",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hat Sanatı Bakımından Kudüs ve Çevresindeki Eyyubi Kitabeleri",
+      "author": "Ahmet gedik",
+      "cover": "İnce Kapak",
+      "publisher": "Hikmet Yayınları",
+      "publisherSource": "link",
+      "price": 45.00,
+      "discount": "37"
+    },
+    {
+      "id": "News-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Miyav İki Hav Hav",
+      "author": "H. Salih Zengin",
+      "cover": "İnce Kapak",
+      "publisher": "Vakvak Yayınları",
+      "publisherSource": "link",
+      "price": 18.00,
+      "discount": "22"
+    }
+  ],
+  "ForYou": [
+    {
+      "id": "ForYou-1",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "İmzalı-Dikili İlişkiler",
+      "author": "Haluk Tatar",
+      "cover": "İnce Kapak",
+      "publisher": "İnkilap Kitapevi",
+      "publisherSource": "link",
+      "price": 19.00,
+      "discount": "50"
+    },
+    {
+      "id": "ForYou-2",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Bülbülü Öldürmek",
+      "author": "Harper Lee",
+      "cover": "İnce Kapak",
+      "publisher": "Epsilon Yayınevi",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "35"
+    },
+    {
+      "id": "ForYou-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Yolun Sonundaki Okyanus",
+      "author": "Neil Gaiman",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "publisherSource": "link",
+      "price": 21.00,
+      "discount": "35"
+    },
+    {
+      "id": "ForYou-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Leonardo'nun Beyni",
+      "author": "Leonarda Shlain",
+      "cover": "İnce Kapak",
+      "publisher": "Paloma Yayınevi",
+      "publisherSource": "link",
+      "price": 32.00,
+      "discount": "35"
+    },
+    {
+      "id": "ForYou-5",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Kübra",
+      "author": "Afşin Kum",
+      "cover": "İnce Kapak",
+      "publisher": "April Yayıncılık",
+      "publisherSource": "link",
+      "price": 28.00,
+      "discount": "35"
+    },
+    {
+      "id": "ForYou-6",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Benliğini Arayan Çocuk",
+      "author": "Virginia M.Axline",
+      "cover": "İnce Kapak",
+      "publisher": "Panama Yayıncılık",
+      "publisherSource": "link",
+      "price": 25.00,
+      "discount": "40"
+    },
+    {
+      "id": "News-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Miyav İki Hav Hav",
+      "author": "H. Salih Zengin",
+      "cover": "İnce Kapak",
+      "publisher": "Vakvak Yayınları",
+      "publisherSource": "link",
+      "price": 18.00,
+      "discount": "22"
+    },
+    {
+      "id": "News-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Miyav İki Hav Hav",
+      "author": "H. Salih Zengin",
+      "cover": "İnce Kapak",
+      "publisher": "Vakvak Yayınları",
+      "publisherSource": "link",
+      "price": 18.00,
+      "discount": "22"
+    },
+    {
+      "id": "News-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Miyav İki Hav Hav",
+      "author": "H. Salih Zengin",
+      "cover": "İnce Kapak",
+      "publisher": "Vakvak Yayınları",
+      "publisherSource": "link",
+      "price": 18.00,
+      "discount": "22"
+    },
+    {
+      "id": "News-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Bir Miyav İki Hav Hav",
+      "author": "H. Salih Zengin",
+      "cover": "İnce Kapak",
+      "publisher": "Vakvak Yayınları",
+      "publisherSource": "link",
+      "price": 18.00,
+      "discount": "22"
+    }
+  ]
+}

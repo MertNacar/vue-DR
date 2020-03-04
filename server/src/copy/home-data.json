@@ -1,0 +1,602 @@
+{
+  "Menu": [
+    {
+      "id": "Menu-1",
+      "source": "link",
+      "img": "link",
+      "title": "Kitap"
+    },
+    {
+      "id": "Menu-2",
+      "source": "#",
+      "img": "link",
+      "title": "E-Kitap"
+    },
+    {
+      "id": "Menu-3",
+      "source": "#",
+      "img": "link",
+      "title": "Elektronik"
+    },
+    {
+      "id": "Menu-4",
+      "source": "#",
+      "img": "link",
+      "title": "Hobi & Oyuncak"
+    },
+    {
+      "id": "Menu-5",
+      "source": "#",
+      "img": "link",
+      "title": "Kırtasiye"
+    },
+    {
+      "id": "Menu-6",
+      "source": "#",
+      "img": "link",
+      "title": "Hediyelik Eşyalar"
+    },
+    {
+      "id": "Menu-7",
+      "source": "#",
+      "img": "link",
+      "title": "Oyun & Konsol"
+    },
+    {
+      "id": "Menu-8",
+      "source": "#",
+      "img": "link",
+      "title": "Yeni Çıkan Kitaplar"
+    },
+    {
+      "id": "Menu-9",
+      "source": "#",
+      "img": "link",
+      "title": "Çok Satanlar"
+    },
+    {
+      "id": "Menu-10",
+      "source": "#",
+      "img": "link",
+      "title": "Spor & Outdoor"
+    },
+    {
+      "id": "Menu-11",
+      "source": "#",
+      "img": "link",
+      "title": "Film"
+    },
+    {
+      "id": "Menu-12",
+      "source": "#",
+      "img": "link",
+      "title": "Müzik"
+    },
+    {
+      "id": "Menu-13",
+      "source": "#",
+      "img": "link",
+      "title": "Kampanyalar"
+    },
+    {
+      "id": "Menu-14",
+      "source": "#",
+      "img": "link",
+      "title": "Mağaza Etkinlikleri"
+    }
+  ],
+  "PopularSearch": [
+    {
+      "id": "PopularSearch-1",
+      "title": "İngilizce Kitaplar"
+    },
+    {
+      "id": "PopularSearch-2",
+      "title": "Cep Telefonu"
+    },
+    {
+      "id": "PopularSearch-3",
+      "title": "Ajanda-Takvim"
+    },
+    {
+      "id": "PopularSearch-4",
+      "title": "Pikap"
+    },
+    {
+      "id": "PopularSearch-5",
+      "title": "Puzzle"
+    },
+    {
+      "id": "PopularSearch-6",
+      "title": "Ödüllü Kitaplar"
+    },
+    {
+      "id": "PopularSearch-7",
+      "title": "Harry Potter"
+    },
+    {
+      "id": "PopularSearch-8",
+      "title": "Can - Okurunu Bulan Kitaplar"
+    }
+  ],
+  "Book": [
+    {
+      "id": "Book-1",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Imzalı-Dikili İlişkiler",
+      "author": "Haluk Tatar",
+      "cover": "İnce Kapak",
+      "publisher": "Inkılap Kitabevi",
+      "publisherSource": "link",
+      "price": 19.00,
+      "discount": "50"
+    },
+    {
+      "id": "Book-2",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Bülbülü Öldürmek",
+      "author": "Harper Lee",
+      "cover": "İnce Kapak",
+      "publisher": "Epsilon Yayınevi",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "22"
+    },
+    {
+      "id": "Book-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Yolun Sonundaki Okyanus",
+      "author": "Neil Gaiman",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "publisherSource": "link",
+      "price": 21.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Leonardo'nun Beyni",
+      "author": "Leonard Shlain",
+      "cover": "İnce Kapak",
+      "publisher": "Paloma Yayınevi",
+      "publisherSource": "link",
+      "price": 32.00,
+      "discount": "25"
+    },
+    {
+      "id": "Book-5",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Kübra",
+      "author": "Afşin Kum",
+      "cover": "İnce Kapak",
+      "publisher": "April Yayıncılık",
+      "publisherSource": "link İnkılap",
+      "price": 28.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-6",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Benliğini Arayan Çocuk",
+      "author": "Virgina M.Axline",
+      "cover": "İnce Kapak",
+      "publisher": "Panama Yayıncılık",
+      "publisherSource": "link İnkılap",
+      "price": 25.00,
+      "discount": "40"
+    }
+  ],
+  "Featured": [
+    {
+      "id": "Featured-1",
+      "source": "link",
+      "img": "link",
+      "rate": 1.5,
+      "title": "Hiç'likten Gelen Güç",
+      "author": "Tuğçe Işınsu",
+      "cover": "İnce Kapak",
+      "publisher": "Feniks Kitap",
+      "publisherSource": "link",
+      "price": 32.00,
+      "discount": "37"
+    },
+    {
+      "id": "Featured-2",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Özgürleşebilmek-Özgür Olma Cesareti",
+      "author": "Guy Finley",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "publisherSource": "link",
+      "price": 17.00,
+      "discount": "32"
+    },
+    {
+      "id": "Featured-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Yazarların İstanbul'u",
+      "author": "İlber Ortaylı",
+      "cover": "İnce Kapak",
+      "publisher": "Pozitif Yayıncılık",
+      "publisherSource": "link",
+      "price": 17.50,
+      "discount": "25"
+    },
+    {
+      "id": "Featured-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "James Bond-Casino Royale",
+      "author": "Ian Fleming",
+      "cover": "İnce Kapak",
+      "publisher": "Salon Yayınları",
+      "publisherSource": "link",
+      "price": 19.90,
+      "discount": "22"
+    },
+    {
+      "id": "Featured-5",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Yılanın Gizemi-Kiranmala ve Öte Krallık",
+      "author": "Sayantani Dasgupta",
+      "cover": "İnce Kapak",
+      "publisher": "Siyah Kitap",
+      "publisherSource": "link",
+      "price": 32.00,
+      "discount": "38"
+    },
+    {
+      "id": "Featured-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Duygularımı İyileştiriyorum-Etkinlik Rehberi-Eğlen Öğren",
+      "author": "Catherine Alexis",
+      "cover": "İnce Kapak",
+      "publisher": "Dstil Tasarım",
+      "publisherSource": "link",
+      "price": 79.90,
+      "discount": "32"
+    }
+  ],
+  "Stationery": [
+    {
+      "id": "Stationery-1",
+      "source": "link",
+      "img": "link",
+      "rate": 5.0,
+      "title": "Crayola Silly Scents Kalın Keçeli Boya Kalemi 12'li",
+      "type": "Kırtasiye",
+      "brand": "Crayola",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 79.90,
+      "discount": "21"
+    },
+    {
+      "id": "Stationery-2",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Fabooks Ajanda 2020 Girl Boss",
+      "type": "Kırtasiye",
+      "brand": "Fabooks",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 46.00,
+      "discount": "38"
+    },
+    {
+      "id": "Stationery-3",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Rotring 800+ Iki Fonksiyonlu Kalem, Krom 0.5 mm 1900183",
+      "type": "Kırtasiye",
+      "brand": "Rotring",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 499.90,
+      "discount": "35"
+    },
+    {
+      "id": "Stationery-4",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Lamy Al-Star Charged Yeşil Roller Kalem 352",
+      "type": "Kırtasiye",
+      "brand": "Lamy",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 246.00,
+      "discount": "43"
+    },
+    {
+      "id": "Stationery-5",
+      "source": "link",
+      "img": "link",
+      "rate": 5.0,
+      "title": "Fenerbahçe Sırt Çantası 87023",
+      "type": "Kırtasiye",
+      "brand": "Fenerbahçe",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 127.90,
+      "discount": "50"
+    },
+    {
+      "id": "Stationery-6",
+      "source": "link",
+      "img": "link",
+      "rate": 5.0,
+      "title": "Galatasaray Sırt Çantası 86939",
+      "type": "Kırtasiye",
+      "brand": "Galatasaray",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 139.90,
+      "discount": "50"
+    }
+  ],
+  "Electronic": [
+    {
+      "id": "Stationery-1",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Sony WIXB400B.CE7 Kablosuz Extra Bass Kulak İçi Kulaklık - Siyah",
+      "type": "Elektronik",
+      "brand": "Sony",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 449.00,
+      "discount": "48"
+    },
+    {
+      "id": "Stationery-2",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Urbanears, Sumpan, Control Talk IE Headphones, Tomato ZD.4091382",
+      "type": "Elektronik",
+      "brand": "Urbanears",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 199.00,
+      "discount": "30"
+    },
+    {
+      "id": "Stationery-3",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "JBL T110 Kulakiçi Kulaklık CT Beyaz",
+      "type": "Elektronik",
+      "brand": "JBL",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 99.90,
+      "discount": "20"
+    },
+    {
+      "id": "Stationery-4",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Sony WIXB400B.CE7 Kablosuz Extra Bass Kulak İçi Kulaklık - Mavi",
+      "type": "Elektronik",
+      "brand": "Sony",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 449.90,
+      "discount": "15"
+    },
+    {
+      "id": "Stationery-5",
+      "source": "link",
+      "img": "link",
+      "rate": 3,
+      "title": "Philips PRO6305BK Kulakiçi Kulaklık Mikrofonlu",
+      "type": "Elektronik",
+      "brand": "Philips",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 219.90,
+      "discount": "15"
+    },
+    {
+      "id": "Stationery-6",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Anker Nebula Mars II Akıllı Taşınabilir WiFi Kablosuz Projeksiyon Cihazı ve Hoparlör - Siyah",
+      "type": "Elektronik",
+      "brand": "Anker",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 3999.00,
+      "discount": "18"
+    }
+  ],
+  "HoobyToys": [
+    {
+      "id": "HoobyToys-1",
+      "source": "link",
+      "img": "link",
+      "rate": 3,
+      "title": "Scrabble Orjinal Türkçe Y9611",
+      "type": "Hobi & Oyuncak",
+      "brand": "Scrabble",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 119.90,
+      "discount": "21"
+    },
+    {
+      "id": "HoobyToys-2",
+      "source": "link",
+      "img": "link",
+      "rate": 2.5,
+      "title": "Wissper Bebek ve Peggy",
+      "type": "Hobi & Oyuncak",
+      "brand": "Wissper",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 199.90,
+      "discount": "30"
+    },
+    {
+      "id": "HoobyToys-3",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Hatchimals Hatchibabies Cheetree Figür",
+      "type": "Hobi & Oyuncak",
+      "brand": "Hatchimals",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 799.00,
+      "discount": "63"
+    },
+    {
+      "id": "HoobyToys-4",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Lego-Technic App-Controlled Top Gear Rally Car 42109",
+      "type": "Hobi & Oyuncak",
+      "brand": "Lego",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 1099.90,
+      "discount": "15"
+    },
+    {
+      "id": "HoobyToys-5",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Bee Oyun Kartları (Jumbo Index)",
+      "type": "Hobi & Oyuncak",
+      "brand": "Bee",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 39.90,
+      "discount": "41"
+    },
+    {
+      "id": "HoobyToys-6",
+      "source": "link",
+      "img": "link",
+      "rate": 2.5,
+      "title": "Art Puzzle 120 ml. Yapıştırıcısı 903",
+      "type": "Hobi & Oyuncak",
+      "brand": "Art Puzzle",
+      "cargoFree": false,
+      "brandSource": "link",
+      "price": 19.90,
+      "discount": "22"
+    }
+  ],
+  "GameConsole": [
+    {
+      "id": "GameConsole-1",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "PS4 500 GB - Playstation 4 Oyun Konsolu (Sony Eurasia Garantili)",
+      "type": "Oyun & Konsol",
+      "brand": "Sony",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 2699.00,
+      "discount": "0"
+    },
+    {
+      "id": "GameConsole-2",
+      "source": "link",
+      "img": "link",
+      "rate": 5,
+      "title": "Nintendo Switch Konsol (Gri Joy-Con)",
+      "type": "Oyun & Konsol",
+      "brand": "Nintendo",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 3299.00,
+      "discount": "15"
+    },
+    {
+      "id": "GameConsole-3",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "The Sims 4 PC",
+      "type": "PC DVD-Rom",
+      "brand": "Electronic Arts",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 190.90,
+      "discount": "18"
+    },
+    {
+      "id": "GameConsole-4",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Battlefield 5",
+      "type": "Playstation 4",
+      "brand": "EA",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 390.00,
+      "discount": "18"
+    },
+    {
+      "id": "GameConsole-5",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Need For Speed Heat",
+      "type": "Playstation 4",
+      "brand": "EA",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 500.00,
+      "discount": "18"
+    },
+    {
+      "id": "GameConsole-6",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "PS4 1TB Days Of Play Bundle",
+      "type": "Oyun & Konsol",
+      "brand": "Sony",
+      "cargoFree": true,
+      "brandSource": "link",
+      "price": 3199.00,
+      "discount": "0"
+    }
+  ]
+}

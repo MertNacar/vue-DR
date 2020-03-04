@@ -1,0 +1,43 @@
+[
+  {
+<<<<<<< HEAD
+=======
+    "id": 1,
+    "name": "Hüseyin",
+    "surname": "Savran",
+    "email": "huseyin.savran@yalova.edu.tr",
+    "password": "hüseyin1234"
+  },
+  {
+    "id": 2,
+>>>>>>> 12 requests done
+    "name": "Mert",
+    "surname": "Nacar",
+    "email": "mertnacar2374@gmail.com",
+    "password": "mert2374"
+  },
+  {
+<<<<<<< HEAD
+=======
+    "id": 3,
+>>>>>>> 12 requests done
+    "name": "Bektaş",
+    "surname": "Çimen",
+    "email": "bektascimen09@gmail.com",
+    "password": "bektas7709"
+  },
+  {
+<<<<<<< HEAD
+    "name": "Hüseyin",
+    "surname": "Savran",
+    "email": "huseyin.savran@yalova.edu.tr",
+    "password": "hüseyin1234"
+=======
+    "id": 4,
+    "name": "Hasan",
+    "surname": "Bulur",
+    "email": "fltci@gmail.com",
+    "password": "123456"
+>>>>>>> 12 requests done
+  }
+]

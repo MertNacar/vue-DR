@@ -1,0 +1,684 @@
+{
+  "Menu": [
+    {
+      "id": "Menu-1",
+      "source": "link",
+      "img": "link",
+      "title": "Kitap"
+    },
+    {
+      "id": "Menu-2",
+      "source": "#",
+      "img": "link",
+      "title": "E-Kitap"
+    },
+    {
+      "id": "Menu-3",
+      "source": "#",
+      "img": "link",
+      "title": "Elektronik"
+    },
+    {
+      "id": "Menu-4",
+      "source": "#",
+      "img": "link",
+      "title": "Hobi & Oyuncak"
+    },
+    {
+      "id": "Menu-5",
+      "source": "#",
+      "img": "link",
+      "title": "Kırtasiye"
+    },
+    {
+      "id": "Menu-6",
+      "source": "#",
+      "img": "link",
+      "title": "Hediyelik Eşyalar"
+    },
+    {
+      "id": "Menu-7",
+      "source": "#",
+      "img": "link",
+      "title": "Oyun & Konsol"
+    },
+    {
+      "id": "Menu-8",
+      "source": "#",
+      "img": "link",
+      "title": "Yeni Çıkan Kitaplar"
+    },
+    {
+      "id": "Menu-9",
+      "source": "#",
+      "img": "link",
+      "title": "Çok Satanlar"
+    },
+    {
+      "id": "Menu-10",
+      "source": "#",
+      "img": "link",
+      "title": "Spor & Outdoor"
+    },
+    {
+      "id": "Menu-11",
+      "source": "#",
+      "img": "link",
+      "title": "Film"
+    },
+    {
+      "id": "Menu-12",
+      "source": "#",
+      "img": "link",
+      "title": "Müzik"
+    },
+    {
+      "id": "Menu-13",
+      "source": "#",
+      "img": "link",
+      "title": "Kampanyalar"
+    },
+    {
+      "id": "Menu-14",
+      "source": "#",
+      "img": "link",
+      "title": "Mağaza Etkinlikleri"
+    }
+  ],
+  "PopularSearch": [
+    {
+      "id": "PopularSearch-1",
+      "title": "İngilizce Kitaplar"
+    },
+    {
+      "id": "PopularSearch-2",
+      "title": "Cep Telefonu"
+    },
+    {
+      "id": "PopularSearch-3",
+      "title": "Ajanda-Takvim"
+    },
+    {
+      "id": "PopularSearch-4",
+      "title": "Pikap"
+    },
+    {
+      "id": "PopularSearch-5",
+      "title": "Puzzle"
+    },
+    {
+      "id": "PopularSearch-6",
+      "title": "Ödüllü Kitaplar"
+    },
+    {
+      "id": "PopularSearch-7",
+      "title": "Harry Potter"
+    },
+    {
+      "id": "PopularSearch-8",
+      "title": "Can - Okurunu Bulan Kitaplar"
+    }
+  ],
+  "Categories": [
+    {
+      "id": "Categories-1",
+      "title": "Kitap",
+      "groupNo": "#"
+    },
+    {
+      "id": "Categories-2",
+      "title": "Edebiyat",
+      "groupNo": "0155"
+    },
+    {
+      "id": "Categories-3",
+      "title": "Roman",
+      "groupNo": "0265"
+    },
+    {
+      "id": "Categories-4",
+      "title": "Şiir",
+      "groupNo": "0355"
+    },
+    {
+      "id": "Categories-5",
+      "title": "Deneme/Yazın",
+      "groupNo": "0455"
+    },
+    {
+      "id": "Categories-6",
+      "title": "Türk Öykü",
+      "groupNo": "0555"
+    },
+    {
+      "id": "Categories-7",
+      "title": "Edebiyat İnceleme",
+      "groupNo": "0685"
+    },
+    {
+      "id": "Categories-8",
+      "title": "Biyografi & Oto Biyografi",
+      "groupNo": "0755"
+    },
+    {
+      "id": "Categories-9",
+      "title": "Türk Günlük Anı",
+      "groupNo": "0855"
+    },
+    {
+      "id": "Categories-10",
+      "title": "Aylık Dergi",
+      "groupNo": "0955"
+    },
+    {
+      "id": "Categories-11",
+      "title": "Anlatı",
+      "groupNo": "1055"
+    },
+    {
+      "id": "Categories-12",
+      "title": "Dünya Öykü",
+      "groupNo": "1155"
+    },
+    {
+      "id": "Categories-13",
+      "title": "Dünya Günlük Anı",
+      "groupNo": "1255"
+    },
+    {
+      "id": "Categories-14",
+      "title": "Söyleyişi",
+      "groupNo": "1355"
+    },
+    {
+      "id": "Categories-15",
+      "title": "Edebiyatçılar",
+      "groupNo": "1455"
+    },
+    {
+      "id": "Categories-16",
+      "title": "Türk Mektup",
+      "groupNo": "1555"
+    },
+    {
+      "id": "Categories-17",
+      "title": "Destan",
+      "groupNo": "1655"
+    },
+    {
+      "id": "Categories-18",
+      "title": "Dünya Mektup",
+      "groupNo": "1655"
+    },
+    {
+      "id": "Categories-19",
+      "title": "Röportaj",
+      "groupNo": "1655"
+    },
+    {
+      "id": "Categories-20",
+      "title": "Antoloji",
+      "groupNo": "1655"
+    },
+    {
+      "id": "Categories-21",
+      "title": "Halk Ozanları",
+      "groupNo": "1655"
+    },
+    {
+      "id": "Categories-22",
+      "title": "Almanak",
+      "groupNo": "1655"
+    }
+  ],
+  "Books": [
+    {
+      "id": "Book-1",
+      "source": "link",
+      "img": "link",
+      "rate": 1.5,
+      "title": "Hiçbir Karşılaşma Tesadüf Değildir",
+      "author": "Hakan Mengüç",
+      "cover": "İnce Kapak",
+      "publisher": "Destek Yayınları",
+      "price": 26.00,
+      "discount": "32"
+    },
+    {
+      "id": "Book-2",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Son Av",
+      "author": "Jean-Christophe Grange",
+      "cover": "İnce Kapak",
+      "publisher": "Doğan Kitap",
+      "publisherSource": "link",
+      "price": 36.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-3",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Ben Kirke",
+      "author": "Madeline Miller",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "price": 35.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-4",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Gör Beni-İki Devrin Hikayesi",
+      "author": "Akilah Azra Kohen",
+      "cover": "İnce Kapak",
+      "publisher": "Everest Yayınları",
+      "price": 39.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-5",
+      "source": "link",
+      "img": "link",
+      "rate": null,
+      "title": "Akşam Yıldızı-Bir Göbeklitepe Romanı",
+      "author": "İskender Pala",
+      "cover": "İnce Kapak",
+      "publisher": "Kapı Yayınları",
+      "price": 22.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-6",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Şeker Portakalı",
+      "author": "Jose Mauro De Vasconcelos",
+      "cover": "İnce Kapak",
+      "publisher": "Can Çocuk Yayınları",
+      "publisherSource": "link",
+      "price": 23.50,
+      "discount": "30"
+    },
+    {
+      "id": "Book-7",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Hayvan Çiftliği",
+      "author": "George Orwell",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "publisherSource": "link",
+      "price": 20.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-8",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Beni Kör Kuyularda",
+      "author": "Hasan Ali Toptaş",
+      "cover": "İnce Kapak",
+      "publisher": "Everest Yayınları",
+      "publisherSource": "link",
+      "price": 25.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-9",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "1984",
+      "author": "George Orwell",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-10",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Simyacı",
+      "author": "Paulo Coelho",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "publisherSource": "link",
+      "price": 23.50,
+      "discount": "30"
+    },
+    {
+      "id": "Book-11",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Meyra-Bir Bosna Hikayesi",
+      "author": "Sinan Akyüz",
+      "cover": "İnce Kapak",
+      "publisher": "Alfa Yayınları",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-12",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Körlük",
+      "author": "Jose Saramago",
+      "cover": "İnce Kapak",
+      "publisher": "Kırmızı Kedi",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-13",
+      "source": "link",
+      "img": "link",
+      "rate": 4.5,
+      "title": "Dünyasızlar",
+      "author": "Kaan Murat Yanık",
+      "cover": "İnce Kapak",
+      "publisher": "Turkuvaz Kitap",
+      "publisherSource": "link",
+      "price": 35.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-14",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Camdaki Kız",
+      "author": "Gülseren Budayıcıoğlu",
+      "cover": "İnce Kapak",
+      "publisher": "Doğan Kitap",
+      "publisherSource": "link",
+      "price": 38.00,
+      "discount": "32"
+    },
+    {
+      "id": "Book-15",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Fabrika Ayarı",
+      "author": "Hayati İnanç",
+      "cover": "İnce Kapak",
+      "publisher": "Profil Kitap",
+      "publisherSource": "link",
+      "price": 25.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-16",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Sol Ayağım",
+      "author": "Christy Brown",
+      "cover": "İnce Kapak",
+      "publisher": "Nora",
+      "publisherSource": "link",
+      "price": 24.00,
+      "discount": "37"
+    },
+    {
+      "id": "Book-17",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Suç ve Ceza - Hasan Ali Yücel Klasikleri",
+      "author": "Fyodor Mihayloviç Dostoyevski",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "publisherSource": "link",
+      "price": 20.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-18",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Bir Kadının Yaşamından Yirmi Dört Saat",
+      "author": "Stefan Zweig",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "publisherSource": "link",
+      "price": 8.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-19",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Bir İdam Mahkumunun Son Günü - Hasan Ali Yücel Klasikleri",
+      "author": "Victor Hugp",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "publisherSource": "link",
+      "price": 10.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-20",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "publisherSource": "link",
+      "price": 30.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-21",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Kalbimin Can Mayası",
+      "author": "İclal Aydın",
+      "cover": "İnce Kapak",
+      "publisher": "Artemis Yayınları",
+      "price": 29.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-22",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Sineklerin Tanrısı",
+      "author": "William Golding",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "price": 16.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-23",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Cesur Yeni Dünya",
+      "author": "Aldous Huxley",
+      "cover": "İnce Kapak",
+      "publisher": "İthaki Yayınları",
+      "price": 24.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-24",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Bilinmeyen Bir Kadının Mektubu",
+      "author": "Stefan Zweig",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "price": 6.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-25",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Veronika Ölmek İstiyor",
+      "author": "Paulo Coelho",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "price": 25.50,
+      "discount": "30"
+    },
+    {
+      "id": "Book-25",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Her Yerde Kan Var",
+      "author": "Ayşe Kulin",
+      "cover": "İnce Kapak",
+      "publisher": "Everest Yayınları",
+      "price": 30.00,
+      "discount": "40"
+    },
+    {
+      "id": "Book-26",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Uçurtma Avcısı",
+      "author": "Khaled Hosseini",
+      "cover": "İnce Kapak",
+      "publisher": "Everest Yayınları",
+      "price": 39.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-27",
+      "source": "link",
+      "img": "link",
+      "rate": 2,
+      "title": "Kendine Hoşgeldin",
+      "author": "Miraç Çağrı Aktaş",
+      "cover": "İnce Kapak",
+      "publisher": "Olimpos Yayınları",
+      "price": 22.00,
+      "discount": "42"
+    },
+    {
+      "id": "Book-28",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Yüzyıllık Yalnızlık",
+      "author": "Gabriel Garcia Marquez",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "price": 42.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-29",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Karantina",
+      "author": "Beyza Alkoç",
+      "cover": "İnce Kapak",
+      "publisher": "İndigo Kitap",
+      "price": 29.00,
+      "discount": "32"
+    },
+    {
+      "id": "Book-30",
+      "source": "link",
+      "img": "link",
+      "rate": 3.5,
+      "title": "Otomatik Portakal",
+      "author": "Anthony Burgess",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "price": 16.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-31",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Pia Mater",
+      "author": "Serkan Karaismailoğlu",
+      "cover": "İnce Kapak",
+      "publisher": "Elma Yayınevi",
+      "price": 42.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-32",
+      "source": "link",
+      "img": "link",
+      "rate": 3,
+      "title": "Aşkımız Eski Bir Roman",
+      "author": "Ahmet Ümit",
+      "cover": "İnce Kapak",
+      "publisher": "Yapı Kredi Yayınları",
+      "price": 22.00,
+      "discount": "32"
+    },
+    {
+      "id": "Book-33",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Altıncı Koğuş",
+      "author": "Anton Pavloviç Çehov",
+      "cover": "İnce Kapak",
+      "publisher": "İş Bankası Yayınları",
+      "price": 7.00,
+      "discount": "35"
+    },
+    {
+      "id": "Book-34",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Yabancı",
+      "author": "Albert Camus",
+      "cover": "İnce Kapak",
+      "publisher": "Can Yayınları",
+      "price": 16.00,
+      "discount": "30"
+    },
+    {
+      "id": "Book-35",
+      "source": "link",
+      "img": "link",
+      "rate": 4,
+      "title": "Günahın Üç Rengi",
+      "author": "Gülseren Budayıcıoğlu",
+      "cover": "İnce Kapak",
+      "publisher": "Remzi Kitapevi",
+      "price": 32.00,
+      "discount": "30"
+    }
+  ]
+}
