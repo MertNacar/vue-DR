@@ -4,19 +4,6 @@ var express = require("express");
 
 var router = express.Router();
 
-<<<<<<< HEAD
-const USER_DATA_FILE = path.join(__dirname, 'src/datas/cart-data.json');
-
-router.get('/login', (req, res) => {
-  let { email, password } = req.body
-  fs.readFile(USER_DATA_FILE, (err, data) => {
-    const users = JSON.parse(data);
-    users.map((user) => {
-      if (user.email === email && user.password === password) {
-        res.json({ err: false })
-      } else res.json({ err: true })
-    });
-=======
 const USER_DATA_FILE = path.join(__dirname, '../datas/login-data.json');
 
 router.get('/login', (req, res) => {
@@ -30,27 +17,11 @@ router.get('/login', (req, res) => {
       }
     });
     res.json({ err: !login })
->>>>>>> 12 requests done
   });
 });
 
 router.post('/signup', (req, res) => {
   fs.readFile(USER_DATA_FILE, (err, data) => {
-<<<<<<< HEAD
-    let { email, password } = req.body
-    const users = JSON.parse(data);
-    const newUser = { email, password };
-    users.map((user) => {
-      if (user.email === newUser.email) {
-        res.json({ err: true })
-      } else {
-        users.push(newUser);
-        res.json({ err: false })
-      }
-    });
-  });
-});
-=======
     const users = JSON.parse(data);
     const newUser = { ...req.body }; // email password name surname
     let userExists = false
@@ -73,4 +44,3 @@ router.post('/signup', (req, res) => {
 });
 
 module.exports = router
->>>>>>> 12 requests done

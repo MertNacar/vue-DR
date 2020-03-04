@@ -22,21 +22,12 @@ app.use((req, res, next) => {
 });
 
 app.use("/auth", auth)
-<<<<<<< HEAD
-app.use("/Sepetim", cart)
-app.use("/kategori", category)
-=======
 app.use("/cart", cart)
 app.use("/category", category)
->>>>>>> 12 requests done
 app.use("/home", home)
 
 
 
 app.listen(app.get('port'), () => {
-<<<<<<< HEAD
-  console.log(`Find the server at: http://localhost:${app.get('port')}/`); // eslint-disable-line no-console
-=======
   console.log(`Find the server at: http://localhost:${app.get('port')}`); // eslint-disable-line no-console
->>>>>>> 12 requests done
 });

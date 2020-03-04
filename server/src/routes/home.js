@@ -6,24 +6,6 @@ var express = require("express");
 var router = express.Router();
 
 
-<<<<<<< HEAD
-const HOME_DATA_FILE = path.join(__dirname, 'src/datas/home-data.json');
-
-router.get('', (req, res) => {
-  fs.readFile(HOME_DATA_FILE, (err, data) => {
-    const users = JSON.parse(data);
-    const newUser = { email, password };
-    users.map((user) => {
-      if (user.email === newUser.email) {
-        res.json({ err: true })
-      } else {
-        users.push(newUser);
-        res.json({ err: false })
-      }
-    });
-  });
-});
-=======
 const HOME_DATA_FILE = path.join(__dirname, '../datas/home-data.json');
 const COMMENT_DATA_FILE = path.join(__dirname, '../datas/comments.json');
 
@@ -90,4 +72,3 @@ router.get('/search', (req, res) => {
 
 
 module.exports = router
->>>>>>> 12 requests done

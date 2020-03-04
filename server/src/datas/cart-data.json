@@ -1,20 +1,30 @@
-<<<<<<< HEAD
 [
-    {
-        "id": 1,
-        "title": "The Fullstack Hoodie",
-        "description": "Lightweight, breathable hoodie with the Fullstack Crest. Guaranteed to keep you looking fresh while warm.",
-        "price": 19.99,
-        "quantity": 2
-    },
-    {
-        "id": 4,
-        "title": "The Fullstack Jacket",
-        "description": "Keep warm and protected with the rugged, durable Fullstack lightweight jacket.",
-        "price": 49.99,
-        "quantity": 8
-    }
+  {
+    "id": "Book-1",
+    "source": "link",
+    "img": "link",
+    "rate": 4.5,
+    "title": "Imzalı-Dikili İlişkiler",
+    "author": "Haluk Tatar",
+    "cover": "İnce Kapak",
+    "publisher": "Inkılap Kitabevi",
+    "publisherSource": "link",
+    "price": 19.00,
+    "discount": "50",
+    "quantity:": 1
+  },
+  {
+    "id": "Book-2",
+    "source": "link",
+    "img": "link",
+    "rate": 4.5,
+    "title": "Bülbülü Öldürmek",
+    "author": "Harper Lee",
+    "cover": "İnce Kapak",
+    "publisher": "Epsilon Yayınevi",
+    "publisherSource": "link",
+    "price": 35.00,
+    "discount": "22",
+    "quantity:": 1
+  }
 ]
-=======
-[]
->>>>>>> 12 requests done
