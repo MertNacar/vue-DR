@@ -1,0 +1,1706 @@
+
+
+<!doctype html>
+<!--[if IE 7]>    <html class="ie7 oldie" lang="tr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="tr"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="tr">       <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="tr">
+<!--<![endif]-->
+<head>
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2b1677ff9f","applicationID":"10449926","transactionName":"YARWbUtXXhVSUkFcXllOeW96GXMHR1BZWlZ0DlpNS1lcClZDGnZQQwRTVktP","queueTime":0,"applicationTime":373,"agent":"","atts":"TENVGwNNEghBH0FHWEcoUBsDFHEid3cBdgh1VHIPeAMJJRFMGRdEFVtPG2xFVRR6QXRRVUUER0obDBJeCx8HAQAZVwAXCwUARB8TYEZURShEeF1SQgNAQmdURhVbFgEBGAJSAh8DAR8FUgQbFRRlFVZDfFETDUMBXw5UBgAGAxgBUwIEGQ0IAQVLUQUCBRwOAgUMDAQDB1UAV1QTG0NhSlxEcQFWX0FmRUUIWl4bDBIrXEtcWV1WTgEXCRYYMVpfUVpGREF6bRkHAEgDChViWFlXAAIZTgZSGhF0RUFbBGNcW31ZEhwEBgIfBFcUEXJ+ZCt/HRVZWFwEFH5cVVsJGhF2XUNYDFEWAQYeVh0CDA0GGVAAABllUQBSQ1waBARWGgoPFBxEZkNZZVBDCXVXXWdFA0FIFw8TGApVTVxRXxRaHn5cRVYRFkRE"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQcHVl9XGwIAUFVbDgMB",licenseKey:"2b1677ff9f",applicationID:"10449926"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||"document"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    
+    
+    <title>D&R - Kültür Sanat ve Eğlence Dünyası</title>
+    <meta name="description" content="Binlerce kitap, teknoloji ürünü, hediye, müzik, film ve daha fazlası indirim kampanyalarıyla kültür, sanat ve eğlence dünyası D&R’da!" />
+       
+    
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="Document">
+    <meta name="Rating" content="General">
+    <meta name="RankLevel" content="1st">
+    <meta name="Classification" content="Kitap, müzik, film, elektronik, kırtasiye malzemeleri, oyuncak ve çeşitli hediyelik ürünler" />
+        <meta name="robots" content="index" />
+    <meta name="keyphrases" content="Kitap, müzik, film, elektronik, kırtasiye malzemeleri, oyuncak ve çeşitli hediyelik ürünler" />
+    
+    <meta name="content-language" content="tr-TR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="dns-prefetch" href="https://wps.relateddigital.com" />
+    <link rel="apple-touch-icon-precomposed" media="(resolution: 326dpi)" href="assets/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" media="(resolution: 163dpi)" href="assets/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" media="(resolution: 132dpi)" href="assets/img/apple-touch-icon-72x72.png">
+
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dynamic-banner.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dr-custom.css" />
+    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.autocomplete.js?ver=574"></script>
+    <script type="text/javascript" src="assets/js/jquery.blockUI.js?ver=574" async></script>
+    <script type="text/javascript" src="assets/js/jquery.jgrowl.js" async></script>
+    <script type="text/javascript" src="assets/js/jquery.mousewheel.min.js" async></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/lazysizes.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/siteheader.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.pagination.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ba-hashchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+    
+
+
+    
+    
+    
+    <script type="text/javascript" src="assets/js/jquery.session.min.js"></script>
+
+    
+    
+    
+    <link rel="canonical" href="https://www.dr.com.tr/kategori/Kitap" />
+
+    
+    
+    
+    
+
+<link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script>
+var dataLayer = [];
+</script>
+<script>
+
+dataLayer.push({
+    'CD_UserID': '25381148', 
+    'CD_Login': 'Yes', 
+    'CD_SignupDate' : undefined, 
+    'CD_FirstVisitDate': undefined, 
+    'CD_LastVisitDate': undefined, 
+    'CD_Transaction_Count': undefined, 
+    'CD_Total_Revenue': undefined, 
+    'CD_Avg_Order_Value': undefined, 
+    'CD_First_Transaction_Date': undefined, 
+    'CD_Last_Transaction_Date': undefined, 
+    'CD_E_MD5': '71ac295114cd84f2fce24903503950f6',
+    'SiteType': function(){return /iPad/.test(navigator.userAgent)?"t":/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent)?"m":"d";}
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    var s = document.createElement("script");
+    s.onload = function(){try{if(typeof OnVisilabsLoaded == "function"){/**/}else{var VL = new Visilabs();VL.Collect();}}catch(Ex){}};
+    s.type = "text/javascript";
+    s.src = (location.protocol.indexOf("https")==0?"https":"http")
+        + "://vsh.visilabs.net/Visilabs"
+        + (location.href.toString().indexOf("vldebug=true") > 0 ? "_Debug.js" : ".min.js")
+        + "?sid=2B647334493757534375733D&oid=6567387344534557696E673D&site=DR";
+    document.getElementsByTagName("head")[0].appendChild(s);
+
+});
+function vlB(p,c){var VL = new Visilabs();VL.AddParameter("OM.pb",p);VL.AddParameter("OM.pu",c);VL.Collect();}
+</script>
+
+    
+</head>
+<body>
+<script src="assets/js/p13n.js"></script>
+<script charset='utf-8' type='text/javascript'>
+    var isGuest = 'False';
+    var R3_COMMON = new r3_common();
+    R3_COMMON.setApiKey('69ed436649f912fb');
+    
+    R3_COMMON.setBaseUrl(window.location.protocol + "//" + 'recs.richrelevance.com/rrserver/');
+    R3_COMMON.setClickthruServer(window.location.protocol + "//" + window.location.host);
+    R3_COMMON.setSessionId('lvc5vrupww5uckm4xwnjbhgm')
+    R3_COMMON.setUserId(isGuest == 'False' ? '25381148' : '');
+</script>
+
+    
+    <input type="hidden" id="hdnCategoryEbook" data-name="ebook" data-value="10010" />
+    
+    <input type="hidden" id="hdnCategoryBook" data-name="book" data-value="10001" />
+    
+    <input type="hidden" id="hdnCategoryMovie" data-name="movie" data-value="10003" />
+    
+    <input type="hidden" id="hdnCategoryMusic" data-name="music" data-value="10002" />
+    
+    <input type="hidden" id="hdnCategoryElectronics" data-name="electronics" data-value="10004" />
+    
+    <input type="hidden" id="hdnCategoryGameConsole" data-name="gameConsole" data-value="10005" />
+    
+    <input type="hidden" id="hdnCategoryHobbyToy" data-name="hobbyToys" data-value="10006" />
+    
+    <input type="hidden" id="hdnCategorySportsOutdoor" data-name="sportOutdoor" data-value="10025" />
+    
+    <input type="hidden" id="hdnCategoryStationary" data-name="stationary" data-value="10008" />
+    
+    <input type="hidden" id="hdnCategoryPersonalProducts" data-name="personal" data-value="10009" />
+
+    <p id="servername" style="display: none">server = INT06WEB02</p>
+    
+
+
+
+
+<header>
+   
+    
+
+<div class="header-new">
+    <figure class="logo">
+        <a href="/"><img src="assets/img/head-logo.png" alt="D&R" /></a>
+    </figure>
+    <div class="head-menu logged-in">
+        <ul>
+                <li class="giris"><a href="/customer/info">HESABIM</a></li>
+                <li class="separator"></li>
+                <li class="giris"><a href="/logout">ÇIKIŞ</a></li>
+
+            <li class="separator"></li>
+            <li class="sepet" onclick="eventClick(this);" data-id="sepetim-click">
+                <a href="#">SEPETİM</a>
+                <i class="icon-sepet"></i>
+                <span class="items-count">1</span>
+            </li>
+        </ul>
+        
+<div class="head-cart">
+    
+     <div class="sum">
+         <p class="sum-detail">Sepetinizde Ürün Bulunmamaktadır.</p>
+         <hr />
+     </div>
+     <input class="btn red" value="SEPETE GİT" type="button" onclick="window.location.href = '/Sepetim';">
+</div>
+    </div>
+    <div class="category-tab">
+        <label>MENÜ</label>
+    </div>
+
+    <div class="search-bar logged-in">
+        <i id="menuSrc" class="icon-arama"></i>
+        <i id="menuCls" class="icon-close">X</i>
+        <input type="text" class="searchInput" maxlength="60" placeholder="HANGİ ÜRÜNÜ ARIYORSUN?" autocomplete="off" />
+        <input type="button" value="ARA" id="searchIcon" />
+        <div class="search-suggests">
+            
+            <ul class="product"></ul>
+            <ul class="category"></ul>
+            <ul class="author"></ul>
+            <ul class="brand"></ul>
+        </div>
+    </div>
+    <div class="categories">
+        <ul>
+            <li onclick="eventClick(this);" data-id="kitap-click"><a href="/kategori/Kitap"><i class="icon-kitap"></i></a> <a href="/kategori/Kitap"><span>Kitap</span></a></li>
+            <li onclick="eventClick(this);" data-id="ekitap-click"><a href="/kategori/EKitap"><i class="kobo-logo"></i></a> <a href="/kategori/EKitap"><span>E-Kitap</span></a></li>
+            <li onclick="eventClick(this);" data-id="elektronik-click"><a href="/kategori/Elektronik"><i class="icon-elektronik"></i></a> <a href="/kategori/Elektronik"><span>Elektronik</span></a></li>
+            <li onclick="eventClick(this);" data-id="hobioyuncak-click"><a href="/kategori/Hobi-Oyuncak"><i class="icon-oyuncak"></i></a> <a href="/kategori/Hobi-Oyuncak"><span>Hobi & Oyuncak</span></a></li>
+            <li onclick="eventClick(this);" data-id="kirtasiye-click"><a href="/kategori/Kirtasiye"><i class="icon-kirtasiye"></i></a> <a href="/kategori/Kirtasiye"><span>Kırtasiye</span></a></li>
+            <li onclick="eventClick(this);" data-id="kisisel-click"><a href="/kategori/Kisisel-Urunler"><i class="icon-kisisel_urun"></i></a> <a href="/kategori/Kisisel-Urunler"><span>Hediyelik Eşyalar</span></a></li>
+            <li onclick="eventClick(this);" data-id="oyunkonsol-click"><a href="/kategori/Oyun-Konsol"><i class="icon-oyun"></i></a> <a href="/kategori/Oyun-Konsol"><span>Oyun & Konsol</span></a></li>
+            <li onclick="eventClick(this);" data-id="yenicikan-click"><a href="/Kategori_/Kitap/En-Yeniler/10001/3"><i class="icon-yeni-cikan"></i></a> <a href="/Kategori_/Kitap/En-Yeniler/10001/3"><span>Yeni Çıkan Kitaplar</span></a></li>
+            <li onclick="eventClick(this);" data-id="coksatan-click"><a href="/LP-top20"><i class="icon-cok-satan"></i></a> <a href="/LP-top20"><span>Çok Satanlar</span></a></li>
+            <li onclick="eventClick(this);" data-id="sporoutdoor-click"><a href="/kategori/Spor-Outdoor"><i class="icon-spor_outdoor"></i></a> <a href="/kategori/Spor-Outdoor"><span>Spor & Outdoor</span></a></li>
+            <li onclick="eventClick(this);" data-id="film-click"><a href="/kategori/Film"><i class="icon-film"></i></a> <a href="/kategori/Film"><span>Film</span></a></li>
+            <li onclick="eventClick(this);" data-id="muzik-click"><a href="/kategori/Muzik"><i class="icon-muzik"></i></a> <a href="/kategori/Muzik"><span>Müzik</span></a></li>
+            <li onclick="eventClick(this);" data-id="kampanya-click"><a href="/Kampanyalar"><i class="icon-music"></i></a> <a href="/Kampanyalar"><span>Kampanyalar</span></a></li>
+            <li onclick="eventClick(this);" data-id="magazaetkinlik-click" class="store-events-menu"><a href="/magaza-etkinlikleri"><i class="icon-store"></i></a> <a href="/magaza-etkinlikleri"><span>Mağaza Etkinlikleri</span></a></li>
+        </ul>
+    </div>
+</div>
+
+    
+</header>
+
+
+
+
+
+<section class="catPagesCont clearfix">
+    <div id="catPageContent" class="catPagesContCenter">
+<div class="side-2">
+</div>
+    
+
+
+<script>
+    var google_tag_params = {
+        thisCategoryName: "Kitap"
+    }
+    function productClick(e) {
+    var clicked_product = [{ 
+        'id': $(e).data("id"),
+        'name': $(e).data("name"),
+        'brand': $(e).data("brand"),
+        'category': $(e).data("category"),
+        'dimension4': $(e).data("sku"),
+        'position': $(e).data("position")
+    }];
+dataLayer.push({
+    'Category':'Enhanced Ecommerce',
+    'Action':'Browse',
+    'Label':'Product Click',
+    'Value':0, 
+    'noninteraction':true,
+    'ecommerce': {
+        'click':{
+            'actionField': { 'list': 'productlisting - Kitap' },
+            'products':clicked_product
+        }
+    },
+    'event':'eeEvent'
+});
+}
+function OnVisilabsLoaded() { // 
+    var VL = new Visilabs();
+    VL.AddParameter("OM.clist", "10001");
+    VL.Collect();
+    
+}
+$(document).ready(function () {
+    setTimeout(OnVisilabsLoaded, 1000);
+});
+</script>
+
+
+
+<script type="text/javascript">
+    var google_tag_params = {
+        ecomm_prodid: ["10001|10070|10340|10110|10011|10059|10251|15077|10231|10180|10058|10186|10035|10212|10216"],
+        ecomm_prodid_2: ["0000000105409","0001865739001","0000000064031","0001835964001","0001793197001"],
+        ecomm_prodid_3: ["0000000105409","0001865739001","0000000064031"],        
+        ecomm_pagetype: 'productlisting',
+        pname: ["Hayvan Çiftliği","Olmasa da Olur","Şeker Portakalı","Hayır Diyebilme Sanatı","Gör Beni-İki Devrin Hikayesi"],
+        pcatid: ["10001"], 
+        pcatid2: ["10088","10089","10088","10144","10089"],
+        pauthor: ["George Orwell","Aslı T. Kızmaz","Jose Mauro De Vasconcelos","Müthiş Psikoloji","Akilah Azra Kohen"],
+        ppublisher: ["Can Yayınları","İnkılap Kitabevi","Can Çocuk Yayınları","Destek Yayınları","Everest Yayınları"],
+        fprice: [20.00,15.00,23.50,23.00,39.00], 
+        price: [14.00,11.25,16.45,14.95,23.40], 
+        pdiscount: [30,25,30,35,40], 
+        pdiscountTL: [6.00,3.75,7.05,8.05,15.60], 
+        totalDiscountTL: 40.45,
+        pcat: ["Kitap/Edebiyat/Roman/Dünya Roman","Kitap/Edebiyat/Roman/Türkiye Roman","Kitap/Edebiyat/Roman/Dünya Roman","Kitap/Eğitim Başvuru/Kişisel Gelişim","Kitap/Edebiyat/Roman/Türkiye Roman"],
+        pmaincat: 'Kitap',
+        product_brand: ["Diğer"]
+    };
+    dataLayer.push({ google_tag_params: google_tag_params });
+
+</script>
+<!-- CATEGORY PAGE -->
+
+
+
+
+
+
+<section class="sub-categories">
+    <div class="categories-path">
+        <div class="container">
+            <ul>
+                <li><a href="/">ANASAYFA</a></li>
+                <li>
+                    Kitap
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="category-name">
+        <div class="container">
+            <h1>Kitap</h1>
+        </div>
+    </div>
+    <section class="stage category-banner">
+        <div class="container">
+            <div id="categorySlider" class="owl-carousel">
+                
+
+
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kitap-festivali" title="Mart Kitap Festivali" data-id="6083" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/0220_d_u_24_1140x290_mart_kitap_festivali_lp.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/0220_d_u_24_1140x290_mart_kitap_festivali_lp.jpg">
+                            <img class="lazyload" data-src="assets/img/0220_d_u_24_1140x290_mart_kitap_festivali_lp.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Yayinevi/is-bankasi-kultur-yayinlari/s=5109" title="İş Bankası %40&#39;a Varan İndirim" data-id="6039" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/isbankasi-40-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/isbankasi-40-category.jpg">
+                            <img class="lazyload" data-src="assets/img/isbankasi-40-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Kitap/Saglik-Balonlari-Bilim-Disi-Kandirmacalar/Alp-Sirman/Egitim-Basvuru/Saglik/Beden-Sagligi/urunno=0001867238001" title="Sağlık Balonları" data-id="6169" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/1140x290px_Saglik-Balonlari.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/1140x290px_Saglik-Balonlari.jpg">
+                            <img class="lazyload" data-src="assets/img/1140x290px_Saglik-Balonlari.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/star-wars-orijinal-ucleme-kitaplari/6940" title="Star Wars Orijinal &#220;&#231;leme Kitapları" data-id="6167" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/star-wars-ot-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/star-wars-ot-category.jpg">
+                            <img class="lazyload" data-src="assets/img/star-wars-ot-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Yayinevi/domingo-yayinevi/s=2781" title="Hafta Sonu Fırsatı: Domingo Yayınevi" data-id="6171" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/hsf-domingo-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/hsf-domingo-category.jpg">
+                            <img class="lazyload" data-src="assets/img/hsf-domingo-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/bircan-yildirim-kitaplari-yari-fiyatina/6960" title="Bircan Yıldırım Kitaplarında %50 İndirim" data-id="6175" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/bircan-yildirim-kategori.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/bircan-yildirim-kategori.jpg">
+                            <img class="lazyload" data-src="assets/img/bircan-yildirim-kategori.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/ramazan-kurtoglu-kitaplari-yari-fiyatina/6963" title="Ramazan Kurtoğlu Kitapları Yarı Fiyatına" data-id="6188" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/ramazan-kurtoglu-kategori.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/ramazan-kurtoglu-kategori.jpg">
+                            <img class="lazyload" data-src="assets/img/ramazan-kurtoglu-kategori.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/sudoku-bulmaca-kampanyasi/6965" title="Sudoku &amp; Bulmaca Kitapları Kampanyası" data-id="6200" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/sudoku-kategori.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/sudoku-kategori.jpg">
+                            <img class="lazyload" data-src="assets/img/sudoku-kategori.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/stephen-king-kitaplarinda-indirim/6862" title="Stephen King Kampanyası" data-id="6155" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/stephen-king-kampanyasi-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/stephen-king-kampanyasi-category.jpg">
+                            <img class="lazyload" data-src="assets/img/stephen-king-kampanyasi-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/Alfa-Cok-satan-Kitaplar/6822" title="Alfa Yayın Grubu &#199;ok Satanlar %40 İndirimli" data-id="6009" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/alfa-cok-satan-40-category-1.png">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/alfa-cok-satan-40-category-1.png">
+                            <img class="lazyload" data-src="assets/img/alfa-cok-satan-40-category-1.png" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/Bez-Ciltli-Klasikler/6950" title="Bez Ciltli Klasikler" data-id="6197" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/bez-ciltli-klasikler-kategori.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/bez-ciltli-klasikler-kategori.jpg">
+                            <img class="lazyload" data-src="assets/img/bez-ciltli-klasikler-kategori.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/edebiyat-severler-icin-enfes-kitaplar/6719#/page=1/sort=soldcount,desc/categoryid=0/clog=6719/parentId=0/price=-1,-1" title="Edebiyat Severler İ&#231;in Enfes Kitaplar" data-id="6047" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/0220_d_u_16_1140x290_edebiyat_severler_icin_kitaplar.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/0220_d_u_16_1140x290_edebiyat_severler_icin_kitaplar.jpg">
+                            <img class="lazyload" data-src="assets/img/0220_d_u_16_1140x290_edebiyat_severler_icin_kitaplar.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/Metis-Yayincilik-indirimli-kitaplar/6879#/page=1/sort=soldcount,desc/categoryid=0/clog=6879/parentId=0/price=-1,-1" title="Metis Se&#231;ili Kitaplarda %60&#39;a Varan İndirim" data-id="6130" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/metis-kampanya-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/metis-kampanya-category.jpg">
+                            <img class="lazyload" data-src="assets/img/metis-kampanya-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/ozel-fiyatli-kitaplar" title="&#214;zel Fiyatlı Kitaplar - 5.90, 7.90, 9.90..." data-id="5788" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/1219_d_u_34_1140x290_ozel_kitaplar.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/1219_d_u_34_1140x290_ozel_kitaplar.jpg">
+                            <img class="lazyload" data-src="assets/img/1219_d_u_34_1140x290_ozel_kitaplar.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/antik-tarih-kitaplari" title="Antik Tarih K&#252;t&#252;phanesi" data-id="5871" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/antik-tarih-kutuphanesi-ctg.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/antik-tarih-kutuphanesi-ctg.jpg">
+                            <img class="lazyload" data-src="assets/img/antik-tarih-kutuphanesi-ctg.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/ayin-yayinevleri-everest-kapi-mona" title="Ayın Yayınevleri: Everest - Kapı - Mona" data-id="6102" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/0320_d_u_x_1140x290_ayin_yayinevleri_everest_lp.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/0320_d_u_x_1140x290_ayin_yayinevleri_everest_lp.jpg">
+                            <img class="lazyload" data-src="assets/img/0320_d_u_x_1140x290_ayin_yayinevleri_everest_lp.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/siren-yayinlari-hediye-kitap-kampanyasi/6878" title="Siren Hediye Kitap Kampanyası" data-id="6110" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/0120_d_u_66_1140x290_hediye_kitap_kampanyasi.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/0120_d_u_66_1140x290_hediye_kitap_kampanyasi.jpg">
+                            <img class="lazyload" data-src="assets/img/0120_d_u_66_1140x290_hediye_kitap_kampanyasi.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/destek-yayinlari-aforizmalar-serisi/6830" title="Destek Yayınları Aforizmalar Serisi" data-id="6074" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/0220_d_u_26_1140x290_destek_yayinlari_aforizmalar_serisi.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/0220_d_u_26_1140x290_destek_yayinlari_aforizmalar_serisi.jpg">
+                            <img class="lazyload" data-src="assets/img/0220_d_u_26_1140x290_destek_yayinlari_aforizmalar_serisi.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Kitap/Netflix-Bu-Is-Asla-Tutmaz/Marc-Randolph/Egitim-Basvuru/Is-Ekonomi-Hukuk/Is-Adamlari/urunno=0001866408001" title="Netflix - Bu İş Asla Tutmaz" data-id="6162" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/netflix-category2.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/netflix-category2.jpg">
+                            <img class="lazyload" data-src="assets/img/netflix-category2.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Kitap/Likanin-Mandalina-Kabuklari/Edebiyat/Roman/Turkiye-Roman/urunno=0001866386001" title="Lika&#39;nın Mandalina Kabukları" data-id="6164" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/lika-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/lika-category.jpg">
+                            <img class="lazyload" data-src="assets/img/lika-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/kataloglar_/kral-sakir-urunleri/6860" title="Kral Şakir Serisi" data-id="6070" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/kral-sakir-urunleri.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/kral-sakir-urunleri.jpg">
+                            <img class="lazyload" data-src="assets/img/kral-sakir-urunleri.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/EverestModernKlasikler/4556#/page=1/sort=newness,desc/categoryid=0/clog=4556/parentId=0/price=-1,-1" title="Everest Yayınları Modern Klasikler Dizisi" data-id="6137" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/everest-modern-klasikler-category.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/everest-modern-klasikler-category.jpg">
+                            <img class="lazyload" data-src="assets/img/everest-modern-klasikler-category.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/Kitap/Mutluluk-Beyinde-Baslar/Daniel-Gilbert/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001768499001" title="Mutluluk Beyinde Başlar" data-id="6160" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/mutluluk-beyinde-baslar-1140x290.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/mutluluk-beyinde-baslar-1140x290.jpg">
+                            <img class="lazyload" data-src="assets/img/mutluluk-beyinde-baslar-1140x290.jpg" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dr.com.tr/kataloglar_/Limon-ve-Zeytin/6057#/page=1/sort=soldcount,desc/categoryid=0/clog=6057/parentId=0/price=-1,-1" title="Limon ile Zeytin" data-id="4243" >
+                        <picture>
+                            <source media="(max-width: 766px)" data-srcset="assets/img/limonilezeytinkategori.jpg">
+                            <source media="(min-width: 767px)" data-srcset="assets/img/limonilezeytinkategori.jpg">
+                            <img class="lazyload" data-src="assets/img/limonilezeytinkategori.jpg" alt="Limon ile Zeytin" style="width:auto;">
+                        </picture>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+        <div class="sc-container">
+            <div class="container">
+                <div class="row">
+                        <ul>
+                            <li><a href="kitap" class="active">Kitap</a></li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Edebiyat/grupno=00055" title="Edebiyat">Edebiyat </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Cocuk-ve-Genclik/grupno=00884" title="&#199;ocuk ve Gen&#231;lik">&#199;ocuk ve Gen&#231;lik </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Egitim-Basvuru/grupno=00056" title="Eğitim Başvuru">Eğitim Başvuru </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Arastirma-Tarih/grupno=00051" title="Araştırma - Tarih">Araştırma - Tarih </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Din-Tasavvuf/grupno=00054" title="Din Tasavvuf">Din Tasavvuf </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Foreign-Languages/grupno=00812" title="Foreign Languages">Foreign Languages </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Ders-Sinav-Kitaplari/grupno=10000000" title="Ders / Sınav Kitapları">Ders / Sınav Kita... </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Sanat-Tasarim/grupno=00063" title="Sanat - Tasarım">Sanat - Tasarım </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Felsefe/grupno=00058" title="Felsefe">Felsefe </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Cizgi-Roman/grupno=00053" title="&#199;izgi Roman">&#199;izgi Roman </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Hobi/grupno=00060" title="Hobi">Hobi </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Bilim/grupno=00052" title="Bilim">Bilim </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Mizah/grupno=00061" title="Mizah">Mizah </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Prestij-Kitaplari/grupno=00062" title="Prestij Kitapları">Prestij Kitapları </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Mitoloji-Efsane/grupno=00190" title="Mitoloji Efsane">Mitoloji Efsane </a>
+                                </li>
+                                <li>
+
+                                    <a href="/kategori/Kitap/Sesli-Kitaplar/grupno=00064" title="Sesli Kitaplar">Sesli Kitaplar </a>
+                                </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+        <div class="container">
+        <div class="highlight" style=font-size:16px!important;color:#ffffff!important;background:#ff0000!important;> 
+                <p><a href="https://www.dr.com.tr/kataloglar_/Metis-Yayincilik-indirimli-kitaplar/6879#/page=1/sort=discount,desc/categoryid=0/clog=6879/parentId=0/price=-1,-1" target="" style=color:#ffffff!important;><span>METİS&#39;ten y&#252;ksek indirimli kitaplar!..</span><img src="/Themes/DR/Content/assets/images/general/arrow-right.png"></a>
+                    
+                </p>
+
+        </div>
+    </div>     
+
+
+
+    
+        <div id="rrCategoryShow"></div>
+
+        <section class="shelf">
+            <div class="container">
+                <header>
+                    <h2>Çok Satanlar</h2>
+                                <a href="/CokSatanlar/Kitap">TÜMÜNÜ GÖRÜNTÜLE</a>
+                </header>
+
+
+<div class="cell" onclick="productClick(this)" data-id="1188962" data-name="Hi&#231;&#39;likten Gelen G&#252;&#231;" data-brand="Feniks Kitap" data-category="Kitap/Eğitim Başvuru/Kişisel Gelişim" data-sku="0001857556001" >
+    <div class="content">
+        <a title="Hi&#231;&#39;likten Gelen G&#252;&#231; " href="/Kitap/Hiclikten-Gelen-Guc/Tugce-Isinsu/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001857556001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001857556001-1.jpg" alt="Hi&#231;&#39;likten Gelen G&#252;&#231; " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Hi&#231;&#39;likten Gelen G&#252;&#231;" href="/Kitap/Hiclikten-Gelen-Guc/Tugce-Isinsu/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001857556001 " class="item-name">
+        <ul class="rate one-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Hi&#231;&#39;likten Gelen G&#252;&#231;</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/tugce-isinsu/s=5203" class="who">Tuğ&#231;e Işınsu</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/feniks-kitap/s=3638" class="who mb10">Feniks Kitap</a>
+        </div>
+            <span class="old-price">32,00 TL</span>
+            <span class="discount-category">%37</span>
+            <span class="price">20,16 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1190570" data-name="Hi&#231;bir Karşılaşma Tesad&#252;f Değildir" data-brand="Destek Yayınları" data-category="Kitap/Edebiyat/Roman/T&#252;rkiye Roman" data-sku="0001858361001" >
+    <div class="content">
+        <a title="Hi&#231;bir Karşılaşma Tesad&#252;f Değildir " href="/Kitap/Hicbir-Karsilasma-Tesaduf-Degildir/Hakan-Menguc/Edebiyat/Roman/Turkiye-Roman/urunno=0001858361001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001858361001-1.jpg" alt="Hi&#231;bir Karşılaşma Tesad&#252;f Değildir " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Hi&#231;bir Karşılaşma Tesad&#252;f Değildir" href="/Kitap/Hicbir-Karsilasma-Tesaduf-Degildir/Hakan-Menguc/Edebiyat/Roman/Turkiye-Roman/urunno=0001858361001 " class="item-name">
+        <ul class="rate two-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Hi&#231;bir Karşılaşma Tesad&#252;f Değildir</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/hakan-menguc/s=10003080" class="who">Hakan Meng&#252;&#231;</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/destek-yayinlari/s=2561" class="who mb10">Destek Yayınları</a>
+        </div>
+            <span class="old-price">26,00 TL</span>
+            <span class="discount-category">%32</span>
+            <span class="price">17,68 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="389411" data-name="Şeker Portakalı" data-brand="Can Çocuk Yayınları" data-category="Kitap/Edebiyat/Roman/D&#252;nya Roman" data-sku="0000000064031" >
+    <div class="content">
+        <a title="Şeker Portakalı " href="/Kitap/Seker-Portakali/Edebiyat/Roman/Dunya-Roman/urunno=0000000064031">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0000000064031-1.jpg" alt="Şeker Portakalı " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Şeker Portakalı" href="/Kitap/Seker-Portakali/Edebiyat/Roman/Dunya-Roman/urunno=0000000064031 " class="item-name">
+        <ul class="rate four">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Şeker Portakalı</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/jose-mauro-de-vasconcelos/s=217923" class="who">Jose Mauro De...</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/can-cocuk-yayinlari/s=1881" class="who mb10">Can &#199;ocuk Yayınları</a>
+        </div>
+            <span class="old-price">23,50 TL</span>
+            <span class="discount-category">%30</span>
+            <span class="price">16,45 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1125283" data-name="Hayır Diyebilme Sanatı" data-brand="Destek Yayınları" data-category="Kitap/Eğitim Başvuru/Kişisel Gelişim" data-sku="0001835964001" >
+    <div class="content">
+        <a title="Hayır Diyebilme Sanatı " href="/Kitap/Muthis-Psikoloji/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001835964001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001835964001-1.jpg" alt="Hayır Diyebilme Sanatı " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Hayır Diyebilme Sanatı" href="/Kitap/Muthis-Psikoloji/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001835964001 " class="item-name">
+        <ul class="rate three">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Hayır Diyebilme Sanatı</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/muthis-psikoloji/s=10091427" class="who">M&#252;thiş Psikoloji</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/destek-yayinlari/s=2561" class="who mb10">Destek Yayınları</a>
+        </div>
+            <span class="old-price">23,00 TL</span>
+            <span class="discount-category">%35</span>
+            <span class="price">14,95 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1049392" data-name="Bir &#214;m&#252;r Nasıl Yaşanır?" data-brand="Kronik Kitap" data-category="Kitap/Eğitim Başvuru/Kişisel Gelişim" data-sku="0001796150001" >
+    <div class="content">
+        <a title="Bir &#214;m&#252;r Nasıl Yaşanır? " href="/Kitap/Bir-Omur-Nasil-Yasanir/Ilber-Ortayli/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001796150001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001796150001-1.jpg" alt="Bir &#214;m&#252;r Nasıl Yaşanır? " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Bir &#214;m&#252;r Nasıl Yaşanır?" href="/Kitap/Bir-Omur-Nasil-Yasanir/Ilber-Ortayli/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001796150001 " class="item-name">
+        <ul class="rate three-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Bir &#214;m&#252;r Nasıl Yaşanır?</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/ilber-ortayli/s=94404" class="who">İlber Ortaylı</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/kronik-kitap/s=5786" class="who mb10">Kronik Kitap</a>
+        </div>
+            <span class="old-price">27,50 TL</span>
+            <span class="discount-category">%37</span>
+            <span class="price">17,32 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1193941" data-name="D&#252;nyasızlar" data-brand="Turkuvaz Kitap" data-category="Kitap/Edebiyat/Roman/T&#252;rkiye Roman" data-sku="0001860240001" >
+    <div class="content">
+        <a title="D&#252;nyasızlar " href="/Kitap/Dunyasizlar/Kaan-Murat-Yanik/Edebiyat/Roman/Turkiye-Roman/urunno=0001860240001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001860240001-1.jpg" alt="D&#252;nyasızlar " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="D&#252;nyasızlar" href="/Kitap/Dunyasizlar/Kaan-Murat-Yanik/Edebiyat/Roman/Turkiye-Roman/urunno=0001860240001 " class="item-name">
+        <ul class="rate four-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">D&#252;nyasızlar</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/kaan-murat-yanik/s=61585" class="who">Kaan Murat Yanık</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/turkuvaz-kitap/s=26386" class="who mb10">Turkuvaz Kitap</a>
+        </div>
+            <span class="old-price">35,00 TL</span>
+            <span class="discount-category">%30</span>
+            <span class="price">24,50 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+
+            </div>
+        </section>
+            <section class="shelf">
+            <div class="container">
+                <header>
+                    <h2>En Yeniler</h2>
+                        <a href="/Kategori_/Kitap/En-Yeniler/10001/3">TÜMÜNÜ GÖRÜNTÜLE</a>
+                </header>
+
+
+<div class="cell" onclick="productClick(this)" data-id="1208243" data-name="National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#214;ncesi 6 Ay-5 Yaş/Eğitim Etkinlik Kitapları" data-sku="0001867707001" data-position="1">
+    <div class="content">
+        <a title="National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım " href="/Kitap/National-Geographic-Kids-Mavi-Gezegen-Seti-5-Kitap-Takim/Cocuk-ve-Genclik/Okul-Oncesi-6-Ay-5-Yas/Egitim-Etkinlik-Kitaplari/urunno=0001867707001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867707001-1.jpg" alt="National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım" href="/Kitap/National-Geographic-Kids-Mavi-Gezegen-Seti-5-Kitap-Takim/Cocuk-ve-Genclik/Okul-Oncesi-6-Ay-5-Yas/Egitim-Etkinlik-Kitaplari/urunno=0001867707001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/kolektif/s=94369" class="who">Kolektif</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">99,50 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">77,61 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1208255" data-name="National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#199;ağı 6-10 Yaş/&#199;ocuk Bilim" data-sku="0001867713001" data-position="2">
+    <div class="content">
+        <a title="National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım " href="/Kitap/National-Geographic-Kids-Okuma-Serisi-Seviye-2-Seti-17-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867713001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867713001-1.jpg" alt="National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım " />                  <div class="p-info">
+                                            <span class="info">KARGO BEDAVA</span>
+                </div>
+            </figure>
+        </a>
+        <a title="National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım" href="/Kitap/National-Geographic-Kids-Okuma-Serisi-Seviye-2-Seti-17-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867713001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/melissa-stewart/s=265287" class="who">Melissa Stewart</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">254,90 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">198,82 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1208249" data-name="National Geographic Kids-D&#252;nyamızı Keşfedin Seti-8 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#199;ağı 6-10 Yaş/&#199;ocuk Bilim" data-sku="0001867710001" data-position="3">
+    <div class="content">
+        <a title="National Geographic Kids-D&#252;nyamızı Keşfedin Seti-8 Kitap Takım " href="/Kitap/National-Geographic-Kids-Dunyamizi-Kesfedin-Seti-8-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867710001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867710001-1.jpg" alt="National Geographic Kids-D&#252;nyamızı Keşfedin Seti-8 Kitap Takım " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="National Geographic Kids-D&#252;nyamızı Keşfedin Seti-8 Kitap Takım" href="/Kitap/National-Geographic-Kids-Dunyamizi-Kesfedin-Seti-8-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867710001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">National Geographic Kids-D&#252;nyamızı Keşfedin Seti-8 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/jill-esbaum/s=324478" class="who">Jill Esbaum</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">119,90 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">93,52 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1208251" data-name="National Geographic Kids-Okul &#214;ncesi Seti-7 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#199;ağı 6-10 Yaş/&#199;ocuk Bilim" data-sku="0001867711001" data-position="4">
+    <div class="content">
+        <a title="National Geographic Kids-Okul &#214;ncesi Seti-7 Kitap Takım " href="/Kitap/National-Geographic-Kids-Okul-Oncesi-Seti-7-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867711001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867711001-1.jpg" alt="National Geographic Kids-Okul &#214;ncesi Seti-7 Kitap Takım " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="National Geographic Kids-Okul &#214;ncesi Seti-7 Kitap Takım" href="/Kitap/National-Geographic-Kids-Okul-Oncesi-Seti-7-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867711001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">National Geographic Kids-Okul &#214;ncesi Seti-7 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/melissa-stewart/s=265287" class="who">Melissa Stewart</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">104,65 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">81,63 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1208237" data-name="M&#252;thiş Marvel Hikayeleri Seti-6 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#199;ağı 6-10 Yaş/&#199;ocuk Fantastik/Bilim Kurgu" data-sku="0001867704001" data-position="5">
+    <div class="content">
+        <a title="M&#252;thiş Marvel Hikayeleri Seti-6 Kitap Takım " href="/Kitap/Muthis-Marvel-Hikayeleri-Seti-6-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Fantastik-Bilim-Kurgu/urunno=0001867704001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867704001-1.jpg" alt="M&#252;thiş Marvel Hikayeleri Seti-6 Kitap Takım " />                  <div class="p-info">
+                                            <span class="info">KARGO BEDAVA</span>
+                </div>
+            </figure>
+        </a>
+        <a title="M&#252;thiş Marvel Hikayeleri Seti-6 Kitap Takım" href="/Kitap/Muthis-Marvel-Hikayeleri-Seti-6-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Fantastik-Bilim-Kurgu/urunno=0001867704001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">M&#252;thiş Marvel Hikayeleri Seti-6 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/kolektif/s=94369" class="who">Kolektif</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">149,50 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">116,61 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1208233" data-name="National Geographic Kids-İnanılmaz İnsan V&#252;cudu Seti-2 Kitap Takım" data-brand="Beta Kids" data-category="Kitap/&#199;ocuk ve Gen&#231;lik/Okul &#199;ağı 6-10 Yaş/&#199;ocuk Bilim" data-sku="0001867702001" data-position="6">
+    <div class="content">
+        <a title="National Geographic Kids-İnanılmaz İnsan V&#252;cudu Seti-2 Kitap Takım " href="/Kitap/National-Geographic-Kids-Inanilmaz-Insan-Vucudu-Seti-2-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867702001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867702001-1.jpg" alt="National Geographic Kids-İnanılmaz İnsan V&#252;cudu Seti-2 Kitap Takım " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="National Geographic Kids-İnanılmaz İnsan V&#252;cudu Seti-2 Kitap Takım" href="/Kitap/National-Geographic-Kids-Inanilmaz-Insan-Vucudu-Seti-2-Kitap-Takim/Cocuk-ve-Genclik/Okul-Cagi-6-10-Yas/Cocuk-Bilim/urunno=0001867702001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">National Geographic Kids-İnanılmaz İnsan V&#252;cudu Seti-2 Kitap Takım</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/kolektif/s=94369" class="who">Kolektif</a>        <div class="media-type">
+Ciltli        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/beta-kids/s=1408" class="who mb10">Beta Kids</a>
+        </div>
+            <span class="old-price">127,95 TL</span>
+            <span class="discount-category">%22</span>
+            <span class="price">99,80 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>    <script>
+        var prodArr = [{"id":"1208243","name":"National Geographic Kids-Mavi Gezegen Seti-5 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Öncesi 6 Ay-5 Yaş/Eğitim Etkinlik Kitapları","list":"productlisting - Kitap","dimension4":"0001867707001","dimension10":"Kitap","position":1},{"id":"1208255","name":"National Geographic Kids-Okuma Serisi Seviye 2 Seti-17 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Çağı 6-10 Yaş/Çocuk Bilim","list":"productlisting - Kitap","dimension4":"0001867713001","dimension10":"Kitap","position":2},{"id":"1208249","name":"National Geographic Kids-Dünyamızı Keşfedin Seti-8 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Çağı 6-10 Yaş/Çocuk Bilim","list":"productlisting - Kitap","dimension4":"0001867710001","dimension10":"Kitap","position":3},{"id":"1208251","name":"National Geographic Kids-Okul Öncesi Seti-7 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Çağı 6-10 Yaş/Çocuk Bilim","list":"productlisting - Kitap","dimension4":"0001867711001","dimension10":"Kitap","position":4},{"id":"1208237","name":"Müthiş Marvel Hikayeleri Seti-6 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Çağı 6-10 Yaş/Çocuk Fantastik/Bilim Kurgu","list":"productlisting - Kitap","dimension4":"0001867704001","dimension10":"Kitap","position":5},{"id":"1208233","name":"National Geographic Kids-İnanılmaz İnsan Vücudu Seti-2 Kitap Takım","brand":"Beta Kids","category":"Kitap/Çocuk ve Gençlik/Okul Çağı 6-10 Yaş/Çocuk Bilim","list":"productlisting - Kitap","dimension4":"0001867702001","dimension10":"Kitap","position":6}];
+    </script>
+
+  <script>
+      var impression_products = prodArr;
+      dataLayer.push({
+          'Category': 'Enhanced Ecommerce',
+          'Action': 'Browse',
+          'Label': 'Product Impressions',
+          'Value': 0,
+          'noninteraction': true,
+          'ecommerce': {
+              'currencyCode': 'TRY',
+              'impressions': impression_products
+          },
+          'event': 'eeEvent'
+      });
+    </script>
+            </div>
+        </section>
+            <section class="shelf">
+            <div class="container">
+                <header>
+                    <h2>Sizin İçin Seçtiklerimiz</h2>
+                        <a href="/Sectiklerimiz/Kitap">TÜMÜNÜ GÖRÜNTÜLE</a>
+
+                </header>
+
+
+<div class="cell" onclick="productClick(this)" data-id="1207886" data-name="Ahitler" data-brand="Doğan Kitap" data-category="Kitap/Edebiyat/Roman/D&#252;nya Roman" data-sku="0001867512001" data-position="1">
+    <div class="content">
+        <a title="Ahitler " href="/Kitap/Ahitler-Booker-Odulu-2019/Margaret-Atwood/Edebiyat/Roman/Dunya-Roman/urunno=0001867512001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001867512001-1.jpg" alt="Ahitler " />                  <div class="p-info">
+                        <span class="warning">23.03.2020 tarihinde stoklarda</span>
+                                    </div>
+            </figure>
+        </a>
+        <a title="Ahitler" href="/Kitap/Ahitler-Booker-Odulu-2019/Margaret-Atwood/Edebiyat/Roman/Dunya-Roman/urunno=0001867512001 " class="item-name">
+        <ul class="rate ">
+        </ul>
+        
+            <h3 class="ellipsis">Ahitler</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/margaret-atwood/s=149178" class="who">Margaret Atwood</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/dogan-kitap/s=2744" class="who mb10">Doğan Kitap</a>
+        </div>
+            <span class="old-price">47,00 TL</span>
+            <span class="discount-category">%30</span>
+            <span class="price">32,90 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1204497" data-name="Olmasa da Olur" data-brand="İnkılap Kitabevi" data-category="Kitap/Edebiyat/Roman/T&#252;rkiye Roman" data-sku="0001865739001" data-position="2">
+    <div class="content">
+        <a title="Olmasa da Olur " href="/Kitap/Olmasa-da-Olur/Edebiyat/Roman/Turkiye-Roman/urunno=0001865739001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001865739001-1.jpg" alt="Olmasa da Olur " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Olmasa da Olur" href="/Kitap/Olmasa-da-Olur/Edebiyat/Roman/Turkiye-Roman/urunno=0001865739001 " class="item-name">
+        <ul class="rate four">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Olmasa da Olur</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/asli-t--kizmaz/s=10086608" class="who">Aslı T. Kızmaz</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/inkilap-kitabevi/s=4994" class="who mb10">İnkılap Kitabevi</a>
+        </div>
+            <span class="old-price">15,00 TL</span>
+            <span class="discount-category">%25</span>
+            <span class="price">11,25 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1203306" data-name="Akhilleus&#39;un Şarkısı" data-brand="İthaki Yayınları" data-category="Kitap/Edebiyat/Roman/Fantastik" data-sku="0001865141001" data-position="3">
+    <div class="content">
+        <a title="Akhilleus&#39;un Şarkısı " href="/Kitap/Akhilleusun-Sarkisi/Edebiyat/Roman/Fantastik/urunno=0001865141001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001865141001-1.jpg" alt="Akhilleus&#39;un Şarkısı " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Akhilleus&#39;un Şarkısı" href="/Kitap/Akhilleusun-Sarkisi/Edebiyat/Roman/Fantastik/urunno=0001865141001 " class="item-name">
+        <ul class="rate three-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Akhilleus&#39;un Şarkısı</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/madeline-miller/s=7400" class="who">Madeline Miller</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/ithaki-yayinlari/s=5119" class="who mb10">İthaki Yayınları</a>
+        </div>
+            <span class="old-price">35,00 TL</span>
+            <span class="discount-category">%35</span>
+            <span class="price">22,75 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1205742" data-name="Netflix: Bu İş Asla Tutmaz" data-brand="Konu Kitap" data-category="Kitap/Eğitim Başvuru/İş Ekonomi - Hukuk/İş Adamları" data-sku="0001866408001" data-position="4">
+    <div class="content">
+        <a title="Netflix: Bu İş Asla Tutmaz " href="/Kitap/Netflix-Bu-Is-Asla-Tutmaz/Marc-Randolph/Egitim-Basvuru/Is-Ekonomi-Hukuk/Is-Adamlari/urunno=0001866408001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001866408001-1.jpg" alt="Netflix: Bu İş Asla Tutmaz " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Netflix: Bu İş Asla Tutmaz" href="/Kitap/Netflix-Bu-Is-Asla-Tutmaz/Marc-Randolph/Egitim-Basvuru/Is-Ekonomi-Hukuk/Is-Adamlari/urunno=0001866408001 " class="item-name">
+        <ul class="rate four-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Netflix: Bu İş Asla Tutmaz</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/marc-randolph/s=10091666" class="who">Marc Randolph</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/konu-kitap/s=10004792" class="who mb10">Konu Kitap</a>
+        </div>
+            <span class="old-price">34,00 TL</span>
+            <span class="discount-category">%25</span>
+            <span class="price">25,50 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1202768" data-name="Fil Saati" data-brand="Destek Yayınları" data-category="Kitap/Edebiyat/Roman/T&#252;rkiye Roman" data-sku="0001864882001" data-position="5">
+    <div class="content">
+        <a title="Fil Saati " href="/Kitap/Fil-Saati/Tugba-Sariunal/Edebiyat/Roman/Turkiye-Roman/urunno=0001864882001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001864882001-1.jpg" alt="Fil Saati " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="Fil Saati" href="/Kitap/Fil-Saati/Tugba-Sariunal/Edebiyat/Roman/Turkiye-Roman/urunno=0001864882001 " class="item-name">
+        <ul class="rate four-half">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">Fil Saati</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/tugba-sariunal/s=24148" class="who">Tuğba Sarı&#252;nal</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/destek-yayinlari/s=2561" class="who mb10">Destek Yayınları</a>
+        </div>
+            <span class="old-price">22,00 TL</span>
+            <span class="discount-category">%50</span>
+            <span class="price">11,00 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>
+<div class="cell" onclick="productClick(this)" data-id="1195461" data-name="İmzalı-D&#252;nyasızlar" data-brand="Turkuvaz Kitap" data-category="Kitap/Edebiyat/Roman/T&#252;rkiye Roman" data-sku="0001861125001" data-position="6">
+    <div class="content">
+        <a title="İmzalı-D&#252;nyasızlar " href="/Kitap/Imzali-Dunyasizlar/Kaan-Murat-Yanik/Edebiyat/Roman/Turkiye-Roman/urunno=0001861125001">
+            <figure>
+                
+ <img class="lazyload" data-src="assets/img/0001861125001-1.jpg" alt="İmzalı-D&#252;nyasızlar " />                  <div class="p-info">
+                                    </div>
+            </figure>
+        </a>
+        <a title="İmzalı-D&#252;nyasızlar" href="/Kitap/Imzali-Dunyasizlar/Kaan-Murat-Yanik/Edebiyat/Roman/Turkiye-Roman/urunno=0001861125001 " class="item-name">
+        <ul class="rate four">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        
+            <h3 class="ellipsis">İmzalı-D&#252;nyasızlar</h3>
+        </a>
+        <hr>
+ <a href="/Yazar/kaan-murat-yanik/s=61585" class="who">Kaan Murat Yanık</a>        <div class="media-type">
+İnce Kapak        </div>
+        <div class="media-type">
+                <a href="/Yayinevi/turkuvaz-kitap/s=26386" class="who mb10">Turkuvaz Kitap</a>
+        </div>
+            <span class="old-price">35,00 TL</span>
+            <span class="discount-category">%30</span>
+            <span class="price">24,50 TL </span>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    
+    var sectionheight = new Array(); //set empty array
+    $(".cell .content").each(function () { //get all div elements
+        var value = $(this).height(); //get div height
+        sectionheight.push(value); //write height to array
+    });
+    var newsectionheight = Math.max.apply(Math, sectionheight); //get largest value in array
+    $('.cell .content').height(newsectionheight); //set height of all elements to largest
+
+
+</script>    <script>
+        var prodArr = [{"id":"1207886","name":"Ahitler","brand":"Doğan Kitap","category":"Kitap/Edebiyat/Roman/Dünya Roman","list":"productlisting - Kitap","dimension4":"0001867512001","dimension10":"Kitap","position":1},{"id":"1204497","name":"Olmasa da Olur","brand":"İnkılap Kitabevi","category":"Kitap/Edebiyat/Roman/Türkiye Roman","list":"productlisting - Kitap","dimension4":"0001865739001","dimension10":"Kitap","position":2},{"id":"1203306","name":"Akhilleus\u0027un Şarkısı","brand":"İthaki Yayınları","category":"Kitap/Edebiyat/Roman/Fantastik","list":"productlisting - Kitap","dimension4":"0001865141001","dimension10":"Kitap","position":3},{"id":"1205742","name":"Netflix: Bu İş Asla Tutmaz","brand":"Konu Kitap","category":"Kitap/Eğitim Başvuru/İş Ekonomi - Hukuk/İş Adamları","list":"productlisting - Kitap","dimension4":"0001866408001","dimension10":"Kitap","position":4},{"id":"1202768","name":"Fil Saati","brand":"Destek Yayınları","category":"Kitap/Edebiyat/Roman/Türkiye Roman","list":"productlisting - Kitap","dimension4":"0001864882001","dimension10":"Kitap","position":5},{"id":"1195461","name":"İmzalı-Dünyasızlar","brand":"Turkuvaz Kitap","category":"Kitap/Edebiyat/Roman/Türkiye Roman","list":"productlisting - Kitap","dimension4":"0001861125001","dimension10":"Kitap","position":6}];
+    </script>
+
+  <script>
+      var impression_products = prodArr;
+      dataLayer.push({
+          'Category': 'Enhanced Ecommerce',
+          'Action': 'Browse',
+          'Label': 'Product Impressions',
+          'Value': 0,
+          'noninteraction': true,
+          'ecommerce': {
+              'currencyCode': 'TRY',
+              'impressions': impression_products
+          },
+          'event': 'eeEvent'
+      });
+    </script>
+            </div>
+        </section>
+
+<div class="full-banner-container">
+    <div class="container">
+        <div class="row">
+            <div class="col4">
+                
+        <div class="item">
+            <a href="https://www.dr.com.tr/kataloglar_/1001Kitap/3216#/page=1/sort=newness,desc/categoryid=0/clog=3216/parentId=0/price=-1,-1" title="&#214;lmeden &#214;nce Okumanız Gereken 1001 Kitap" data-id="291" >
+                <picture>
+                    <source media="(max-width: 766px)" data-srcset="assets/img/0519_d_u_x_364x178_olmeden_once_okumaniz_gereken_1001_kitap_rev.jpg">
+                    <source media="(min-width: 767px)" data-srcset="assets/img/0519_d_u_x_364x178_olmeden_once_okumaniz_gereken_1001_kitap_rev.jpg">
+                    <img class="lazyload" data-src="assets/img/0519_d_u_x_364x178_olmeden_once_okumaniz_gereken_1001_kitap_rev.jpg" alt="&#214;lmeden &#214;nce Okumanız Gereken 1001 Kitap" style="width:auto;">
+                </picture>
+            </a>
+        </div>
+
+            </div>
+            <div class="col4">
+                
+        <div class="item">
+            <a href="/Ozel-Fiyatli-Kitaplar" title="&#214;zel Fiyatlı Kitaplar" data-id="6107" >
+                <picture>
+                    <source media="(max-width: 766px)" data-srcset="assets/img/ozel-fiyatli-kitaplar-ctg-3.jpg">
+                    <source media="(min-width: 767px)" data-srcset="assets/img/ozel-fiyatli-kitaplar-ctg-3.jpg">
+                    <img class="lazyload" data-src="assets/img/ozel-fiyatli-kitaplar-ctg-3.jpg" alt="ozel-fiyatli-kitaplar" style="width:auto;">
+                </picture>
+            </a>
+        </div>
+
+            </div>
+            <div class="col4">
+                
+        <div class="item">
+            <a href="https://www.dr.com.tr/Kitap/Hiclikten-Gelen-Guc/Tugce-Isinsu/Egitim-Basvuru/Kisisel-Gelisim/urunno=0001857556001" title="Hi&#231;likten Gelen G&#252;&#231; İmzalı" data-id="6116" >
+                <picture>
+                    <source media="(max-width: 766px)" data-srcset="assets/img/0320_d_u_x_364x178_tugce_isinsu_guc_imzali-REV.jpg">
+                    <source media="(min-width: 767px)" data-srcset="assets/img/0320_d_u_x_364x178_tugce_isinsu_guc_imzali-REV.jpg">
+                    <img class="lazyload" data-src="assets/img/0320_d_u_x_364x178_tugce_isinsu_guc_imzali-REV.jpg" style="width:auto;">
+                </picture>
+            </a>
+        </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<input type="hidden" id="hdnParentId" value="10001" />
+<input type="hidden" id="hdnCategoryids"value="0,10001" />
+
+<script type="text/javascript" src="assets/js/categoryPages.js"></script>
+
+
+</div>
+</section>
+
+<input type="hidden" autocomplete="off" id="hdnBrandId" />
+<input type="hidden" autocomplete="off" id="hdnVariationName" />
+<input type="hidden" autocomplete="off" id="hdnPropVal" />
+<input type="hidden" autocomplete="off" id="hdnLanguage" />
+<input type="hidden" id="hdnFilterPrice" />
+
+
+
+
+<footer>
+    <div class="container">
+        <nav class="footerNav">
+            <ul>
+
+                    <div class="topic-html-content">
+        <div class="topic-html-content-body">
+            <ul>
+<li data-id="drhakkinda-click"><a href="/hakkimizda">D&amp;R Hakkında</a></li>
+<li data-id="drcard-click"><a href="/common/pagecontent/drcard">D&amp;R Kart</a></li>
+<li data-id="yardim-click"><a href="/yardim">Yardım / SSS</a></li>
+<li data-id="kampanyafooter-click"><a href="/kampanyalar">Kampanyalar</a></li>
+<li data-id="magazalarfooter-click"><a href="/magazalar">D&amp;R Mağazalar</a></li>
+<li data-id="mobiluygulamalar-click"><a href="/common/pagecontent/dr_mobiluygulamalar">Mobil Uygulamalar</a></li>
+<li data-id="islem-click"><a href="/islem-rehberi">İşlem Rehberi</a></li>
+<li data-id="Oyun-Konsol-click"><a href="/kategori/Kirtasiye">Kırtasiye</a></li>
+<li data-id="hediye-click"><a href="/hediyekarti">Sanal Hediye Kartı</a></li>
+<li data-id="iletisim-click"><a href="/iletisim">İletişim</a></li>
+<li data-id="magazaetkinlikfooter-click"><a href="/ayni-gun-teslimat/">Hızlı Teslimat</a></li>
+<li data-id="legolar-click"><a href="/kitap-festivali">Kitap Festivali</a></li>
+</ul>
+        </div>
+    </div>
+
+            </ul>
+        </nav>
+        <div class="channels">
+            <ul class="social">
+                <li class="fb"><a href="http://www.facebook.com/DRdunyasi" target="_blank"><i class="icon-facebook"></i></a></li>
+                <li class="twitter"><a href="http://twitter.com/DRDunyasi" target="_blank"><i class="icon-twitter"></i></a></li>
+                <li class="instagram"><a href="http://instagram.com/dr_dunyasi" target="_blank"><i class="icon-instagram-yeni"></i></a></li>
+            </ul>
+            <ul class="app">
+                <li class="android"><a href="http://www.dr.com.tr/Common/PageContent/DR_MobilUygulamalar"><img class="lazyload" data-src="assets/img/google-play-logo.png" alt="Google Play" /></a></li>
+                <li class="android"><a href="http://www.dr.com.tr/Common/PageContent/DR_MobilUygulamalar"><img class="lazyload" data-src="assets/img/app-store-logo.png" alt="App Store" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <ul class="copyright">
+            <li>&copy; Copyright 2000-2020 Turkuvaz Müzik Kitap Mağazacılık ve Pazarlama A.Ş. Tüm hakları saklıdır.</li>
+            <li class="separator"></li>
+            <li><a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/10740" target="_blank">Bilgi Toplumu Hizmetleri</a></li>
+            <li class="separator"></li>
+            <li><a href="http://www.dr.com.tr/kisisel-verilere-iliskin-aydinlatma-metni" target="_blank">Kişisel Verilere İlişkin Aydınlatma Metni</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="assets/js/jquery.selectBox.js"></script>
+<script src="assets/js/icheck.min.js"></script>
+<script src="assets/js/jquery.tooltipster.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="assets/js/corenew.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/js/drcorenew.js"></script>
+
+    
+
+<script type="text/javascript" charset="utf-8" src="assets/js/selectsChange.js"></script>
+
+<!--[if lt IE 7]>
+<div class="cross_browsers">
+    <a href='#' class="close_button" onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'>X</a>
+    <div class="browsers_list">
+        <p>Tarayıcınız çok eski.</br>Aşağıdaki güncel tarayıcılardan birini yükleyiniz.</p>
+        <a href='http://www.google.com/chrome' target='_blank'><img src='/Content/Library/Images/icons/google_chrome.png' alt='Google Chrome'/></a>
+        <a href='http://windows.microsoft.com/tr-TR/internet-explorer/products/ie/home' target='_blank'><img src='/Content/Library/Images/icons/internet_explorer.png' alt='Internet Explorer'/></a>
+        <a href='http://www.apple.com/safari/download/' target='_blank'><img src='/Content/Library/Images/icons/safari.png'  alt='Safari'/></a>      
+        <a href='http://www.opera.com/' target='_blank'><img src='/Content/Library/Images/icons/opera.png' alt='Opera'/></a>
+        <a href='http://www.mozilla-europe.org' target='_blank'><img src='/Content/Library/Images/icons/firefox.png'  alt='Firefox'/></a>
+    </div>
+</div>
+<style type="text/css">
+    .cross_browsers img{border:none;margin:0;padding:0;}
+    .cross_browsers{line-height:22px;height:85px;font:11px Tahoma, Geneva, sans-serif;padding:10px;position:relative;color:#9F6000;background-color:#FEEFB3;border-radius:5px;-moz-border-radius:5px;-web-kit-border-radius:5px;overflow:hidden;overflow:hidden;}
+    .close_button{color:#000;font-weight:bold;text-decoration:none;padding:5px;float:right;}
+    .browsers_list{overflow:hidden;}
+    .browsers_list a{display:block;float:left;margin:0 10px 0 0;opacity:0.5;filter:alpha(opacity=50);}
+    .browsers_list a:hover{display:block;float:left;margin:0 10px 0 0;opacity:1;filter:alpha(opacity=100);}
+    #container{display:none;}
+</style> 
+<![endif]-->
+<noscript>
+    <div class="cross_browsers">
+        <div class="browsers_list">Tarayıcınızın javascripti kapalıdır! Javascript kapalı iken siteyi verimli kullanmanız mümkün değildir. Lütfen tarayıcınızın javascriptini etkinleştiriniz.</div>
+    </div>
+    <style type="text/css">
+    body {overflow:hidden; margin:0;}    
+    .cross_browsers img {border:none;margin:0;padding:0;}
+    .cross_browsers {font:11px Tahoma, Geneva, sans-serif;padding:10px;position:relative;color:#D8000C;background-color:#FFBABA;border-radius:5px;-moz-border-radius:5px;-web-kit-border-radius:5px;overflow:hidden;overflow:hidden;}
+    .close_butto {color:#000;font-weight:bold;text-decoration:none;padding:5px;float:right;}
+    .browsers_list {overflow:hidden;}
+    .browsers_list a {display:block;float:left;margin:0 10px 0 0;opacity:0.5;filter:alpha(opacity=50);}
+    .browsers_list a:hover {display:block;float:left;margin:0 10px 0 0;opacity:1;filter:alpha(opacity=100);}
+    .transparent_bg {height:5000px;position:absolute;z-index:10001;width:100%;top:0;left:0;display:block;text-indent:-9999px;background:url('/Content/Library/Images/icons/white_bg.png') repeat;}
+    </style> 
+</noscript>
+
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-ZGV7"
+        height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-ZGV7');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Firebase Code -->
+    <script>(function(d,t){
+    var e = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+    e.src = "https://wps.relateddigital.com/relatedpush_sdk.js?ckey=87BDA24BFB444EB9BE7FBDB0B4A9E61C&aid=6f8d3af4-58f7-4030-ae3a-6da2ebf04e81";
+    e.async = true;
+    s.parentNode.insertBefore(e,s);
+    }(document,"script"));</script>
+
+    <!-- Firebase Code End -->
+
+</body>
+</html>
