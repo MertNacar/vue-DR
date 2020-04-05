@@ -1,0 +1,46 @@
+.pad {
+	position: absolute;
+	width: 114px;
+	padding: 1px;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #646464;
+	background: #ffffff;
+}
+.keypad-popup {
+	background: none repeat scroll 0 0 #E6E6E6;
+	display: inline-block;
+	padding: 4px;
+	width: 106px;
+}
+.keypad-popup button {
+	margin-bottom: 3px;
+}
+.keypad-popup button:hover {
+	background: #e9e9e9;
+}
+.keypad-key {
+	cursor: pointer;
+	width: 33px;
+	padding: 5px 0;
+	font-size: 12px;
+	text-align: center;
+	color: #424242;
+	border-bottom: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	border-top: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}
+.keypad-clear {
+	cursor: pointer;
+	width: 69px;
+	padding: 5px 0;
+	font-size: 12px;
+	text-align: center;
+	color: #424242;
+	border-bottom: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	border-top: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}

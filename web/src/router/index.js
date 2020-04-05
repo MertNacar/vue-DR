@@ -1,6 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Category from "../views/Category";
+import CategoryBook from "../views/CategoryBook";
+import CategoryBookLiterature from "../views/CategoryBookLiterature";
+import Auth from "../views/Auth";
+import BookDetail from "../views/BookDetail";
+import Cart from "../views/Cart";
 
 Vue.use(VueRouter);
 

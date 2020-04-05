@@ -2,6 +2,7 @@
 
 <script>
 export default {
+   name: "OpenableMenu",
   data() {
     return {
       items: [
