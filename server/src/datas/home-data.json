@@ -155,6 +155,20 @@
         "title": "Literat&#252;r Yayınları Se&#231;ili Kitaplar Kampanyası",
         "src": "./assets/img/0120_d_u_73_364x178_literatur_secili_kitaplar.jpg"
       }
+    ],
+    "ThirdBanner": [
+      {
+        "title": "Çizgi Romanlar",
+        "src": "./assets/img/cizgi-roman-3lu-2.jpg"
+      },
+      {
+        "title": "İndirimli Kitaplar - Footer",
+        "src": "./assets/img/indirimli-kitap-setleri.jpg"
+      },
+      {
+        "title": "Bircan Yıldırım",
+        "src": "./assets/img/Bircan3lu.png"
+      }
     ]
   },
   "PopularSearch": [
@@ -195,9 +209,9 @@
     {
       "id": "Book-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001862523001-1.jpg",
       "rate": 4.5,
-      "title": "Imzalı-Dikili İlişkiler",
+      "title": "Imzalı-Dikili İliskiler",
       "author": "Haluk Tatar",
       "cover": "İnce Kapak",
       "publisher": "Inkılap Kitabevi",
@@ -221,7 +235,7 @@
     {
       "id": "Book-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001862956001-1.jpg",
       "rate": null,
       "title": "Yolun Sonundaki Okyanus",
       "author": "Neil Gaiman",
@@ -234,7 +248,7 @@
     {
       "id": "Book-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001863434001-1.jpg",
       "rate": null,
       "title": "Leonardo'nun Beyni",
       "author": "Leonard Shlain",
@@ -247,7 +261,7 @@
     {
       "id": "Book-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001862614001-1.jpg",
       "rate": 4.5,
       "title": "Kübra",
       "author": "Afşin Kum",
@@ -260,7 +274,7 @@
     {
       "id": "Book-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001780976001-1.jpg",
       "rate": 4.5,
       "title": "Benliğini Arayan Çocuk",
       "author": "Virgina M.Axline",
@@ -275,7 +289,7 @@
     {
       "id": "Featured-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001857556001-1.jpg",
       "rate": 1.5,
       "title": "Hiç'likten Gelen Güç",
       "author": "Tuğçe Işınsu",
@@ -288,7 +302,7 @@
     {
       "id": "Featured-2",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001862657001-1.jpg",
       "rate": null,
       "title": "Özgürleşebilmek-Özgür Olma Cesareti",
       "author": "Guy Finley",
@@ -301,7 +315,7 @@
     {
       "id": "Featured-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000419225-1.jpg",
       "rate": null,
       "title": "Yazarların İstanbul'u",
       "author": "İlber Ortaylı",
@@ -314,7 +328,7 @@
     {
       "id": "Featured-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001863452001-1.jpg",
       "rate": null,
       "title": "James Bond-Casino Royale",
       "author": "Ian Fleming",
@@ -327,7 +341,7 @@
     {
       "id": "Featured-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001861355001-1.jpg",
       "rate": null,
       "title": "Yılanın Gizemi-Kiranmala ve Öte Krallık",
       "author": "Sayantani Dasgupta",
@@ -340,7 +354,7 @@
     {
       "id": "Featured-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001860252001-1.jpg",
       "rate": null,
       "title": "Duygularımı İyileştiriyorum-Etkinlik Rehberi-Eğlen Öğren",
       "author": "Catherine Alexis",
@@ -355,7 +369,7 @@
     {
       "id": "Stationery-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001793643001-1.jpg",
       "rate": 5.0,
       "title": "Crayola Silly Scents Kalın Keçeli Boya Kalemi 12'li",
       "type": "Kırtasiye",
@@ -368,7 +382,7 @@
     {
       "id": "Stationery-2",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001782098001-1.jpg",
       "rate": 3.5,
       "title": "Fabooks Ajanda 2020 Girl Boss",
       "type": "Kırtasiye",
@@ -381,7 +395,7 @@
     {
       "id": "Stationery-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000593226-1.jpg",
       "rate": 3.5,
       "title": "Rotring 800+ Iki Fonksiyonlu Kalem, Krom 0.5 mm 1900183",
       "type": "Kırtasiye",
@@ -394,7 +408,7 @@
     {
       "id": "Stationery-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000695483-1.jpg",
       "rate": 4.5,
       "title": "Lamy Al-Star Charged Yeşil Roller Kalem 352",
       "type": "Kırtasiye",
@@ -407,7 +421,7 @@
     {
       "id": "Stationery-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001775232001-1.jpg",
       "rate": 5.0,
       "title": "Fenerbahçe Sırt Çantası 87023",
       "type": "Kırtasiye",
@@ -420,7 +434,7 @@
     {
       "id": "Stationery-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001775224001-1.jpg",
       "rate": 5.0,
       "title": "Galatasaray Sırt Çantası 86939",
       "type": "Kırtasiye",
@@ -435,7 +449,7 @@
     {
       "id": "Stationery-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001846467001-1.jpg",
       "rate": 3.5,
       "title": "Sony WIXB400B.CE7 Kablosuz Extra Bass Kulak İçi Kulaklık - Siyah",
       "type": "Elektronik",
@@ -448,7 +462,7 @@
     {
       "id": "Stationery-2",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000690972-1.jpg",
       "rate": null,
       "title": "Urbanears, Sumpan, Control Talk IE Headphones, Tomato ZD.4091382",
       "type": "Elektronik",
@@ -461,7 +475,7 @@
     {
       "id": "Stationery-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000727628-1.jpg",
       "rate": 3.5,
       "title": "JBL T110 Kulakiçi Kulaklık CT Beyaz",
       "type": "Elektronik",
@@ -474,7 +488,7 @@
     {
       "id": "Stationery-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001846467002-1.jpg",
       "rate": 3.5,
       "title": "Sony WIXB400B.CE7 Kablosuz Extra Bass Kulak İçi Kulaklık - Mavi",
       "type": "Elektronik",
@@ -487,7 +501,7 @@
     {
       "id": "Stationery-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001852853001-1.jpg",
       "rate": 3,
       "title": "Philips PRO6305BK Kulakiçi Kulaklık Mikrofonlu",
       "type": "Elektronik",
@@ -500,7 +514,7 @@
     {
       "id": "Stationery-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001861545001-1.jpg",
       "rate": null,
       "title": "Anker Nebula Mars II Akıllı Taşınabilir WiFi Kablosuz Projeksiyon Cihazı ve Hoparlör - Siyah",
       "type": "Elektronik",
@@ -515,7 +529,7 @@
     {
       "id": "HoobyToys-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000597265-1.jpg",
       "rate": 3,
       "title": "Scrabble Orjinal Türkçe Y9611",
       "type": "Hobi & Oyuncak",
@@ -528,7 +542,7 @@
     {
       "id": "HoobyToys-2",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001781400001-1.jpg",
       "rate": 2.5,
       "title": "Wissper Bebek ve Peggy",
       "type": "Hobi & Oyuncak",
@@ -541,7 +555,7 @@
     {
       "id": "HoobyToys-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001779451001-1.jpg",
       "rate": null,
       "title": "Hatchimals Hatchibabies Cheetree Figür",
       "type": "Hobi & Oyuncak",
@@ -554,7 +568,7 @@
     {
       "id": "HoobyToys-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001854812001-1.jpg",
       "rate": null,
       "title": "Lego-Technic App-Controlled Top Gear Rally Car 42109",
       "type": "Hobi & Oyuncak",
@@ -567,7 +581,7 @@
     {
       "id": "HoobyToys-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0000000273264-1.jpg",
       "rate": 3.5,
       "title": "Bee Oyun Kartları (Jumbo Index)",
       "type": "Hobi & Oyuncak",
@@ -580,14 +594,14 @@
     {
       "id": "HoobyToys-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001698544001-1.jpg",
       "rate": 2.5,
-      "title": "Art Puzzle 120 ml. Yapıştırıcısı 903",
+      "title": "Art Puzzle TREX",
       "type": "Hobi & Oyuncak",
       "brand": "Art Puzzle",
       "cargoFree": false,
       "brandSource": "link",
-      "price": 19.9,
+      "price": 33.92,
       "discount": "22"
     }
   ],
@@ -595,11 +609,11 @@
     {
       "id": "GameConsole-1",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001759279001-1.jpg",
       "rate": 4,
-      "title": "PS4 500 GB - Playstation 4 Oyun Konsolu (Sony Eurasia Garantili)",
+      "title": "SteelSeries Arctis Pro Hi-Res RGB Oyuncu Kulaklığı",
       "type": "Oyun & Konsol",
-      "brand": "Sony",
+      "brand": "SteelSeries",
       "cargoFree": true,
       "brandSource": "link",
       "price": 2699.0,
@@ -608,7 +622,7 @@
     {
       "id": "GameConsole-2",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001780918001-1.jpg",
       "rate": 5,
       "title": "Nintendo Switch Konsol (Gri Joy-Con)",
       "type": "Oyun & Konsol",
@@ -621,7 +635,7 @@
     {
       "id": "GameConsole-3",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001850315001-1.jpg",
       "rate": 4,
       "title": "The Sims 4 PC",
       "type": "PC DVD-Rom",
@@ -634,7 +648,7 @@
     {
       "id": "GameConsole-4",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001785320002-1.jpg",
       "rate": 3.5,
       "title": "Battlefield 5",
       "type": "Playstation 4",
@@ -647,7 +661,7 @@
     {
       "id": "GameConsole-5",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001850167003-1.jpg",
       "rate": null,
       "title": "Need For Speed Heat",
       "type": "Playstation 4",
@@ -660,14 +674,14 @@
     {
       "id": "GameConsole-6",
       "source": "link",
-      "img": "link",
+      "img": "./assets/img/0001838066003-1.jpg",
       "rate": 4,
-      "title": "PS4 1TB Days Of Play Bundle",
+      "title": "PS4 Dualshock Cont Titanium Blue",
       "type": "Oyun & Konsol",
-      "brand": "Sony",
+      "brand": "PS4",
       "cargoFree": true,
       "brandSource": "link",
-      "price": 3199.0,
+      "price": 549.0,
       "discount": "0"
     }
   ]
