@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Header v-bind:Menu="Menu" />
     <SubHeader v-if="event" :event="event" v-bind:SubHeader="SubHeader" />
     <ArrowBanner title="Tüm kitap kampanyaları tek bir sayfada" />
 
@@ -67,25 +66,25 @@
       </div>
     </section>
 
-    <FullBanner v-bind:items="FullBanner.SecondBanner" />
-    <Footer />
+    <FullBanner
+      v-if="event"
+      :event="event"
+      v-bind:items="FullBanner.SecondBanner"
+    />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
 import SubHeader from "@/components/SubHeader";
 import ArrowBanner from "@/components/ArrowBanner";
 import FullBanner from "@/components/FullBanner";
 import CardList from "@/components/CardList";
-import Footer from "@/components/Footer";
 import axios from "axios";
 
 export default {
   name: "Home",
   data() {
     return {
-      Menu: [],
       PopularSearch: [],
       SubHeader: {},
       Book: [],
@@ -99,12 +98,10 @@ export default {
     };
   },
   components: {
-    Header,
     SubHeader,
     ArrowBanner,
     FullBanner,
     CardList,
-    Footer,
   },
   async created() {
     try {

@@ -2,41 +2,57 @@
   <header>
     <div class="header-new">
       <figure class="logo">
-        <a href="/"><img src="assets/img/head-logo.png" alt="D&R"/></a>
+        <router-link :to="{ name: 'Home' }"
+          ><img src="assets/img/head-logo.png" alt="D&R"
+        /></router-link>
       </figure>
-      <div class="head-menu ">
+
+      <div id="header-login" class="head-menu">
         <ul>
-          <li class="giris" onclick="eventClick(this);">
-            <a href="login.html">ÜYE GİRİŞİ</a>
+          <li v-if="loggedIn" class="giris"><a href="#">HESABIM</a></li>
+          <li v-if="loggedIn" class="separator"></li>
+          <li v-if="loggedIn" class="giris"><a href="#">ÇIKIŞ</a></li>
+
+          <li v-if="!loggedIn" class="giris">
+            <router-link :to="{ name: 'Login' }">ÜYE GİRİŞİ</router-link>
           </li>
 
           <li class="separator"></li>
-          <li class="sepet" onclick="eventClick(this);" data-id="sepetim-click">
-            <a href="sepet.html">SEPETİM</a>
-            <i class="icon-sepet"></i>
-            <span class="items-count">0</span>
+          <li class="sepet">
+            <!--<a @click="show = !show">SEPETİM</a>-->
+            <router-link :to="{ name: 'Cart' }">
+              <a>SEPETİM</a>
+            </router-link>
+
+            <i style="font-size:2em" class="fa fa-shopping-cart"></i>
+
+            <!-- icon-sepet -->
+            <span class="items-count">{{ cartCount }}</span>
           </li>
         </ul>
 
-        <div class="head-cart">
+        <div v-if="show" class="head-cart">
           <div class="sum">
             <p class="sum-detail">Sepetinizde Ürün Bulunmamaktadır.</p>
             <hr />
           </div>
-          <input
-            class="btn red"
-            value="SEPETE GİT"
-            type="button"
-            onclick="window.location.href = '/Sepetim';"
-          />
+          <router-link :to="{ name: 'Cart' }">
+            <input class="btn red" value="SEPETE GİT" type="button" />
+          </router-link>
         </div>
       </div>
-      <div class="category-tab">
+
+      <div
+        class="category-tab"
+        style="display:flex;flex-direction:row;align-items:center;"
+      >
+        <i id="menuSrc" style="padding-left:25px" class="fa fa-bars fa-2x"></i>
         <label>MENÜ</label>
       </div>
 
-      <div class="search-bar ">
-        <i id="menuSrc" class="icon-arama"></i>
+      <div id="search-login" class="search-bar">
+        <i id="menuSrc" class="fa fa-search"></i>
+        <!-- icon-arama -->
         <i id="menuCls" class="icon-close">X</i>
         <input
           type="text"
@@ -61,6 +77,28 @@
 export default {
   name: "Header",
   props: ["Menu"],
+  data() {
+    return {
+      show: false,
+    };
+  },
+  computed: {
+    loggedIn() {
+      return this.$store.getters.user.email != null;
+    },
+    cartCount() {
+      return this.$store.getters.cart.length || 0;
+    },
+  },
+  beforeUpdate() {
+    if (this.loggedIn) {
+      document.getElementById("header-login").classList.add("logged-in");
+      document.getElementById("search-login").classList.add("logged-in");
+    } else {
+      document.getElementById("header-login").classList.remove("logged-in");
+      document.getElementById("search-login").classList.remove("logged-in");
+    }
+  },
 };
 </script>
 

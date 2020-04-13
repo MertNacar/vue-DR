@@ -1,12 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Category from "../views/Category";
 import CategoryBook from "../views/CategoryBook";
 import CategoryBookLiterature from "../views/CategoryBookLiterature";
-import Auth from "../views/Auth";
+import Login from "../views/Login";
 import BookDetail from "../views/BookDetail";
 import Cart from "../views/Cart";
+import Register from "../views/Register";
 
 Vue.use(VueRouter);
 
@@ -15,11 +15,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
-  },
-  {
-    path: "/category",
-    name: "Category",
-    component: Category
   },
   {
     path: "/category/book",
@@ -32,9 +27,14 @@ const routes = [
     component: CategoryBookLiterature
   },
   {
-    path: "/auth",
-    name: "Auth",
-    component: Auth
+    path: "/login",
+    name: "Login",
+    component: Login
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register
   },
   {
     path: "/book-detail",

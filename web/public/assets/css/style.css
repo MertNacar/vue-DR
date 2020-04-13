@@ -4436,7 +4436,7 @@ header {
     transition: all 0.4s cubic-bezier(0.03, 0.96, 0.52, 0.98); }
     header .category-tab label {
       font-size: 13px;
-      padding: 20px 10px 20px 55px;
+      padding: 20px 10px 20px 10px;
       display: block;
       cursor: pointer; }
     header .category-tab.active {

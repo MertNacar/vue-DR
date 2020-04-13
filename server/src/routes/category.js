@@ -16,6 +16,14 @@ router.get('/books', (req, res) => {
   });
 });
 
+
+router.get('/books/literature/all', (req, res) => {
+  fs.readFile(CATEGORY_2_DATA_FILE, (err, data) => {
+    res.setHeader('Cache-Control', 'no-cache');
+    res.json(JSON.parse(data));
+  });
+});
+
 router.get('/books/literature', (req, res) => {
   let { price } = req.query
   fs.readFile(CATEGORY_2_DATA_FILE, (err, data) => {

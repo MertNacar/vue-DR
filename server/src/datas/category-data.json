@@ -1,122 +1,46 @@
 {
-  "Menu": [
+  "Carousels": [
     {
-      "id": "Menu-1",
-      "source": "link",
-      "img": "link",
-      "title": "Kitap"
+      "src": "./assets/img/0220_d_u_x_851x373_haftanin_firsati_domingo.jpg"
     },
     {
-      "id": "Menu-2",
-      "source": "#",
-      "img": "link",
-      "title": "E-Kitap"
+      "src": "./assets/img/0120_d_t_76_851x373_jbl.jpg"
     },
     {
-      "id": "Menu-3",
-      "source": "#",
-      "img": "link",
-      "title": "Elektronik"
+      "src": "./assets/img/0919_d_u_x_851x373_bic_kampanya.jpg"
     },
     {
-      "id": "Menu-4",
-      "source": "#",
-      "img": "link",
-      "title": "Hobi & Oyuncak"
+      "src": "./assets/img/1019_d_u_x_851x373_hatchimals.jpg"
     },
     {
-      "id": "Menu-5",
-      "source": "#",
-      "img": "link",
-      "title": "Kırtasiye"
+      "src": "./assets/img/0220_d_u_23_851x373_sennheiser_hd450bt_kulaklik_yeni2-son.jpg"
     },
     {
-      "id": "Menu-6",
-      "source": "#",
-      "img": "link",
-      "title": "Hediyelik Eşyalar"
+      "src": "./assets/img/0220_d_u_x_851x373_dunyasizlar1.png"
     },
     {
-      "id": "Menu-7",
-      "source": "#",
-      "img": "link",
-      "title": "Oyun & Konsol"
+      "src": "./assets/img/axess-wings-3.jpg"
     },
     {
-      "id": "Menu-8",
-      "source": "#",
-      "img": "link",
-      "title": "Yeni Çıkan Kitaplar"
+      "src": "./assets/img/0120_d_u_x_851x373_ithaki_yayinlari_rev.jpg"
     },
     {
-      "id": "Menu-9",
-      "source": "#",
-      "img": "link",
-      "title": "Çok Satanlar"
-    },
-    {
-      "id": "Menu-10",
-      "source": "#",
-      "img": "link",
-      "title": "Spor & Outdoor"
-    },
-    {
-      "id": "Menu-11",
-      "source": "#",
-      "img": "link",
-      "title": "Film"
-    },
-    {
-      "id": "Menu-12",
-      "source": "#",
-      "img": "link",
-      "title": "Müzik"
-    },
-    {
-      "id": "Menu-13",
-      "source": "#",
-      "img": "link",
-      "title": "Kampanyalar"
-    },
-    {
-      "id": "Menu-14",
-      "source": "#",
-      "img": "link",
-      "title": "Mağaza Etkinlikleri"
+      "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
     }
   ],
-  "PopularSearch": [
+
+  "FullBanners": [
     {
-      "id": "PopularSearch-1",
-      "title": "İngilizce Kitaplar"
+      "title": "Lego",
+      "src": "./assets/img/LE190326-1_-LEGO-D%26R-Banner_2.jpg"
     },
     {
-      "id": "PopularSearch-2",
-      "title": "Cep Telefonu"
+      "title": "Sizin İ&#231;in Se&#231;tiğimiz Kitaplar - Footer",
+      "src": "./assets/img/0220_d_u_x_364x178_sizin_icin_sectiklerimiz_rev.jpg"
     },
     {
-      "id": "PopularSearch-3",
-      "title": "Ajanda-Takvim"
-    },
-    {
-      "id": "PopularSearch-4",
-      "title": "Pikap"
-    },
-    {
-      "id": "PopularSearch-5",
-      "title": "Puzzle"
-    },
-    {
-      "id": "PopularSearch-6",
-      "title": "Ödüllü Kitaplar"
-    },
-    {
-      "id": "PopularSearch-7",
-      "title": "Harry Potter"
-    },
-    {
-      "id": "PopularSearch-8",
-      "title": "Can - Okurunu Bulan Kitaplar"
+      "title": "Orenda Yayınları",
+      "src": "./assets/img/orenda-banner.png"
     }
   ],
   "Categories": [
@@ -216,7 +140,7 @@
       "author": "Guy Finley",
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
-      "price": 28.00,
+      "price": 28.0,
       "discount": "32"
     },
     {
@@ -228,7 +152,7 @@
       "author": "Guy Finley",
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
-      "price": 24.00,
+      "price": 24.0,
       "discount": "32"
     },
     {
@@ -240,7 +164,7 @@
       "author": "Tuğçe Işınsu",
       "cover": "İnce Kapak",
       "publisher": "Feniks Kitap",
-      "price": 32.00,
+      "price": 32.0,
       "discount": "37"
     },
     {
@@ -252,7 +176,7 @@
       "author": "Müthiş Psikoloji",
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
-      "price": 23.00,
+      "price": 23.0,
       "discount": "35"
     },
     {
@@ -264,7 +188,7 @@
       "author": "Mark Manson",
       "cover": "İnce Kapak",
       "publisher": "Butik",
-      "price": 29.00,
+      "price": 29.0,
       "discount": "40"
     },
     {
@@ -276,80 +200,8 @@
       "author": "Hakan Mengüç",
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
-      "price": 26.00,
+      "price": 26.0,
       "discount": "32"
-    },
-    {
-      "id": "Interested-7",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Bir Ömür Nasıl Yaşanır?",
-      "author": "İlber Ortaylı",
-      "cover": "İnce Kapak",
-      "publisher": "Kronik Kitap",
-      "price": 27.50,
-      "discount": "32"
-    },
-    {
-      "id": "Interested-8",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Ben Kirke",
-      "author": "Madeline Miller",
-      "cover": "İnce Kapak",
-      "publisher": "İthaki Yayınları",
-      "price": 35.00,
-      "discount": "40"
-    },
-    {
-      "id": "Interested-9",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Hayatın Değeri Uzun Yaşanmasında Değil, İyi Yaşanmasındadır.",
-      "author": "Michel de Montaigne",
-      "cover": "İnce Kapak",
-      "publisher": "Destek Yayınları",
-      "price": 15.00,
-      "discount": "32"
-    },
-    {
-      "id": "Interested-10",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Gerçek Mucize Kendine İnanmaktır",
-      "author": "Ethem Emin Nemutlu",
-      "cover": "İnce Kapak",
-      "publisher": "Olimpos Yayınları",
-      "price": 35.00,
-      "discount": "40"
-    },
-    {
-      "id": "Interested-11",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Gör Beni-İki Devrin Hikayesi",
-      "author": "Akilah Azra Kohen",
-      "cover": "İnce Kapak",
-      "publisher": "Everest Yayınları",
-      "price": 39.00,
-      "discount": "40"
-    },
-    {
-      "id": "Interested-12",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Hayat Cesurlara Torpil Geçer",
-      "author": "Bircan Yıldırım",
-      "cover": "İnce Kapak",
-      "publisher": "Destek Yayınları",
-      "price": 23.00,
-      "discount": "35"
     }
   ],
   "TopSale": [
@@ -363,7 +215,7 @@
       "cover": "İnce Kapak",
       "publisher": "Feniks Kitap",
       "publisherSource": "link",
-      "price": 32.00,
+      "price": 32.0,
       "discount": "37"
     },
     {
@@ -376,7 +228,7 @@
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
       "publisherSource": "link",
-      "price": 26.00,
+      "price": 26.0,
       "discount": "32"
     },
     {
@@ -389,7 +241,7 @@
       "cover": "İnce Kapak",
       "publisher": "Can Çocuk Yayınları",
       "publisherSource": "link",
-      "price": 23.50,
+      "price": 23.5,
       "discount": "30"
     },
     {
@@ -402,7 +254,7 @@
       "cover": "İnce Kapak",
       "publisher": "Doğan Kitap",
       "publisherSource": "link",
-      "price": 36.00,
+      "price": 36.0,
       "discount": "30"
     },
     {
@@ -415,7 +267,7 @@
       "cover": "İnce Kapak",
       "publisher": "Turkuvaz Kitap",
       "publisherSource": "link",
-      "price": 35.00,
+      "price": 35.0,
       "discount": "30"
     },
     {
@@ -428,7 +280,7 @@
       "cover": "İnce Kapak",
       "publisher": "Destek Yayınları",
       "publisherSource": "link",
-      "price": 28.00,
+      "price": 28.0,
       "discount": "35"
     }
   ],
@@ -443,7 +295,7 @@
       "cover": "İnce Kapak",
       "publisher": "Otonom Yayıncılık",
       "publisherSource": "link",
-      "price": 25.00,
+      "price": 25.0,
       "discount": "22"
     },
     {
@@ -456,7 +308,7 @@
       "cover": "Ciltli",
       "publisher": "Everest Yayınları",
       "publisherSource": "link",
-      "price": 42.00,
+      "price": 42.0,
       "discount": "35"
     },
     {
@@ -469,7 +321,7 @@
       "cover": "İnce Kapak",
       "publisher": "Liberus",
       "publisherSource": "link",
-      "price": 59.00,
+      "price": 59.0,
       "discount": "33"
     },
     {
@@ -482,7 +334,7 @@
       "cover": "İnce Kapak",
       "publisher": "Diyojen Yayıncılık",
       "publisherSource": "link",
-      "price": 29.00,
+      "price": 29.0,
       "discount": "38"
     },
     {
@@ -495,7 +347,7 @@
       "cover": "İnce Kapak",
       "publisher": "Hikmet Yayınları",
       "publisherSource": "link",
-      "price": 45.00,
+      "price": 45.0,
       "discount": "37"
     },
     {
@@ -508,7 +360,7 @@
       "cover": "İnce Kapak",
       "publisher": "Vakvak Yayınları",
       "publisherSource": "link",
-      "price": 18.00,
+      "price": 18.0,
       "discount": "22"
     }
   ],
@@ -523,7 +375,7 @@
       "cover": "İnce Kapak",
       "publisher": "İnkilap Kitapevi",
       "publisherSource": "link",
-      "price": 19.00,
+      "price": 19.0,
       "discount": "50"
     },
     {
@@ -536,7 +388,7 @@
       "cover": "İnce Kapak",
       "publisher": "Epsilon Yayınevi",
       "publisherSource": "link",
-      "price": 35.00,
+      "price": 35.0,
       "discount": "35"
     },
     {
@@ -549,7 +401,7 @@
       "cover": "İnce Kapak",
       "publisher": "İthaki Yayınları",
       "publisherSource": "link",
-      "price": 21.00,
+      "price": 21.0,
       "discount": "35"
     },
     {
@@ -562,7 +414,7 @@
       "cover": "İnce Kapak",
       "publisher": "Paloma Yayınevi",
       "publisherSource": "link",
-      "price": 32.00,
+      "price": 32.0,
       "discount": "35"
     },
     {
@@ -575,7 +427,7 @@
       "cover": "İnce Kapak",
       "publisher": "April Yayıncılık",
       "publisherSource": "link",
-      "price": 28.00,
+      "price": 28.0,
       "discount": "35"
     },
     {
@@ -588,60 +440,8 @@
       "cover": "İnce Kapak",
       "publisher": "Panama Yayıncılık",
       "publisherSource": "link",
-      "price": 25.00,
+      "price": 25.0,
       "discount": "40"
-    },
-    {
-      "id": "News-6",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Bir Miyav İki Hav Hav",
-      "author": "H. Salih Zengin",
-      "cover": "İnce Kapak",
-      "publisher": "Vakvak Yayınları",
-      "publisherSource": "link",
-      "price": 18.00,
-      "discount": "22"
-    },
-    {
-      "id": "News-6",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Bir Miyav İki Hav Hav",
-      "author": "H. Salih Zengin",
-      "cover": "İnce Kapak",
-      "publisher": "Vakvak Yayınları",
-      "publisherSource": "link",
-      "price": 18.00,
-      "discount": "22"
-    },
-    {
-      "id": "News-6",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Bir Miyav İki Hav Hav",
-      "author": "H. Salih Zengin",
-      "cover": "İnce Kapak",
-      "publisher": "Vakvak Yayınları",
-      "publisherSource": "link",
-      "price": 18.00,
-      "discount": "22"
-    },
-    {
-      "id": "News-6",
-      "source": "link",
-      "img": "link",
-      "rate": null,
-      "title": "Bir Miyav İki Hav Hav",
-      "author": "H. Salih Zengin",
-      "cover": "İnce Kapak",
-      "publisher": "Vakvak Yayınları",
-      "publisherSource": "link",
-      "price": 18.00,
-      "discount": "22"
     }
   ]
 }
