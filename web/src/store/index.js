@@ -33,7 +33,7 @@ export default new Vuex.Store({
       })
       state.cart = newCart
     },
-    deleteCartAll(state) {
+    deleteAllCart(state) {
       state.cart = []
     },
     addUser(state, payload) {

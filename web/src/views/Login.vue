@@ -5,7 +5,6 @@
       type="text/css"
       href="assets/css/customerPages.css"
     />
-    <Header />
     <div id="fb-root"></div>
 
     <section class="user-landing">
@@ -111,20 +110,20 @@
         </v-card-text>
       </v-card>
     </v-dialog>
-    <Footer />
   </div>
 </template>
 
 <script>
 import axios from "axios";
 export default {
+  name: "Login",
   data() {
     return {
       email: "",
       password: "",
       checked: false,
       dialog: false,
-      dialogText: "",
+      dialogText: ""
     };
   },
   methods: {
@@ -139,7 +138,7 @@ export default {
           setTimeout(() => {
             this.$store.dispatch("addUser", {
               email: this.email,
-              password: this.password,
+              password: this.password
             });
             this.$router.push({ name: "Home" });
           }, 2000);
@@ -148,7 +147,7 @@ export default {
         this.dialogText = "Email veya şifrenizi hatalı girdiniz.";
         this.dialog = true;
       }
-    },
-  },
+    }
+  }
 };
 </script>

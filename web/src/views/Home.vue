@@ -7,7 +7,7 @@
       <div class="container">
         <header>
           <h2>Kitap</h2>
-          <a href="/Sectiklerimiz/Kitap">TÜMÜNÜ GÖRÜNTÜLE</a>
+       <router-link :to="{ name: 'CategoryBook' }">TÜMÜNÜ GÖRÜNTÜLE</router-link>
         </header>
         <CardList v-bind:items="Book" />
       </div>
@@ -23,7 +23,7 @@
       <div class="container">
         <header>
           <h2>Öne Çıkanlar</h2>
-          <a href="/kataloglar_/anasayfaonecikanlar/6804">TÜMÜNÜ GÖRÜNTÜLE</a>
+          <a href="#">TÜMÜNÜ GÖRÜNTÜLE</a>
         </header>
         <CardList v-bind:items="Featured" />
       </div>
@@ -33,7 +33,7 @@
       <div class="container">
         <header>
           <h2>Kırtasiye</h2>
-          <a href="/kategori/Kirtasiye">TÜMÜNÜ GÖRÜNTÜLE</a>
+          <a href="#">TÜMÜNÜ GÖRÜNTÜLE</a>
         </header>
         <CardList v-bind:items="Stationery" />
       </div>
@@ -42,7 +42,7 @@
       <div class="container">
         <header>
           <h2>Elektronik</h2>
-          <a href="/kategori/Elektronik">TÜMÜNÜ GÖRÜNTÜLE</a>
+          <a href="#">TÜMÜNÜ GÖRÜNTÜLE</a>
         </header>
         <CardList v-bind:items="Electronic" />
       </div>
@@ -51,7 +51,7 @@
       <div class="container">
         <header>
           <h2>Hobi&Oyuncak</h2>
-          <a href="/kategori/Hobi-Oyuncak">TÜMÜNÜ GÖRÜNTÜLE</a>
+          <a href="#">TÜMÜNÜ GÖRÜNTÜLE</a>
         </header>
         <CardList v-bind:items="HoobyToys" />
       </div>
@@ -60,7 +60,7 @@
       <div class="container">
         <header>
           <h2>Oyun&Konsol</h2>
-          <a href="/kategori/Oyun-Konsol">TÜMÜNÜ GÖRÜNTÜLE</a>
+          <a href="#">TÜMÜNÜ GÖRÜNTÜLE</a>
         </header>
         <CardList v-bind:items="GameConsole" />
       </div>

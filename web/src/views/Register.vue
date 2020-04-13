@@ -1,6 +1,5 @@
 <template>
   <div class="register">
-    <Header />
     <link
       rel="stylesheet"
       type="text/css"
@@ -159,6 +158,11 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  name: "Register",
+};
+</script>

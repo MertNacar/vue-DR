@@ -153,7 +153,7 @@ import CardList from "@/components/CardList";
 import CategoryList from "@/components/CategoryList";
 import axios from "axios";
 export default {
-  name: "CategoryBook",
+  name: "CategoryBookLiterature",
   components: {
     CardList,
     CategoryList,

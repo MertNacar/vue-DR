@@ -11,7 +11,9 @@
         <ul>
           <li v-if="loggedIn" class="giris"><a href="#">HESABIM</a></li>
           <li v-if="loggedIn" class="separator"></li>
-          <li v-if="loggedIn" class="giris"><a href="#">ÇIKIŞ</a></li>
+          <li v-if="loggedIn" class="giris">
+            <a @click="logOut()" href="#">ÇIKIŞ</a>
+          </li>
 
           <li v-if="!loggedIn" class="giris">
             <router-link :to="{ name: 'Login' }">ÜYE GİRİŞİ</router-link>
@@ -79,8 +81,14 @@ export default {
   props: ["Menu"],
   data() {
     return {
-      show: false,
+      show: false
     };
+  },
+  methods: {
+    logOut() {
+      this.$store.dispatch("deleteUser");
+      this.$store.dispatch("deleteAllCart");
+    }
   },
   computed: {
     loggedIn() {
@@ -88,7 +96,7 @@ export default {
     },
     cartCount() {
       return this.$store.getters.cart.length || 0;
-    },
+    }
   },
   beforeUpdate() {
     if (this.loggedIn) {
@@ -98,7 +106,7 @@ export default {
       document.getElementById("header-login").classList.remove("logged-in");
       document.getElementById("search-login").classList.remove("logged-in");
     }
-  },
+  }
 };
 </script>
 

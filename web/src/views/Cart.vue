@@ -29,7 +29,13 @@
                 </div>
               </div>
 
-              <CartList :items="this.$store.getters.cart" />
+              <CartList
+                :items="cart"
+                :decrease="decreaseQty"
+                :increase="increaseQty"
+                :change="changeQty"
+                :totalNew="totalNew"
+              />
 
               <div class="extras-row">
                 <div class="half">
@@ -93,6 +99,7 @@
                     value="checkout"
                     class="btn red"
                     style="font-weight: bold;font-size: 14px;"
+                    @click="goPayment()"
                   >
                     SATIN AL
                   </button>
@@ -147,22 +154,50 @@ export default {
     CartList,
     BankPayment,
     BankImage,
-    ArrowBanner,
+    ArrowBanner
+  },
+  data() {
+    return {
+      cart: JSON.parse(JSON.stringify(this.$store.getters.cart))
+    };
   },
   computed: {
     total() {
       let total = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         total += calculated;
       });
-      return total;
+      return total.toFixed(2);
+    },
+    totalNew() {
+      let totalNew = 0;
+      this.cart.forEach(item => {
+        let calculated =
+          (item.price - item.price * (item.discount / 100)) * item.quantity;
+        totalNew += calculated;
+      });
+      return totalNew.toFixed(2);
     },
     totalCount() {
       return this.$store.getters.cart.length;
-    },
+    }
   },
+  methods: {
+    changeQty(item) {
+      this.$store.dispatch("changeQtyCart", item);
+    },
+    decreaseQty(item, index) {
+      if (item.quantity > 1) this.cart[index].quantity--;
+    },
+    increaseQty(item, index) {
+      this.cart[index].quantity++;
+    },
+    goPayment() {
+      this.$router.push({ name: "Payment" });
+    }
+  }
 };
 </script>
 <style>

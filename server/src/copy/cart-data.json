@@ -11,7 +11,7 @@
     "publisherSource": "link",
     "price": 19.00,
     "discount": "50",
-    "quantity:": 1
+    "quantity": 1
   },
   {
     "id": "Book-2",
@@ -25,6 +25,6 @@
     "publisherSource": "link",
     "price": 35.00,
     "discount": "22",
-    "quantity:": 1
+    "quantity": 1
   }
 ]
