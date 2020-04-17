@@ -1,124 +1,4 @@
 {
-  "Menu": [
-    {
-      "id": "Menu-1",
-      "source": "link",
-      "img": "link",
-      "title": "Kitap"
-    },
-    {
-      "id": "Menu-2",
-      "source": "#",
-      "img": "link",
-      "title": "E-Kitap"
-    },
-    {
-      "id": "Menu-3",
-      "source": "#",
-      "img": "link",
-      "title": "Elektronik"
-    },
-    {
-      "id": "Menu-4",
-      "source": "#",
-      "img": "link",
-      "title": "Hobi & Oyuncak"
-    },
-    {
-      "id": "Menu-5",
-      "source": "#",
-      "img": "link",
-      "title": "Kırtasiye"
-    },
-    {
-      "id": "Menu-6",
-      "source": "#",
-      "img": "link",
-      "title": "Hediyelik Eşyalar"
-    },
-    {
-      "id": "Menu-7",
-      "source": "#",
-      "img": "link",
-      "title": "Oyun & Konsol"
-    },
-    {
-      "id": "Menu-8",
-      "source": "#",
-      "img": "link",
-      "title": "Yeni Çıkan Kitaplar"
-    },
-    {
-      "id": "Menu-9",
-      "source": "#",
-      "img": "link",
-      "title": "Çok Satanlar"
-    },
-    {
-      "id": "Menu-10",
-      "source": "#",
-      "img": "link",
-      "title": "Spor & Outdoor"
-    },
-    {
-      "id": "Menu-11",
-      "source": "#",
-      "img": "link",
-      "title": "Film"
-    },
-    {
-      "id": "Menu-12",
-      "source": "#",
-      "img": "link",
-      "title": "Müzik"
-    },
-    {
-      "id": "Menu-13",
-      "source": "#",
-      "img": "link",
-      "title": "Kampanyalar"
-    },
-    {
-      "id": "Menu-14",
-      "source": "#",
-      "img": "link",
-      "title": "Mağaza Etkinlikleri"
-    }
-  ],
-  "PopularSearch": [
-    {
-      "id": "PopularSearch-1",
-      "title": "İngilizce Kitaplar"
-    },
-    {
-      "id": "PopularSearch-2",
-      "title": "Cep Telefonu"
-    },
-    {
-      "id": "PopularSearch-3",
-      "title": "Ajanda-Takvim"
-    },
-    {
-      "id": "PopularSearch-4",
-      "title": "Pikap"
-    },
-    {
-      "id": "PopularSearch-5",
-      "title": "Puzzle"
-    },
-    {
-      "id": "PopularSearch-6",
-      "title": "Ödüllü Kitaplar"
-    },
-    {
-      "id": "PopularSearch-7",
-      "title": "Harry Potter"
-    },
-    {
-      "id": "PopularSearch-8",
-      "title": "Can - Okurunu Bulan Kitaplar"
-    }
-  ],
   "Categories": [
     {
       "id": "Categories-1",
@@ -549,7 +429,7 @@
       "discount": "30"
     },
     {
-      "id": "Book-25",
+      "id": "Book-26",
       "source": "link",
       "img": "link",
       "rate": 3.5,
@@ -561,7 +441,7 @@
       "discount": "40"
     },
     {
-      "id": "Book-26",
+      "id": "Book-27",
       "source": "link",
       "img": "link",
       "rate": 4,
@@ -573,7 +453,7 @@
       "discount": "35"
     },
     {
-      "id": "Book-27",
+      "id": "Book-28",
       "source": "link",
       "img": "link",
       "rate": 2,
@@ -585,7 +465,7 @@
       "discount": "42"
     },
     {
-      "id": "Book-28",
+      "id": "Book-29",
       "source": "link",
       "img": "link",
       "rate": 3.5,
@@ -597,7 +477,7 @@
       "discount": "30"
     },
     {
-      "id": "Book-29",
+      "id": "Book-30",
       "source": "link",
       "img": "link",
       "rate": 4,
@@ -609,7 +489,7 @@
       "discount": "32"
     },
     {
-      "id": "Book-30",
+      "id": "Book-31",
       "source": "link",
       "img": "link",
       "rate": 3.5,
@@ -621,7 +501,7 @@
       "discount": "35"
     },
     {
-      "id": "Book-31",
+      "id": "Book-32",
       "source": "link",
       "img": "link",
       "rate": 4,
@@ -633,7 +513,7 @@
       "discount": "35"
     },
     {
-      "id": "Book-32",
+      "id": "Book-33",
       "source": "link",
       "img": "link",
       "rate": 3,
@@ -645,7 +525,7 @@
       "discount": "32"
     },
     {
-      "id": "Book-33",
+      "id": "Book-34",
       "source": "link",
       "img": "link",
       "rate": 4,
@@ -657,7 +537,7 @@
       "discount": "35"
     },
     {
-      "id": "Book-34",
+      "id": "Book-35",
       "source": "link",
       "img": "link",
       "rate": 4,
@@ -669,7 +549,7 @@
       "discount": "30"
     },
     {
-      "id": "Book-35",
+      "id": "Book-36",
       "source": "link",
       "img": "link",
       "rate": 4,
