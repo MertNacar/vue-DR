@@ -19,7 +19,15 @@
 
       <div class="row">
         <div class="col-sm-9">
-          <Carousel v-if="event" :event="event" v-bind:items="SubHeader.Carousel" />
+          <div class="slider promo owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <Carousel
+                v-if="event"
+                :event="event"
+                v-bind:items="SubHeader.Carousel"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="col-sm-3 todaysDeal">
@@ -47,9 +55,9 @@ import Carousel from "./Carousel";
 export default {
   Name: "SubHeader",
   components: {
-    Carousel,
+    Carousel
   },
-  props: ["SubHeader","event"],
+  props: ["SubHeader", "event"]
 };
 </script>
 

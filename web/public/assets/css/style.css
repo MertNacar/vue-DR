@@ -742,6 +742,18 @@ pre {
   @media (min-width: 1200px) {
     .container {
       width: 1156px; } }
+  @media (min-width: 1408px) {
+    .container {
+      width: 1358px; } }
+  @media (min-width: 1616px) {
+    .container {
+      width: 1560px; } }
+  @media (min-width: 1824px) {
+    .container {
+      width: 1768px; } }      
+  @media (min-width: 2016px) {
+    .container {
+      width: 1976px; } }        
 .container-fluid, header {
   margin-right: auto;
   margin-left: auto;
@@ -10955,8 +10967,6 @@ a#paymentTypeGarantiPay {text-decoration: none;}
 /*** KATEGORİ BANNER ***/
 
 .category-banner img { width:100%; }
-
-/*# sourceMappingURL=style.css.map */
 
 
 /* Mağaza Etkinlikleri */

@@ -9,14 +9,9 @@
               <div class="p-info"></div>
             </figure>
           </a>
+
           <a :title="item.title" class="item-name">
-            <ul class="rate three-half">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <Ratings :hover="false" :rating="item.rating" :readonly="true" />
 
             <h3 class="ellipsis">{{ item.title }}</h3>
           </a>
@@ -44,8 +39,10 @@
 </template>
 
 <script>
+import Ratings from "./Ratings";
 export default {
   name: "CardList",
-  props: ["items"],
+  components: { Ratings },
+  props: ["items"]
 };
 </script>

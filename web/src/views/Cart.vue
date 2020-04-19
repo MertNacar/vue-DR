@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <div id="cartList">
+    <div v-if="!empty" id="cartList">
       <section class="basket-container clearfix">
         <form action="/cart" enctype="multipart/form-data" method="post">
           <section class="cart">
@@ -36,32 +36,6 @@
                 :change="changeQty"
                 :totalNew="totalNew"
               />
-
-              <div class="extras-row">
-                <div class="half">
-                  <div class="check"></div>
-                  <div class="product">
-                    <figure><i class="fa fa-gift"></i></figure>
-                    <div class="extra-description">
-                      <a class="fancybox" href="#" data-fancybox-type="ajax"
-                        >Hediye Paketi Yap</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="half">
-                  <div class="price">
-                    <p></p>
-                  </div>
-                  <div class="gift-note-container">
-                    <input
-                      type="text"
-                      placeholder="Notunuz"
-                      class="gift-note"
-                    />
-                  </div>
-                </div>
-              </div>
 
               <div class="cta-row">
                 <div class="product-selected">
@@ -141,6 +115,10 @@
         </form>
       </section>
     </div>
+
+    <div v-if="empty">
+      <EmptyCart />
+    </div>
   </div>
 </template>
 
@@ -149,16 +127,19 @@ import CartList from "@/components/CartList";
 import BankPayment from "@/components/BankPayment";
 import BankImage from "@/components/BankImage";
 import ArrowBanner from "@/components/ArrowBanner";
+import EmptyCart from "@/components/EmptyCart";
 export default {
   components: {
     CartList,
     BankPayment,
     BankImage,
-    ArrowBanner
+    ArrowBanner,
+    EmptyCart
   },
   data() {
     return {
-      cart: JSON.parse(JSON.stringify(this.$store.getters.cart))
+      cart: JSON.parse(JSON.stringify(this.$store.getters.cart)),
+      empty: this.$store.getters.cart.length === 0 ? true : false
     };
   },
   computed: {
