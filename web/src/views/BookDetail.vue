@@ -3,7 +3,7 @@
     <div id="selectedId">
       <section class="sub-categories">
         <div class="categories-path">
-          <div class="container">
+          <div class="container" style="text-align:left">
             <ul>
               <li><a href="#">ANASAYFA</a></li>
               <li><a href="#">Kitap</a></li>
@@ -25,13 +25,13 @@
           <div class="container">
             <div class="product-details">
               <figure>
-                <img :src="item.imgBig" :title="item.title" :alt="item.title" />
+                <img :src="item.img" :title="item.title" :alt="item.title" />
               </figure>
               <div class="product-name">
                 <h3>{{ item.title }}</h3>
               </div>
             </div>
-            <div class="hidden">
+            <div>
               <div class="product-price">
                 <p>
                   <span>(KDV Dahil)</span>
@@ -45,9 +45,6 @@
                 >SEPETE EKLE</a
               >
             </div>
-            <div class="hidden">
-              <span class="product-status">Satışa Hazır</span>
-            </div>
           </div>
         </div>
         <div class="container">
@@ -55,25 +52,17 @@
             <div class="col-half">
               <h1 class="product-name">
                 {{ item.title }}
-                <span class="newItem"
-                  ><img src="assets/img/new-item.png"
-                /></span>
               </h1>
             </div>
 
             <div class="col-half" style="text-align:right">
-              <ul class="rate four">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+              <Ratings :hover="true" :rating="item.rate" :readonly="false" />
               <span>8/10 - 5 Kişi</span>
               <a
                 href="javascript:;"
                 onclick="PrepareAndAddToFavorites();"
-                class="add-to-favorites"
+                class="fa fa-heart"
+                style="color: #000;padding-left: 5px; font-weight:bold; text-decoration:none"
                 >FAVORİLERİME EKLE</a
               >
             </div>
@@ -115,7 +104,7 @@
             </div>
 
             <div class="specs">
-              <div class="author">
+              <div class="author" style="text-align:left">
                 Yazar:
                 <span
                   ><a href="#"
@@ -124,7 +113,7 @@
                 >
               </div>
 
-              <div class="author">
+              <div class="author" style="text-align:left">
                 Yayınevi :
                 <h2>
                   <a href="#"
@@ -135,7 +124,21 @@
                 </h2>
               </div>
               <div class="spec-box" id="priceBox">
-                <div id="result" class="variants-wrapper"></div>
+                <div id="result" class="variants-wrapper">
+                  <div class="variant">
+                    <h3></h3>
+                    <div class="variant-content">
+                      <ul id="value1Div">
+                        <li class="">
+                          <input type="radio" checked="" id="chars1_0" /><label
+                            for="chars1_0"
+                            >{{ item.cover }}</label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
                 <div id="statusDiv"></div>
                 <div id="priceDiv" class="book-active">
                   <div class="prices">
@@ -187,7 +190,7 @@
                     >
                     <a
                       class="btn white fancybox"
-                      href="/Themes/DR/Content/assets/partials/fiyati-dusunce-uyar.html?ver=574"
+                      href="#"
                       id="openAlarm"
                       data-fancybox-type="ajax"
                       >FİYATI DÜŞÜNCE UYAR</a
@@ -208,7 +211,7 @@
                 </div>
               </div>
 
-              <ul class="pluses">
+              <ul class="pluses" style="padding:0px;">
                 <li class="bold hide-element" id="ebookInfo"></li>
                 <li class="bold" id="ucretsizKargoDiv">
                   <i class="ico-right-arrow"></i>100 TL üstü standart teslimatlı
@@ -323,6 +326,7 @@
 </template>
 
 <script>
+import Ratings from "@/components/Ratings";
 export default {
   data() {
     return {
@@ -330,6 +334,9 @@ export default {
       dialog: false,
       qty: 1,
     };
+  },
+  components: {
+    Ratings,
   },
   methods: {
     addToCart() {

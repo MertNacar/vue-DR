@@ -21,10 +21,7 @@
 
           <li class="separator"></li>
           <li class="sepet">
-            <!--<a @click="show = !show">SEPETİM</a>-->
-            <router-link :to="{ name: 'Cart' }">
-              <a>SEPETİM</a>
-            </router-link>
+            <a @click="openCart()">SEPETİM</a>
 
             <i style="font-size:2em" class="fa fa-shopping-cart"></i>
 
@@ -33,14 +30,18 @@
           </li>
         </ul>
 
-        <div v-if="show" class="head-cart">
-          <div class="sum">
+        <div id="header-cart" class="head-cart">
+          <OpenCartList v-if="showCart" />
+          <div v-if="!showCart" class="sum">
             <p class="sum-detail">Sepetinizde Ürün Bulunmamaktadır.</p>
             <hr />
           </div>
-          <router-link :to="{ name: 'Cart' }">
-            <input class="btn red" value="SEPETE GİT" type="button" />
-          </router-link>
+          <input
+            @click="goCart()"
+            class="btn red"
+            value="SEPETE GİT"
+            type="button"
+          />
         </div>
       </div>
 
@@ -76,27 +77,48 @@
 </template>
 
 <script>
+import OpenCartList from "@/components/OpenCartList";
 export default {
   name: "Header",
   props: ["Menu"],
+  components: {
+    OpenCartList,
+  },
   data() {
     return {
-      show: false
+      show: false,
     };
   },
   methods: {
     logOut() {
       this.$store.dispatch("deleteUser");
       this.$store.dispatch("deleteAllCart");
-    }
+    },
+    openCart() {
+      this.show = !this.show;
+      if (this.show)
+        document.getElementById("header-cart").classList.add("active");
+      else document.getElementById("header-cart").classList.remove("active");
+    },
+    goCart() {
+      if (this.show === true) this.openCart();
+      this.$router.push({ name: "Cart" });
+    },
   },
   computed: {
     loggedIn() {
       return this.$store.getters.user.email != null;
     },
     cartCount() {
-      return this.$store.getters.cart.length || 0;
-    }
+      return (
+        this.$store.getters.cart.reduce((prev, next) => {
+          return prev.quantity + next.quantity;
+        }, 0) || 0
+      );
+    },
+    showCart() {
+      return this.$store.getters.cart.length > 0 ? true : false;
+    },
   },
   beforeUpdate() {
     if (this.loggedIn) {
@@ -106,7 +128,7 @@ export default {
       document.getElementById("header-login").classList.remove("logged-in");
       document.getElementById("search-login").classList.remove("logged-in");
     }
-  }
+  },
 };
 </script>
 
