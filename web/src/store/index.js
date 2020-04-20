@@ -17,10 +17,9 @@ export default new Vuex.Store({
           isExist = true
         }
       })
-      if (isExist === false)
-        state.cart.push(payload)
+      if (isExist === false) state.cart.push(payload)
     },
-    changeQtyCart(state,payload){
+    changeQtyCart(state, payload) {
       state.cart.map(item => {
         if (item.id === payload.id) {
           item.quantity = payload.quantity

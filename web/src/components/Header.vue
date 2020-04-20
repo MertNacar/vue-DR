@@ -110,11 +110,11 @@ export default {
       return this.$store.getters.user.email != null;
     },
     cartCount() {
-      return (
-        this.$store.getters.cart.reduce((prev, next) => {
-          return prev.quantity + next.quantity;
-        }, 0) || 0
-      );
+      let count = 0;
+      this.$store.getters.cart.forEach((item) => {
+        count += item.quantity;
+      });
+      return count || 0;
     },
     showCart() {
       return this.$store.getters.cart.length > 0 ? true : false;

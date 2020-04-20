@@ -57,11 +57,11 @@ export default {
       return total.toFixed(2);
     },
     totalCount() {
-      return (
-        this.$store.getters.cart.reduce((prev, next) => {
-          return prev.quantity + next.quantity;
-        }, 0) || 0
-      );
+      let count = 0;
+      this.$store.getters.cart.forEach((item) => {
+        count += item.quantity;
+      });
+      return count || 0;
     },
   },
 };
