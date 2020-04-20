@@ -26,13 +26,13 @@
       <div class="channels">
         <ul class="social">
           <li class="fb">
-            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
           </li>
           <li class="twitter">
-            <a href="#" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
           </li>
           <li class="instagram">
-            <a href="#" target="_blank"><i class="icon-instagram-yeni"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
           </li>
         </ul>
         <ul class="app">

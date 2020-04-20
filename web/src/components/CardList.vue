@@ -6,18 +6,20 @@
           <a :title="item.title">
             <figure>
               <img class="lazyload" :src="item.img" :alt="item.title" />
-              <div class="p-info"></div>
+              <div class="p-info">
+                <span v-if="item.price > 100" class="info">KARGO BEDAVA</span>
+              </div>
             </figure>
           </a>
 
           <a :title="item.title" class="item-name">
-            <Ratings :hover="false" :rating="item.rating" :readonly="true" />
+            <Ratings :hover="false" :rating="item.rate || 0" :readonly="true" />
 
             <h3 class="ellipsis">{{ item.title }}</h3>
           </a>
           <hr />
           <a :href="item.authorSource" class="who">{{ item.author }}</a>
-          <!-- who alternate gelebilir -->
+          <!-- who alternate -->
           <div class="media-type">{{ item.cover }}</div>
           <div class="media-type">
             <a :href="item.publisherSource" class="who mb10">
@@ -43,6 +45,6 @@ import Ratings from "./Ratings";
 export default {
   name: "CardList",
   components: { Ratings },
-  props: ["items"]
+  props: ["items"],
 };
 </script>

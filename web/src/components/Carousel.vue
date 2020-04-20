@@ -1,5 +1,10 @@
 <template>
-  <v-carousel v-if="event" cycle :show-arrows="false">
+  <v-carousel
+    v-if="event"
+    cycle
+    height="375"
+    :show-arrows="false"
+  >
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -14,5 +19,8 @@ export default {
   props: ["items", "event"],
 };
 </script>
-
-<style lang="scss" scoped></style>
+<style>
+.v-image__image--cover{
+  background-size: 100% auto !important;
+}
+</style>
