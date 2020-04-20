@@ -208,7 +208,7 @@
   "Book": [
     {
       "id": "Book-1",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001862523001-1 (1).jpg",
       "img": "./assets/img/0001862523001-1.jpg",
       "rate": 4.5,
       "title": "Imzalı-Dikili İliskiler",
@@ -232,8 +232,8 @@
     },
     {
       "id": "Book-2",
-      "imgBig": "link",
-      "img": "./assets/img/ben-kirke.jpg",
+      "imgBig": "./assets/img/0001836978001-1 (1).jpg",
+      "img": "./assets/img/0001836978001-1.jpg",
       "rate": 3.5,
       "title": "Ben Kirke",
       "author": "Madeline Miller",
@@ -256,7 +256,7 @@
     },
     {
       "id": "Book-3",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001747075001-1 (1).jpg",
       "img": "./assets/img/0001862956001-1.jpg",
       "rate": null,
       "title": "Yolun Sonundaki Okyanus",
@@ -280,7 +280,7 @@
     },
     {
       "id": "Book-4",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001863434001-1 (1).jpg",
       "img": "./assets/img/0001863434001-1.jpg",
       "rate": null,
       "title": "Leonardo'nun Beyni",
@@ -304,7 +304,7 @@
     },
     {
       "id": "Book-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001862614001-1 (1)",
       "img": "./assets/img/0001862614001-1.jpg",
       "rate": 4.5,
       "title": "Kübra",
@@ -328,7 +328,7 @@
     },
     {
       "id": "Book-6",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001780976001-1 (1).jpg",
       "img": "./assets/img/0001780976001-1.jpg",
       "rate": 4.5,
       "title": "Benliğini Arayan Çocuk",
@@ -354,7 +354,7 @@
   "Featured": [
     {
       "id": "Featured-1",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001857556001-1 (1).jpg",
       "img": "./assets/img/0001857556001-1.jpg",
       "rate": 1.5,
       "title": "Hiç'likten Gelen Güç",
@@ -378,7 +378,7 @@
     },
     {
       "id": "Featured-2",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001862657001-1 (1).jpg",
       "img": "./assets/img/0001862657001-1.jpg",
       "rate": null,
       "title": "Özgürleşebilmek-Özgür Olma Cesareti",
@@ -402,7 +402,7 @@
     },
     {
       "id": "Featured-3",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000419225-1 (1).jpg",
       "img": "./assets/img/0000000419225-1.jpg",
       "rate": null,
       "title": "Yazarların İstanbul'u",
@@ -426,7 +426,7 @@
     },
     {
       "id": "Featured-4",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001863452001-1 (1).jpg",
       "img": "./assets/img/0001863452001-1.jpg",
       "rate": null,
       "title": "James Bond-Casino Royale",
@@ -450,7 +450,7 @@
     },
     {
       "id": "Featured-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001861355001-1 (1).jpg",
       "img": "./assets/img/0001861355001-1.jpg",
       "rate": null,
       "title": "Yılanın Gizemi-Kiranmala ve Öte Krallık",
@@ -474,7 +474,7 @@
     },
     {
       "id": "Featured-6",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001860252001-1 (1).jpg",
       "img": "./assets/img/0001860252001-1.jpg",
       "rate": null,
       "title": "Duygularımı İyileştiriyorum-Etkinlik Rehberi-Eğlen Öğren",
@@ -500,8 +500,8 @@
   "Stationery": [
     {
       "id": "Stationery-1",
-      "imgBig": "link",
-      "img": "./assets/img/0001793643001-1.jpg",
+      "imgBig": "./assets/img/0001793641001-1.jpg",
+      "img": "./assets/img/0001793641001-1 (1).jpg",
       "rate": 5.0,
       "cover": "Renkli",
       "title": "Crayola Silly Scents Kalın Keçeli Boya Kalemi 12'li",
@@ -522,8 +522,8 @@
     },
     {
       "id": "Stationery-2",
-      "imgBig": "link",
-      "img": "./assets/img/0001782098001-1.jpg",
+      "imgBig": "./assets/img/0001846677001-1.jpg",
+      "img": "./assets/img/0001846677001-1 (1).jpg",
       "rate": 3.5,
       "cover": "Renkli",
       "title": "Fabooks Ajanda 2020 Girl Boss",
@@ -544,7 +544,7 @@
     },
     {
       "id": "Stationery-3",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000593226-1 (1).jpg",
       "img": "./assets/img/0000000593226-1.jpg",
       "rate": 3.5,
       "cover": "Renkli",
@@ -566,7 +566,7 @@
     },
     {
       "id": "Stationery-4",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000695483-1 (1).jpg",
       "img": "./assets/img/0000000695483-1.jpg",
       "rate": 4.5,
       "cover": "Renkli",
@@ -588,7 +588,7 @@
     },
     {
       "id": "Stationery-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001775232001-1 (1).jpg",
       "img": "./assets/img/0001775232001-1.jpg",
       "rate": 5.0,
       "cover": "Sarı-Lacivert",
@@ -610,7 +610,7 @@
     },
     {
       "id": "Stationery-6",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001775224001-1 (1).jpg",
       "img": "./assets/img/0001775224001-1.jpg",
       "rate": 5.0,
       "cover": "Sarı-Kırmızı",
@@ -634,7 +634,7 @@
   "Electronic": [
     {
       "id": "Stationery-1",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001846467001-1 (1).jpg",
       "img": "./assets/img/0001846467001-1.jpg",
       "rate": 3.5,
       "cover": "Siyah",
@@ -656,7 +656,7 @@
     },
     {
       "id": "Stationery-2",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000690972-1 (1).jpg",
       "img": "./assets/img/0000000690972-1.jpg",
       "rate": null,
       "cover": "Urban",
@@ -678,8 +678,8 @@
     },
     {
       "id": "Stationery-3",
-      "imgBig": "link",
-      "img": "./assets/img/0000000727628-1.jpg",
+      "imgBig": "./assets/img/0000000724027-1.jpg",
+      "img": "./assets/img/0000000724027-1 (1).jpg",
       "rate": 3.5,
       "cover": "Beyaz",
       "title": "JBL T110 Kulakiçi Kulaklık CT Beyaz",
@@ -700,7 +700,7 @@
     },
     {
       "id": "Stationery-4",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001846467002-1 (1).jpg",
       "img": "./assets/img/0001846467002-1.jpg",
       "rate": 3.5,
       "cover": "Mavi",
@@ -722,7 +722,7 @@
     },
     {
       "id": "Stationery-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001852853001-1 (1).jpg",
       "img": "./assets/img/0001852853001-1.jpg",
       "rate": 3,
       "cover": "Gri",
@@ -744,8 +744,8 @@
     },
     {
       "id": "Stationery-6",
-      "imgBig": "link",
-      "img": "./assets/img/0001861545001-1.jpg",
+      "imgBig": "./assets/img/0001855770001-1.jpg",
+      "img": "./assets/img/0001855770001-1 (1).jpg",
       "rate": null,
       "cover": "Siyah",
       "title": "Anker Nebula Mars II Akıllı Taşınabilir WiFi Kablosuz Projeksiyon Cihazı ve Hoparlör - Siyah",
@@ -768,7 +768,7 @@
   "HoobyToys": [
     {
       "id": "HoobyToys-1",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000597265-1 (1).jpg",
       "img": "./assets/img/0000000597265-1.jpg",
       "rate": 3,
       "cover": "Türkçe",
@@ -790,7 +790,7 @@
     },
     {
       "id": "HoobyToys-2",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001781400001-1 (1).jpg",
       "img": "./assets/img/0001781400001-1.jpg",
       "rate": 2.5,
       "cover": "Peggy",
@@ -812,7 +812,7 @@
     },
     {
       "id": "HoobyToys-3",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001779451001-1 (1).jpg",
       "img": "./assets/img/0001779451001-1.jpg",
       "rate": null,
       "cover": "Figür",
@@ -834,8 +834,8 @@
     },
     {
       "id": "HoobyToys-4",
-      "imgBig": "link",
-      "img": "./assets/img/0001854812001-1.jpg",
+      "imgBig": "./assets/img/0001790256001-1.jpg",
+      "img": "./assets/img/0001790256001-1 (1).jpg",
       "rate": null,
       "cover": "Siyah",
       "title": "Lego-Technic App-Controlled Top Gear Rally Car 42109",
@@ -856,7 +856,7 @@
     },
     {
       "id": "HoobyToys-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0000000273264-1 (1).jpg",
       "img": "./assets/img/0000000273264-1.jpg",
       "rate": 3.5,
       "cover": "Oyun Kartı",
@@ -878,10 +878,10 @@
     },
     {
       "id": "HoobyToys-6",
-      "imgBig": "link",
-      "img": "./assets/img/0001698544001-1.jpg",
+      "imgBig": "./assets/img/0001789162001-1 (1).jpg",
+      "img": "./assets/img/0001789162001-1.jpg",
       "rate": 2.5,
-      "title": "Art Puzzle TREX",
+      "title": "Art Puzzle Kuşlar",
       "type": "Hobi & Oyuncak",
       "brand": "Art Puzzle",
       "cargoFree": false,
@@ -901,7 +901,7 @@
   "GameConsole": [
     {
       "id": "GameConsole-1",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001759279001-1 (1).jpg",
       "img": "./assets/img/0001759279001-1.jpg",
       "rate": 4,
       "title": "SteelSeries Arctis Pro Hi-Res RGB Oyuncu Kulaklığı",
@@ -922,7 +922,7 @@
     },
     {
       "id": "GameConsole-2",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001780924001-1.jpg",
       "img": "./assets/img/0001780918001-1.jpg",
       "rate": 5,
       "cover": "Beyaz",
@@ -944,8 +944,8 @@
     },
     {
       "id": "GameConsole-3",
-      "imgBig": "link",
-      "img": "./assets/img/0001850315001-1.jpg",
+      "imgBig": "./assets/img/0001850314001-1.jpg",
+      "img": "./assets/img/0001850314001-1 (1).jpg",
       "rate": 4,
       "cover": "PC",
       "title": "The Sims 4 PC",
@@ -966,8 +966,8 @@
     },
     {
       "id": "GameConsole-4",
-      "imgBig": "link",
-      "img": "./assets/img/0001785320002-1.jpg",
+      "imgBig": "./assets/img/0001784848001-1.jpg",
+      "img": "./assets/img/0001784848001-1 (1).jpg",
       "rate": 3.5,
       "cover": "PC",
       "title": "Battlefield 5",
@@ -988,7 +988,7 @@
     },
     {
       "id": "GameConsole-5",
-      "imgBig": "link",
+      "imgBig": "./assets/img/0001850167003-1 (1).jpg",
       "img": "./assets/img/0001850167003-1.jpg",
       "rate": null,
       "cover": "PC",
@@ -1010,8 +1010,8 @@
     },
     {
       "id": "GameConsole-6",
-      "imgBig": "link",
-      "img": "./assets/img/0001838066003-1.jpg",
+      "imgBig": "./assets/img/0001846416001-1.jpg",
+      "img": "./assets/img/0001846416001-1 (1).jpg",
       "rate": 4,
       "title": "PS4 Dualshock Cont Titanium Blue",
       "type": "Oyun & Konsol",

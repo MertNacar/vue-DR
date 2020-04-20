@@ -25,16 +25,16 @@
       "src": "./assets/img/0120_d_u_x_851x373_ithaki_yayinlari_rev.jpg"
     },
     {
-      "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
+      "src": "./assets/img/evde-kal-kategori-banner.jpg"
     },
     {
-      "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
+      "src": "./assets/img/0320_d_u_60_1140x290_elektronik_okazyon_lp.jpg"
     },
     {
-      "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
+      "src": "./assets/img/philips-kategori.jpg"
     },
     {
-      "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
+      "src": "./assets/img/akilli-saat-ana-sayfa.jpg"
     },
     {
       "src": "./assets/img/taksit-sevenekleri-yeni.jpg"
@@ -145,8 +145,8 @@
   "Interested": [
     {
       "id": "Interested-1",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001691198001-1.jpg",
+      "img": "./assets/img/0001691198001-1 (1).jpg",
       "rate": null,
       "title": "Vazgeçebilmek",
       "author": "Guy Finley",
@@ -169,8 +169,8 @@
     },
     {
       "id": "Interested-2",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001814358001-1.jpg",
+      "img": "./assets/img/0001814358001-1 (1).jpg",
       "rate": null,
       "title": "Sevebilmek-İlişkilerin Büyüsü ve Beraber Uyanabilmek",
       "author": "Guy Finley",
@@ -193,8 +193,8 @@
     },
     {
       "id": "Interested-3",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001857556001-1 (1).jpg",
+      "img": "./assets/img/0001857556001-1.jpg",
       "rate": null,
       "title": "Hiç'likten Gelen Güç",
       "author": "Tuğçe Işınsu",
@@ -217,8 +217,8 @@
     },
     {
       "id": "Interested-4",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001835964001-1.jpg",
+      "img": "./assets/img/0001835964001-1 (1).jpg",
       "rate": null,
       "title": "Hayır Diyebilme Sanatı",
       "author": "Müthiş Psikoloji",
@@ -241,8 +241,8 @@
     },
     {
       "id": "Interested-5",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001698804001-1.jpg",
+      "img": "./assets/img/0001698804001-1 (1).jpg",
       "rate": null,
       "title": "Ustalık Gerektiren Kafaya Takmama Sanatı",
       "author": "Mark Manson",
@@ -265,8 +265,8 @@
     },
     {
       "id": "Interested-6",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001858361001-1.jpg",
+      "img": "./assets/img/0001858361001-1 (1).jpg",
       "rate": null,
       "title": "Hiçbir Karşılaşma Tesadüf Değildir",
       "author": "Hakan Mengüç",
@@ -291,8 +291,8 @@
   "TopSale": [
     {
       "id": "TopSale-1",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001857556001-1 (1).jpg",
+      "img": "./assets/img/0001857556001-1.jpg",
       "rate": 1.5,
       "title": "Hiç'likten Gelen Güç",
       "author": "Tuğçe Işınsu",
@@ -315,8 +315,8 @@
     },
     {
       "id": "TopSale-2",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001858361001-1.jpg",
+      "img": "./assets/img/",
       "rate": null,
       "title": "Hiçbir Karşılaşma Tesadüf Değildir",
       "author": "Hakan Mengüç",
@@ -339,8 +339,8 @@
     },
     {
       "id": "TopSale-3",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0000000064031-1.jpg",
+      "img": "./assets/img/0001858361001-1 (1).jpg",
       "rate": 4,
       "title": "Şeker Portakalı",
       "author": "Jose Mauro De Vasconcelos",
@@ -363,8 +363,8 @@
     },
     {
       "id": "TopSale-4",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001862044001-1.jpg",
+      "img": "./assets/img/0001862044001-1 (1).jpg",
       "rate": 4.5,
       "title": "Son Av",
       "author": "Jean-Christophe Grange",
@@ -387,8 +387,8 @@
     },
     {
       "id": "TopSale-5",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001860240001-1.jpg",
+      "img": "./assets/img/0001860240001-1 (1).jpg",
       "rate": 4.5,
       "title": "Dünyasızlar",
       "author": "Kaan Murat Yanık",
@@ -411,8 +411,8 @@
     },
     {
       "id": "TopSale-6",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001856872001-1.jpg",
+      "img": "./assets/img/0001856872001-1 (1).jpg",
       "rate": 3.5,
       "title": "Hayat Cesurlara Torpil Geçer-Özel Baskı",
       "author": "Bircan Yıldırım",
@@ -437,8 +437,8 @@
   "News": [
     {
       "id": "News-1",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001864689001-1.jpg",
+      "img": "./assets/img/0001864689001-1 (1).jpg",
       "rate": null,
       "title": "Tenin Sınırlarının Ötesine",
       "author": "Silvia Federici",
@@ -461,8 +461,8 @@
     },
     {
       "id": "News-2",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001847107001-1.jpg",
+      "img": "./assets/img/0001847107001-1 (1).jpg",
       "rate": null,
       "title": "Her Yerde Kan Var",
       "author": "Ayşe Kulin",
@@ -485,8 +485,8 @@
     },
     {
       "id": "News-3",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/34534367224 (1).jpg",
+      "img": "./assets/img/34534367224.jpg",
       "rate": null,
       "title": "Yanlış Cumhuriyet",
       "author": "Sevan Nişanyan",
@@ -509,8 +509,8 @@
     },
     {
       "id": "News-4",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001864592001-1.jpg",
+      "img": "./assets/img/0001864592001-1 (1).jpg",
       "rate": null,
       "title": "Sevgi ile Bağlanma",
       "author": "Stan Tatkin",
@@ -533,8 +533,8 @@
     },
     {
       "id": "News-5",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001864554001-1.jpg",
+      "img": "./assets/img/0001864554001-1 (1).jpg",
       "rate": null,
       "title": "Hat Sanatı Bakımından Kudüs ve Çevresindeki Eyyubi Kitabeleri",
       "author": "Ahmet gedik",
@@ -557,8 +557,8 @@
     },
     {
       "id": "News-6",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001864544001-1.jpg",
+      "img": "./assets/img/0001864544001-1 (1).jpg",
       "rate": null,
       "title": "Bir Miyav İki Hav Hav",
       "author": "H. Salih Zengin",
@@ -583,8 +583,8 @@
   "ForYou": [
     {
       "id": "ForYou-1",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001862523001-1 (1).jpg",
+      "img": "./assets/img/0001862523001-1.jpg",
       "rate": 4.5,
       "title": "İmzalı-Dikili İlişkiler",
       "author": "Haluk Tatar",
@@ -607,8 +607,8 @@
     },
     {
       "id": "ForYou-2",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001863920001-1.jpg",
+      "img": "./assets/img/0001863920001-1 (1).jpg",
       "rate": 4.5,
       "title": "Bülbülü Öldürmek",
       "author": "Harper Lee",
@@ -631,8 +631,8 @@
     },
     {
       "id": "ForYou-3",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001747075001-1.jpg",
+      "img": "./assets/img/0001747075001-1 (1).jpg",
       "rate": null,
       "title": "Yolun Sonundaki Okyanus",
       "author": "Neil Gaiman",
@@ -655,8 +655,8 @@
     },
     {
       "id": "ForYou-4",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001863434001-1 (1).jpg",
+      "img": "./assets/img/0001863434001-1.jpg",
       "rate": null,
       "title": "Leonardo'nun Beyni",
       "author": "Leonarda Shlain",
@@ -679,8 +679,8 @@
     },
     {
       "id": "ForYou-5",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "li./assets/img/0001862614001-1 (1).jpg",
+      "img": "./assets/img/0001862614001-1.jpg",
       "rate": 4.5,
       "title": "Kübra",
       "author": "Afşin Kum",
@@ -703,8 +703,8 @@
     },
     {
       "id": "ForYou-6",
-      "imgBig": "link",
-      "img": "link",
+      "imgBig": "./assets/img/0001780976001-1 (1).jpg",
+      "img": "./assets/img/0001780976001-1.jpg",
       "rate": 4.5,
       "title": "Benliğini Arayan Çocuk",
       "author": "Virginia M.Axline",
