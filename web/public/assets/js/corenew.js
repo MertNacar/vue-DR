@@ -391,7 +391,6 @@ $('.stage').click(function () {
                         var height = $("header").height();
                         $(".categories, .category-tab").addClass("active");
                         $(".categories.active").css("top", height)
-                        dataLayer.push({ 'Category': 'Anasayfa', 'Action': 'Menü', 'Label': 'Menü Tıklanması', 'event': 'gaEvent' });
                     }
                 });
             },

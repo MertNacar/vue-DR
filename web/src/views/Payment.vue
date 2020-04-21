@@ -23,15 +23,17 @@
                     class="address-cell bill-address-cell"
                     id="billing-address-cell"
                   >
-                    <div class="check">
+                    <div class="check" style="text-align:left">
                       <input
                         type="radio"
                         name="billing_address_id"
-                        value="27780771"
-                        id="item_27780771"
+                        value="28568847"
+                        id="item_28568847"
                         class="input-radio-box-bill"
                       />
-                      <label for="item_27780771">Ev</label>
+                      <label for="item_28568847" style="margin-left:5px"
+                        >Ev</label
+                      >
                     </div>
                     <div class="address-detail">
                       <div class="delete-panel deleteAdresDiv">
@@ -39,7 +41,7 @@
                         <br />
                         <input
                           class="btn blue"
-                          onclick="core.widgets.DeleteAddress('/Customer/DeleteCustomerAddress?addressId=27780771    ', this, { prop: '' })"
+                          onclick="core.widgets.DeleteAddress('/Customer/DeleteCustomerAddress?addressId=28568847    ', this, { prop: '' })"
                           type="button"
                           value="Onayla"
                         />
@@ -51,103 +53,29 @@
                         />
                       </div>
                       <div class="text">
-                        <p>
-                          R&#252;stempaşa mahallesi Cumhuriyet caddesi no:24
-                          daire:4
+                        <p style="text-align:left">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Nunc vel aliquam risus.
                         </p>
                         <hr />
-                        <p>
-                          <span>T.</span> 5551769026 <span> - </span> G.
-                          5551769026
-                        </p>
+                        <p style="text-align:left">G. 5376062342</p>
                       </div>
                       <div class="cta">
                         <input
                           type="button"
                           class="btn white mb10"
                           value="GÜNCELLE"
-                          onclick="core.widgets.updateAddress('/Customer/ProcessAddress?id=27780771    ', this, { prop: '' })"
+                          onclick="#"
                         />
                         <input
                           type="button"
                           class="btn white"
                           value="SİL"
-                          onclick="deleteBillAddress(this)"
+                          onclick="#"
                         />
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="address-cell bill-address-cell"
-                    id="billing-address-cell"
-                  >
-                    <div class="check">
-                      <input
-                        type="radio"
-                        name="billing_address_id"
-                        value="20374911"
-                        id="item_20374911"
-                        class="input-radio-box-bill"
-                      />
-                      <label for="item_20374911">İşyeri</label>
-                    </div>
-                    <div class="address-detail">
-                      <div class="delete-panel deleteAdresDiv">
-                        <p>Adres silinecek Onaylıyor musunuz?</p>
-                        <br />
-                        <input
-                          class="btn blue"
-                          onclick="core.widgets.DeleteAddress('/Customer/DeleteCustomerAddress?addressId=20374911    ', this, { prop: '' })"
-                          type="button"
-                          value="Onayla"
-                        />
-                        <input
-                          class="btn white-border"
-                          onclick="VazgecBillBtn(this)"
-                          type="button"
-                          value="Vazgeç"
-                        />
-                      </div>
-                      <div class="text">
-                        <p>
-                          Kocasinan mahallesi 44. sokak Naz apartmanı no: A10 A9
-                          DEVA MEDİKAL EDİRNE
-                        </p>
-                        <hr />
-                        <p>G. 5435766410</p>
-                      </div>
-                      <div class="cta">
-                        <input
-                          type="button"
-                          class="btn white mb10"
-                          value="GÜNCELLE"
-                          onclick="core.widgets.updateAddress('/Customer/ProcessAddress?id=20374911    ', this, { prop: '' })"
-                        />
-                        <input
-                          type="button"
-                          class="btn white"
-                          value="SİL"
-                          onclick="deleteBillAddress(this)"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="addListBtns" class="complete">
-                  <input
-                    type="button"
-                    id="addListMin"
-                    class="btn lightgrey"
-                    value="Fatura Adreslerimi Daralt"
-                    onclick="addressListMin()"
-                  />
-                  <input
-                    type="button"
-                    id="addListMax"
-                    class="btn lightgrey"
-                    value="Tüm Fatura Adreslerimi Görüntüle"
-                    onclick="addressListMax()"
-                  />
                 </div>
 
                 <div class="show-more">
@@ -161,115 +89,18 @@
                   <header>
                     <h2 style="font-weight: bold;">2- Teslimat ve Kargo</h2>
                   </header>
-                  <ul class="shipListli">
+                  <ul class="shipListli" style="padding-left:0px">
                     <li class="navShippingAddress active">Teslimat Adresi</li>
                   </ul>
 
                   <div class="billing-address-cell" id="billCheckBox-cell">
-                    <div class="check">
+                    <div class="check" style="text-align:left">
                       <input type="checkbox" id="billCheckBox" />
-                      <label for="billCheckBox"
+                      <label for="billCheckBox" style="margin-left:5px"
                         >Kargo teslim adresi, fatura adresi ile aynı.</label
                       >
                     </div>
                   </div>
-                  <form
-                    method="post"
-                    id="shippingAddressForm"
-                    name="shippingAddressForm"
-                    autocomplete="off"
-                  >
-                    <div id="shippingAddressList">
-                      <div id="shipList">
-                        <div id="shippingAddress">
-                          <header>
-                            <h2>Kargo Teslim Adresi</h2>
-                          </header>
-                          <div
-                            class="address-cell shipping-address-cell"
-                            id="shipping-address-cell"
-                          >
-                            <div class="check">
-                              <input
-                                type="radio"
-                                name="shipping_address_id"
-                                value="20374901"
-                                id="shipping_address_id_20374901"
-                                class="input-radio-box"
-                              />
-                              <label for="shipping_address_id_20374901"
-                                >Ev</label
-                              >
-                            </div>
-                            <div class="address-detail">
-                              <div class="delete-panel deleteAdresDiv">
-                                <p>Adres silinecek Onaylıyor musunuz?</p>
-                                <br />
-                                <input
-                                  class="btn blue"
-                                  onclick="core.widgets.DeleteAddress('/Customer/DeleteCustomerAddress?addressId=20374901    ', this, { prop: '' })"
-                                  type="button"
-                                  value="Onayla"
-                                />
-                                <input
-                                  class="btn white-border"
-                                  onclick="VazgecBtn(this)"
-                                  type="button"
-                                  value="Vazgeç"
-                                />
-                              </div>
-                              <div class="text">
-                                <p>
-                                  Kocasinan mahallesi 44. sokak naz apartmanı no
-                                  A10 A9 DEVA MEDİKAL EDİRNE
-                                </p>
-                                <hr />
-                                <p>G. 5435766410</p>
-                              </div>
-                              <div class="cta">
-                                <input
-                                  type="button"
-                                  class="btn white mb10"
-                                  value="GÜNCELLE"
-                                  onclick="core.widgets.updateAddress('/Customer/ProcessAddress?id=20374901', this, { prop: '' })"
-                                />
-                                <input
-                                  type="button"
-                                  class="btn white"
-                                  value="SİL"
-                                  onclick="deleteAddress(this)"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div id="shippingAddListBtns" class="complete">
-                            <input
-                              type="button"
-                              id="shippingAddListMin"
-                              class="btn lightgrey"
-                              value="Kargo Adreslerimi Daralt"
-                              onclick="shippingAddressListMin()"
-                            />
-                            <input
-                              type="button"
-                              id="shippingAddListMax"
-                              class="btn lightgrey"
-                              value="Tüm Kargo Adreslerimi Görüntüle"
-                              onclick="shippingAddressListMax()"
-                            />
-                          </div>
-                          <div class="show-more">
-                            <input
-                              type="button"
-                              value="+ Yeni Adres Ekle"
-                              onclick="core.widgets.newAddress('/Customer/ProcessAddress?id=0_1', this, { prop: '' });"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
                 </div>
               </div>
             </div>
@@ -327,15 +158,12 @@
                           />
                           <label for="kargo1" class="leadTimeInfo">
                             Standart Teslimat
-                            <span id="kargo_Yurti&#231;iKargo"
-                              >(&#220;cretsiz)</span
-                            >
+                            <span id="kargo_Yurti&#231;iKargo">7,99 TL</span>
                           </label>
                           <label for="kargo1"
                             ><span class="leadTimeView">Tahmini Teslim: </span
-                            ><span class="cargoEstColor">24 Mart 2020</span> -
-                            <span class="cargoEstColor"
-                              >26 Mart 2020</span
+                            ><span class="cargoEstColor"
+                              >25 Nisan 2020 - 27 Nisan 2020</span
                             ></label
                           >
                         </div>
@@ -346,10 +174,11 @@
               </div>
             </form>
           </div>
-
-          <header>
-            <h2 style="font-weight: bold;">3- Ödeme Seçenekleri</h2>
-          </header>
+          <div>
+            <header style="row">
+              <h2 style="font-weight: bold;">3- Ödeme Seçenekleri</h2>
+            </header>
+          </div>
           <div class="payment-box">
             <ul class="tab-style tabs">
               <li>
@@ -386,6 +215,119 @@
 
             <div class="tab-content">
               <div class="payment-card">
+                <div class="mp-payment" id="mpMasterPassTab">
+                  <form method="post" id="paymentFormMasterPass">
+                    <div style="display:none">
+                      <input
+                        id="paymentmethod_5"
+                        type="radio"
+                        name="paymentmethod"
+                        value="Payments.MasterPass"
+                        checked="checked"
+                        style="display:none"
+                        data=""
+                      />
+                    </div>
+
+                    <div id="chkMpLinkCard">
+                      <input type="hidden" name="msisdn" value="" />
+                      <input
+                        type="hidden"
+                        name="referenceNo"
+                        value="101252836185"
+                      />
+                      <input type="hidden" name="sendSms" value="Y" />
+                      <input type="hidden" name="sendSmsLanguage" value="tur" />
+                      <input type="hidden" name="token" value="" />
+                    </div>
+                    <!-- start: MasterPass kart listesi -->
+                    <div class="mp-card-list">
+                      <div class="drLoading">
+                        <span
+                          ><img
+                            src="/Themes/DR/Content/assets/images/general/loadingSmall.gif"
+                        /></span>
+                      </div>
+                      <div class="mp-uyari">
+                        <span
+                          >Kredi kartı bilgileriniz dr.com.tr tarafından
+                          saklanmamaktadır. Ödeme altyapısı MasterPass
+                          tarafından sağlanmaktadır.</span
+                        >
+                        <img
+                          src="/Themes/DR/Content/assets/images/general/masterpass-logo.png"
+                          alt="MasterPass"
+                          style="width:100px;"
+                        />
+                      </div>
+                      <h3>MasterPass'le Kayıtlı Kartlarım</h3>
+                      <ul id="card-selection2"></ul>
+                      <div class="new-card">
+                        <input
+                          type="radio"
+                          name="listAccountName"
+                          id="newCard"
+                          value=""
+                        />
+                        <label for="newCard"
+                          ><strong>Yeni Kredi Kartı ile Öde</strong></label
+                        >
+                      </div>
+                    </div>
+                    <!-- end: MasterPass kart listesi -->
+                    <input
+                      name="clientId"
+                      type="hidden"
+                      id="clientId"
+                      value="34701902"
+                    />
+                    <input
+                      name="macroMerchantId"
+                      type="hidden"
+                      id="macroMerchantId"
+                      value="01902177920613111021651"
+                    />
+                    <input
+                      name="macroMerchantIdYkb"
+                      type="hidden"
+                      id="macroMerchantIdYkb"
+                      value="01902177920613111732197"
+                    />
+                    <input
+                      name="programSponsorNumber"
+                      type="hidden"
+                      id="programSponsorNumber"
+                      value="PS701896"
+                    />
+                    <input
+                      name="programSponsorName"
+                      type="hidden"
+                      id="programSponsorName"
+                      value="D&amp;R Sponsor"
+                    />
+                    <input type="hidden" name="mno" value="MNO-701897" />
+
+                    <input
+                      type="hidden"
+                      name="referenceNo"
+                      value="101252836185"
+                    />
+                    <input type="hidden" name="sendSms" value="Y" />
+                    <input type="hidden" name="sendSmsLanguage" value="tur" />
+                    <input type="hidden" name="timeZone" value="+01" />
+                    <input type="hidden" name="installmentCount" value="" />
+                    <input type="hidden" name="mpCardNumber" value="" />
+                    <input type="hidden" name="mpBankId" value="" />
+                    <input type="hidden" name="mpInstallmentId" value="" />
+                    <input type="hidden" name="aav" value="aav" />
+                    <input type="hidden" name="clientIp" value="" />
+                    <input type="hidden" name="userId" value="" />
+                    <input type="hidden" name="encCPin" value="0" />
+                    <input type="hidden" name="encPassword" value="" />
+                    <input type="hidden" name="password" value="" />
+                    <input type="hidden" name="sendSmsMerchant" value="Y" />
+                  </form>
+                </div>
                 <form method="post" id="paymentFormCreditCard">
                   <div style="display:none">
                     <input
@@ -402,7 +344,7 @@
                   <link
                     type="text/css"
                     rel="stylesheet"
-                    href="assets/css/table.css"
+                    href="/Plugins/Payments.POSNET/Content/table.css"
                   />
 
                   <input type="hidden" value="value" id="bank-11" />
@@ -636,6 +578,139 @@
                   </div>
 
                   <input type="hidden" id="ivalue" value="" />
+
+                  <div class="last-check mb16" id="masterPassChk">
+                    <input type="checkbox" id="MasterpassOrder" />
+                    <label id="MasterpassLabel" for="MasterpassOrder"
+                      ><img
+                        src="/Themes/DR/Content/assets/images/general/masterpass-logo.png"
+                        alt="MasterPass"
+                        style="width:100px;"
+                      />Kredi kartı bilgilerimin MasterPass ile kaydedilmesini
+                      onaylıyorum.
+                      <a
+                        href="/Themes/DR/Content/assets/partials/masterpass-kosullari.html"
+                        data-fancybox-type="ajax"
+                        class="fancybox"
+                        >MasterPass nedir?</a
+                      ></label
+                    >
+                  </div>
+                  <!-- Get Cards form start -->
+                  <div
+                    class="mp-add-new form-horizontal"
+                    style="display: none"
+                    id="list-form"
+                  >
+                    <h3>Yeni Kart Ekle</h3>
+                    <div class="mp-uyari">
+                      <span
+                        >Kredi kartı bilgileriniz dr.com.tr tarafından
+                        saklanmamaktadır. Ödeme altyapısı Masterpass tarafından
+                        sağlanmaktadır.</span
+                      >
+                      <img
+                        src="/Themes/DR/Content/assets/images/general/masterpass-logo.png"
+                        alt="MasterPass"
+                      />
+                    </div>
+                    <div class="half">
+                      <div class="control-group">
+                        <label class="control-label" for="msisdn"
+                          >Cep Telefonu</label
+                        >
+                        <div class="controls" id="phoneNumberDiv">
+                          <input
+                            id="mpPhoneNumber"
+                            type="text"
+                            class="input-xlarge"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="control-group">
+                        <label class="control-label" for="accountAliasName"
+                          >Kart İsmi</label
+                        >
+                        <div class="controls">
+                          <input
+                            name="accountAliasName"
+                            id="mpCardName"
+                            type="text"
+                            placeholder="Ör: Garanti Kartım"
+                            class="input-xlarge"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="full">
+                      <div class="control-group">
+                        <div class="controls">
+                          <button
+                            type="button"
+                            name="singlebutton"
+                            id="mpSaveCard"
+                            class="btn"
+                          >
+                            Kaydet <span id="timerButton"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Get Cards form end -->
+                  <!-- MFS register operation parameters start -->
+                  <input type="hidden" name="token" value="" />
+                  <input type="hidden" name="expiryDate" value="" />
+                  <input type="hidden" name="delinkReason" value="" />
+                  <input type="hidden" name="actionType" value="A" />
+                  <input type="hidden" name="clientIp" value="" />
+                  <input type="hidden" name="eActionType" value="A" />
+                  <input type="hidden" name="cardTypeFlag" value="05" />
+                  <input type="hidden" name="cpinFlag" value="Y" />
+                  <input type="hidden" name="defaultAccount" value="Y" />
+                  <input type="hidden" name="mmrpConfig" value="110010" />
+                  <input
+                    type="hidden"
+                    name="identityVerificationFlag"
+                    value="Y"
+                  />
+                  <input type="hidden" name="mno" value="" />
+                  <input type="hidden" name="mobileAccountConfig" value="MWA" />
+                  <input
+                    type="hidden"
+                    name="programOwnerName"
+                    value="TURKEY PROGRAM"
+                  />
+                  <input
+                    type="hidden"
+                    name="programParticipantName"
+                    value="D&R"
+                  />
+                  <input
+                    type="hidden"
+                    name="programSponsorName"
+                    value="D&R Sponsor"
+                  />
+                  <input
+                    type="hidden"
+                    name="referenceNo"
+                    value="101252836185"
+                  />
+                  <input type="hidden" name="sendSms" value="Y" />
+                  <input type="hidden" name="sendSmsLanguage" value="tur" />
+                  <input type="hidden" name="timeZone" value="+01" />
+                  <input type="hidden" name="uiChannelType" value="6" />
+                  <!-- MFS register operation parameters end -->
+                  <input
+                    name="macroMerchantId"
+                    type="hidden"
+                    id="macroMerchantId"
+                    value=""
+                  />
+                  <input type="hidden" name="exM" />
+                  <input type="hidden" name="exY" />
                 </form>
               </div>
             </div>
@@ -942,40 +1017,49 @@
               <li>
                 <figure>
                   <a
-                    href="/Oyun-Konsol/Sony-PS4-1TB-Death-Stranding/Oyun-Konsollari/Playstation-4/urunno=0001851540001"
+                    href="/Kitap/Kral-Sakir-8-Macera-Adasi!/Cocuk-ve-Genclik/Genclik-10-Yas/Roman-Oyku/urunno=0001868498001"
                   >
                     <img
-                      src="assets/img/0001851540001-1.jpg"
-                      alt="Sony PS4 1TB/Death Stranding"
+                      src="https://i.dr.com.tr/cache/64x64-0/originals/0001868498001-1.jpg"
+                      alt="Kral Şakir 8-Macera Adası!"
                     />
                   </a>
                 </figure>
                 <div class="detail">
                   <p class="product-name">
                     <a
-                      href="/Oyun-Konsol/Sony-PS4-1TB-Death-Stranding/Oyun-Konsollari/Playstation-4/urunno=0001851540001"
-                      title="Sony PS4 1TB/Death Stranding"
-                      >Sony PS4 1TB/Death Stranding</a
+                      href="/Kitap/Kral-Sakir-8-Macera-Adasi!/Cocuk-ve-Genclik/Genclik-10-Yas/Roman-Oyku/urunno=0001868498001"
+                      title="Kral Şakir 8-Macera Adası!"
+                      >Kral Şakir 8-Macera Adası!</a
                     >
                   </p>
                   <p class="product-type">
                     <a
-                      href="/Oyun-Konsol/Sony-PS4-1TB-Death-Stranding/Oyun-Konsollari/Playstation-4/urunno=0001851540001"
-                      >Renk: Siyah / 1 ADET</a
+                      href="/Kitap/Kral-Sakir-8-Macera-Adasi!/Cocuk-ve-Genclik/Genclik-10-Yas/Roman-Oyku/urunno=0001868498001"
+                      >Medya Tipi: Ciltli / 1 ADET</a
                     >
                   </p>
-                  <p style="text-decoration: line-through">3199,00 TL</p>
+                  <p style="text-decoration: line-through">32,00 TL</p>
                   <p class="product-price">
                     <a
-                      href="/Oyun-Konsol/Sony-PS4-1TB-Death-Stranding/Oyun-Konsollari/Playstation-4/urunno=0001851540001"
-                      >2999,00 TL</a
+                      href="/Kitap/Kral-Sakir-8-Macera-Adasi!/Cocuk-ve-Genclik/Genclik-10-Yas/Roman-Oyku/urunno=0001868498001"
+                      >23,36 TL</a
                     >
                   </p>
                 </div>
               </li>
+              <li>
+                <figure>
+                  <i class="icon-kisisel_urun"></i>
+                </figure>
+                <div class="detail">
+                  <p class="product-name">Standart Teslimat</p>
+                  <p class="product-price">7,99 TL</p>
+                </div>
+              </li>
             </ul>
             <div class="price">
-              <p class="new">2999,00 TL</p>
+              <p class="new">31,35 TL</p>
             </div>
 
             <div class="cta">
@@ -1011,7 +1095,7 @@
 
 <script>
 export default {
-  name: "Payment"
+  name: "Payment",
 };
 </script>
 

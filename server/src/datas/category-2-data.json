@@ -3,112 +3,80 @@
     {
       "id": "Categories-1",
       "title": "Kitap",
-      "groupNo": "#"
+      "link": "CategoryBook",
+      "class":"active"
     },
     {
       "id": "Categories-2",
       "title": "Edebiyat",
-      "groupNo": "0155"
+      "link": "#",
+      "class":"active"
     },
     {
       "id": "Categories-3",
       "title": "Roman",
-      "groupNo": "0265"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-4",
       "title": "Şiir",
-      "groupNo": "0355"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-5",
       "title": "Deneme/Yazın",
-      "groupNo": "0455"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-6",
       "title": "Türk Öykü",
-      "groupNo": "0555"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-7",
       "title": "Edebiyat İnceleme",
-      "groupNo": "0685"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-8",
       "title": "Biyografi & Oto Biyografi",
-      "groupNo": "0755"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-9",
       "title": "Türk Günlük Anı",
-      "groupNo": "0855"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-10",
       "title": "Aylık Dergi",
-      "groupNo": "0955"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-11",
       "title": "Anlatı",
-      "groupNo": "1055"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-12",
       "title": "Dünya Öykü",
-      "groupNo": "1155"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-13",
       "title": "Dünya Günlük Anı",
-      "groupNo": "1255"
-    },
-    {
-      "id": "Categories-14",
-      "title": "Söyleyişi",
-      "groupNo": "1355"
-    },
-    {
-      "id": "Categories-15",
-      "title": "Edebiyatçılar",
-      "groupNo": "1455"
-    },
-    {
-      "id": "Categories-16",
-      "title": "Türk Mektup",
-      "groupNo": "1555"
-    },
-    {
-      "id": "Categories-17",
-      "title": "Destan",
-      "groupNo": "1655"
-    },
-    {
-      "id": "Categories-18",
-      "title": "Dünya Mektup",
-      "groupNo": "1655"
-    },
-    {
-      "id": "Categories-19",
-      "title": "Röportaj",
-      "groupNo": "1655"
-    },
-    {
-      "id": "Categories-20",
-      "title": "Antoloji",
-      "groupNo": "1655"
-    },
-    {
-      "id": "Categories-21",
-      "title": "Halk Ozanları",
-      "groupNo": "1655"
-    },
-    {
-      "id": "Categories-22",
-      "title": "Almanak",
-      "groupNo": "1655"
+      "link": "#",
+      "class":""
     }
   ],
   "Books": [
@@ -451,7 +419,7 @@
     {
       "id": "Book-15",
       "imgBig": "./assets/img/0001858461001-1 (1).jpg",
-      "img": "./assets/img0001858461001-1.jpg/",
+      "img": "./assets/img/0001858461001-1.jpg",
       "rate": 3.5,
       "title": "Fabrika Ayarı",
       "author": "Hayati İnanç",
@@ -643,7 +611,7 @@
     {
       "id": "Book-23",
       "imgBig": "./assets/img/0000000066424-1 (1).jpg",
-      "img": "li./assets/img/0000000066424-1.jpg",
+      "img": "./assets/img/0000000066424-1.jpg",
       "rate": 3.5,
       "title": "Cesur Yeni Dünya",
       "author": "Aldous Huxley",

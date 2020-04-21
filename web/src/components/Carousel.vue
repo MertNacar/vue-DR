@@ -2,7 +2,7 @@
   <v-carousel
     v-if="event"
     cycle
-    height="410"
+    height="380"
     :show-arrows="false"
   >
     <v-carousel-item

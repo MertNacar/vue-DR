@@ -59,87 +59,80 @@
     {
       "id": "Categories-1",
       "title": "Kitap",
-      "groupNo": "#"
+      "link": "#",
+      "class":"active"
     },
     {
       "id": "Categories-2",
       "title": "Edebiyat",
-      "groupNo": "0155"
+      "link": "CategoryBookLiterature",
+      "class":""
     },
     {
       "id": "Categories-3",
       "title": "Çocuk ve Gençlik",
-      "groupNo": "0265"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-4",
       "title": "Eğitim Başvuru",
-      "groupNo": "0355"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-5",
       "title": "Araştırma - Tarih",
-      "groupNo": "0455"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-6",
       "title": "Din Tassavuf",
-      "groupNo": "0555"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-7",
       "title": "Foreign Languages",
-      "groupNo": "0685"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-8",
       "title": "Ders / Sınav Kitapları",
-      "groupNo": "0755"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-9",
       "title": "Sanat - Tasarım",
-      "groupNo": "0855"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-10",
       "title": "Felsefe",
-      "groupNo": "0955"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-11",
       "title": "Çizgi Roman",
-      "groupNo": "1055"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-12",
       "title": "Hobi",
-      "groupNo": "1155"
+      "link": "#",
+      "class":""
     },
     {
       "id": "Categories-13",
       "title": "Bilim",
-      "groupNo": "1255"
-    },
-    {
-      "id": "Categories-14",
-      "title": "Mizah",
-      "groupNo": "1355"
-    },
-    {
-      "id": "Categories-15",
-      "title": "Prestij Kitapları",
-      "groupNo": "1455"
-    },
-    {
-      "id": "Categories-16",
-      "title": "Mitoloji Efsane",
-      "groupNo": "1555"
-    },
-    {
-      "id": "Categories-17",
-      "title": "Sesli Kitaplar",
-      "groupNo": "1655"
+      "link": "#",
+      "class":""
     }
   ],
   "Interested": [

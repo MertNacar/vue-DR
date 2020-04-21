@@ -1,0 +1,74 @@
+{
+  "Menu": [
+    {
+      "id": "Menu-1",
+      "class": "fa fa-book-open",
+      "title": "Kitap"
+    },
+    {
+      "id": "Menu-2",
+      "class": "fa fa-book-medical",
+      "title": "E-Kitap"
+    },
+    {
+      "id": "Menu-3",
+      "class": "fa fa-camera",
+      "title": "Elektronik"
+    },
+    {
+      "id": "Menu-4",
+      "class": "fa fa-car-side",
+      "title": "Hobi & Oyuncak"
+    },
+    {
+      "id": "Menu-5",
+      "class": "fa fa-pencil-alt",
+      "title": "Kırtasiye"
+    },
+    {
+      "id": "Menu-6",
+      "class": "fa fa-gamepad",
+      "title": "Oyun & Konsol"
+    },
+    {
+      "id": "Menu-7",
+      "class": "fa fa-music",
+      "title": "Müzik"
+    },
+    {
+      "id": "Menu-8",
+      "class": "fa fa-book",
+      "title": "Dergi"
+    },
+    {
+      "id": "Menu-9",
+      "class": "fa fa-box",
+      "title": "Hediyelik Eşyalar"
+    },
+    {
+      "id": "Menu-10",
+      "class": "fa fa-skiing",
+      "title": "Spor & Outdoor"
+    },
+    {
+      "id": "Menu-11",
+      "class": "fa fa-crown",
+      "title": "Çok Satanlar"
+    },
+    {
+      "id": "Menu-12",
+      "class": "fa fa-quran",
+      "title": "Yeni Çıkan Kitaplar"
+    },
+    {
+      "id": "Menu-13",
+      "class": "fa fa-feather-alt",
+      "title": "Yazarlar"
+    },
+    {
+      "id": "Menu-14",
+      "class": "fa fa-laptop-house",
+      "title": "Yayınevleri"
+    }
+  ]
+}

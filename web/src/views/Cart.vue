@@ -39,7 +39,7 @@
 
               <div class="cta-row">
                 <div class="product-selected">
-                  <ul>
+                  <ul style="text-align:left">
                     <li class="choose-product-text">
                       SEÇİLEN <span class="choose-product-count">0</span> ÜRÜNÜ
                     </li>
@@ -127,7 +127,7 @@ import CartList from "@/components/CartList";
 import BankPayment from "@/components/BankPayment";
 import BankImage from "@/components/BankImage";
 import ArrowBanner from "@/components/ArrowBanner";
-import EmptyCart from "@/components/EmptyCart";
+import EmptyCart from "@/views/EmptyCart";
 export default {
   components: {
     CartList,

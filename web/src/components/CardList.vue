@@ -13,7 +13,9 @@
           </a>
 
           <a :title="item.title" class="item-name">
-            <Ratings :hover="false" :rating="item.rate || 0" :readonly="true" />
+            <div class="rate">
+              <Ratings :hover="false" :rating="item.rate" :readonly="true" />
+            </div>
 
             <h3 class="ellipsis">{{ item.title }}</h3>
           </a>

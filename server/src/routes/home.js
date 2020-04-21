@@ -8,11 +8,19 @@ var router = express.Router();
 
 const HOME_DATA_FILE = path.join(__dirname, '../datas/home-data.json');
 const COMMENT_DATA_FILE = path.join(__dirname, '../datas/comments.json');
+const MENU_DATA_FILE = path.join(__dirname, '../datas/menu-data.json');
 
 router.get('', (req, res) => {
   fs.readFile(HOME_DATA_FILE, (err, data) => {
     const homepage = JSON.parse(data);
     res.json({ ...homepage })
+  });
+});
+
+router.get('/menu', (req, res) => {
+  fs.readFile(MENU_DATA_FILE, (err, data) => {
+    const menu = JSON.parse(data);
+    res.json({ ...menu })
   });
 });
 

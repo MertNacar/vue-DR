@@ -106,7 +106,6 @@ export default {
   async created() {
     try {
       let res = await axios.get("http://localhost:7700/home");
-      this.Menu = res.data.Menu;
       this.PopularSearch = res.data.PopularSearch;
       this.SubHeader = res.data.SubHeader;
       this.Book = res.data.Book;

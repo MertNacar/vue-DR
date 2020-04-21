@@ -43,12 +43,12 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    addCart: ({ commit }, payload) => commit('addCart', payload),
-    changeQtyCart: ({ commit }, payload) => commit('changeQtyCart', payload),
-    deleteItemCart: ({ commit }, payload) => commit('deleteItemCart', payload),
-    deleteAllCart: ({ commit }) => commit('deleteAllCart'),
-    addUser: ({ commit }, payload) => commit('addUser', payload),
-    deleteUser: ({ commit }) => commit('deleteUser'),
+    addCart: ({ commit }, payload) => commit("addCart", payload),
+    changeQtyCart: ({ commit }, payload) => commit("changeQtyCart", payload),
+    deleteItemCart: ({ commit }, payload) => commit("deleteItemCart", payload),
+    deleteAllCart: ({ commit }) => commit("deleteAllCart"),
+    addUser: ({ commit }, payload) => commit("addUser", payload),
+    deleteUser: ({ commit }) => commit("deleteUser"),
   },
   getters: {
     cart: state => state.cart,

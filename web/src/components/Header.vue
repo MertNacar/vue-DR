@@ -65,12 +65,10 @@
           autocomplete="off"
         />
         <input type="button" value="ARA" id="searchIcon" />
-        <div class="search-suggests">
-          <ul class="product"></ul>
-          <ul class="category"></ul>
-          <ul class="author"></ul>
-          <ul class="brand"></ul>
-        </div>
+        <div class="search-suggests"></div>
+      </div>
+      <div class="categories">
+        <CategoryDialog />
       </div>
     </div>
   </header>
@@ -78,11 +76,12 @@
 
 <script>
 import OpenCartList from "@/components/OpenCartList";
+import CategoryDialog from "@/components/CategoryDialog";
 export default {
   name: "Header",
-  props: ["Menu"],
   components: {
     OpenCartList,
+    CategoryDialog,
   },
   data() {
     return {
@@ -103,7 +102,7 @@ export default {
     goCart() {
       if (this.show === true) this.openCart();
       this.$router.push({ name: "Cart" });
-    },
+    }
   },
   computed: {
     loggedIn() {

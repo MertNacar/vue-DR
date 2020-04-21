@@ -7,7 +7,7 @@
         <section class="sub-categories">
           <div class="categories-path">
             <div class="container">
-              <ul>
+              <ul style="text-align:left">
                 <li><a href="/">ANASAYFA</a></li>
                 <li>
                   Kitap
@@ -106,11 +106,14 @@ export default {
       this.Interested = res.data.Interested;
       this.News = res.data.News;
       this.ForYou = res.data.ForYou;
-     // document.getElementById("categories-1").classList.add("active")
       this.event = true;
     } catch (err) {
       console.log("err", err);
     }
   },
+  mounted(){
+    console.log('object', document.getElementById("Categories-1"))
+   
+  }
 };
 </script>

@@ -11,7 +11,7 @@
         <div class="product" style="padding-left: 0px;">
           <div style="float: left;width: 75px;">
             <span style="display: block;text-align: center;">
-              <img :src="item.img" :alt="item.title" />
+              <img width="50px" :src="item.img" :alt="item.title" />
             </span>
           </div>
           <div style="float: left;">

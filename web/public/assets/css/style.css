@@ -2990,10 +2990,7 @@ input,
 textarea {
   outline: none; }
 
-.global-box, input[type=text],
-input[type=password],
-input[type=number],
-input[type=tel],
+.global-box
 textarea, .selectBox-dropdown, .selectBox-dropdown-menu, header .categories, section.sub-categories .sc-container ul li a, section.filter .sc-filter .filter-search .npt-container,
 section.full-content .sc-filter .filter-search .npt-container, section.shelf .cell .content, section.shelf .list-cell, section.full-content .vendors .vendor-card .cell, section.full-content .locations .address-card .cell, section.full-content .sub-sections li a, section.full-content .e-books .cell .e-book, section.full-content .orders-list .orders-list-row, section.full-content .orders-list .show-more, section.full-content .authors-search, section.full-content .prepaid-cards .prepaid-card .cell,
 section.full-content .events .prepaid-card .cell, section.full-content .prepaid-cards .event-card .cell,

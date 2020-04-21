@@ -56,7 +56,9 @@
             </div>
 
             <div class="col-half" style="text-align:right">
-              <Ratings :hover="true" :rating="item.rate" :readonly="false" />
+              <div class="rate">
+                <Ratings :hover="true" :rating="item.rate" :readonly="false" />
+              </div>
               <span>8/10 - 5 Kişi</span>
               <a
                 href="javascript:;"
@@ -90,13 +92,13 @@
                     <span class="zoomable">
                       <img
                         class="lazyload proSliderImg"
-                        src="assets/img/0001865739001-1.jpg"
-                        thumb="assets/img/0001865739001-1.jpg"
+                        src="item.imgBig"
+                        thumb="item.imgBig"
                         alt="Olmasa da Olur"
                       />
                     </span>
                     <div class="thumbnail-content" hidden aria-hidden="true">
-                      <img src="assets/img/0001865739001-1.jpg" />
+                      <img src="item.imgBig" />
                     </div>
                   </div>
                 </div>
@@ -213,20 +215,16 @@
 
               <ul class="pluses" style="padding:0px;">
                 <li class="bold hide-element" id="ebookInfo"></li>
-                <li class="bold" id="ucretsizKargoDiv">
-                  <i class="ico-right-arrow"></i>100 TL üstü standart teslimatlı
-                  siparişlerde kargo bedava!
+                <li class="bold" id="ucretsizKargoDiv" style="text-align:left">
+                  100 TL üstü standart teslimatlı siparişlerde kargo bedava!
                 </li>
-                <li>Barkod: {{ item.barcode }}</li>
+                <li style="text-align:left">Barkod: {{ item.barcode }}</li>
               </ul>
 
               <div class="social">
                 <div class="comment">
                   <span class="comment-count">0</span>
-                  <a
-                    class="focusCommentForm"
-                    href="javascript:;"
-                    onclick="focusCommentForm()"
+                  <a class="focusCommentForm" href="javascript:;" onclick=""
                     >YORUM YAZ</a
                   >
                 </div>
@@ -315,10 +313,12 @@
           <v-btn text @click="dialog = false"
             ><p style="color:gray">X</p></v-btn
           >
-          <v-spacer></v-spacer>
         </v-card-actions>
+        <div style="font-size:150px">
+          <i class="fa fa-check-circle " style="color:green"></i>
+        </div>
         <v-card-text>
-          Ürün başarıyla sepetinize eklendi.
+          <b>Ürün başarıyla sepetinize eklendi.</b>
         </v-card-text>
       </v-card>
     </v-dialog>

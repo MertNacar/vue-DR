@@ -20,32 +20,28 @@
                 ><label for="Email">E-Posta Adresi</label></label
               >
 
-              <input
+              <v-text-field
                 v-model="email"
-                autofocus="autofocus"
-                data-val="true"
-                data-val-email="Hatalı E-posta"
-                data-val-required="E-Posta adresi zorunlu"
                 id="EmailField"
                 maxlength="500"
                 name="Email"
                 title="Sisteme kayıtlı olan mail adresinizi yazınız!"
                 type="text"
-                value=""
-              />
+                outlined
+              ></v-text-field>
             </div>
 
             <div class="form-row">
               <label for="Password">Şifre</label>
 
-              <input
+              <v-text-field
                 v-model="password"
-                id="PasswordField"
                 maxlength="40"
                 name="Password"
                 title="Lütfen şifrenizi giriniz!"
                 type="password"
-              />
+                outlined
+              ></v-text-field>
             </div>
 
             <div class="form-row">
@@ -103,10 +99,14 @@
           <v-btn text @click="dialog = false"
             ><p style="color:gray">X</p></v-btn
           >
-          <v-spacer></v-spacer>
         </v-card-actions>
+        <div v-if="showIcon" style="font-size:150px">
+          <i id="dialog-icon" class="fa fa-times-circle" style="color:red"></i>
+        </div>
         <v-card-text>
-          {{ dialogText }}
+          <h2>
+            <b style="color:#000">{{ dialogText }}</b>
+          </h2>
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -123,7 +123,8 @@ export default {
       password: "",
       checked: false,
       dialog: false,
-      dialogText: ""
+      showIcon: false,
+      dialogText: "",
     };
   },
   methods: {
@@ -133,21 +134,23 @@ export default {
           `http://localhost:7700/auth/login?email=${this.email}&password=${this.password}`
         );
         if (!res.data.err) {
+          this.showIcon = false;
           this.dialogText = "Bekleyiniz...";
           this.dialog = true;
           setTimeout(() => {
             this.$store.dispatch("addUser", {
               email: this.email,
-              password: this.password
+              password: this.password,
             });
             this.$router.push({ name: "Home" });
           }, 2000);
         } else throw new Error();
       } catch {
         this.dialogText = "Email veya şifrenizi hatalı girdiniz.";
+        this.showIcon = true;
         this.dialog = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>

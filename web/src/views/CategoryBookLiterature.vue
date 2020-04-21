@@ -3,7 +3,7 @@
     <section class="sub-categories">
       <div class="categories-path">
         <div class="container">
-          <ul>
+          <ul style="text-align:left">
             <li><a href="/">ANASAYFA</a></li>
             <li>
               <a href="/kategori/kitap">Kitap</a>
@@ -26,115 +26,55 @@
       <div class="sc-filter">
         <div class="container">
           <hr />
-          <div class="row">
-            <div class="filter">
-              <!--.filter-media-->
-              <select
-                name=""
-                id="media"
-                class="custom select-box-filter mediaTypeControl"
-              >
-                <option value="">MEDYA CİNSİ</option>
-                <option id="media_1134" value="İnce Kapak">İnce Kapak</option>
-                <option id="media_609" value="Ciltli">Ciltli</option>
-                <option id="media_610" value="Cep Boy">Cep Boy</option>
-                <option id="media_706" value="Aylık">Aylık</option>
-              </select>
-            </div>
-            <div class="filter" id="priceFilter">
-              <!--.filter-price-->
-              <select
-                name=""
-                id="price"
-                class="custom select-box-filter priceControl"
-              >
-                <option value="">FİYAT</option>
-                <option value="0,25">0 TL - 25 TL</option>
-                <option value="25,50">25 TL - 50 TL</option>
-                <option value="50,100">50 TL - 100 TL</option>
-                <option value="100,250">100 TL - 250 TL</option>
-                <option value="250,500">250 TL - 500 TL</option>
-                <option value="500,-1">500 TL ve &#252;zeri</option>
-              </select>
-            </div>
+          <v-row>
+            <v-col md="2" sm="12" cols="12">
+              <v-combobox label="MEDYA CİNSİ" solo readonly></v-combobox>
+            </v-col>
+            <v-col md="2" sm="12" cols="12">
+              <v-select
+                v-model="cost"
+                @change="filterBooks()"
+                :items="costItems"
+                label="FİYAT"
+                return-object
+                solo
+              ></v-select>
+            </v-col>
 
-            <div class="filter">
-              <select name="" id="language" class="custom select-box-filter">
-                <option value="">DİL</option>
-                <option>T&#252;rk&#231;e</option>
-                <option>İngilizce</option>
-                <option>K&#252;rt&#231;e</option>
-                <option>T&#252;rk&#231;e - İngilizce</option>
-                <option>Ermenice</option>
-                <option>Almanca</option>
-                <option>T&#252;rk&#231;e - Fars&#231;a</option>
-                <option>T&#252;rk&#231;e - Makedonca</option>
-                <option>Almanca - T&#252;rk&#231;e</option>
-                <option>Arap&#231;a - T&#252;rk&#231;e</option>
-                <option>Fars&#231;a - T&#252;rk&#231;e</option>
-                <option>Fransızca</option>
-                <option>Rus&#231;a</option>
-                <option>Türkçe - Almanca</option>
-                <option>T&#252;rk&#231;e - Arap&#231;a</option>
-                <option>T&#252;rk&#231;e - K&#252;rt&#231;e</option>
-                <option>T&#252;rk&#231;e - Osmanlıca</option>
-                <option>T&#252;rk&#231;e - Yunanca</option>
-                <option>T&#252;rk&#231;e - İspanyolca</option>
-              </select>
-            </div>
+            <v-col md="1" sm="12" cols="12">
+              <v-combobox label="DİL" solo readonly></v-combobox>
+            </v-col>
 
-            <div class="filter-search">
-              <div class="npt-container">
-                <input
-                  type="text"
-                  name="authortext"
-                  id="authortext"
-                  maxlength="25"
-                  autocomplete="off"
-                  placeholder="YAZAR"
-                />
-                <div class="npt-button">
-                  <i class="icon-arama"></i>
-                  <input type="button" value="&nbsp;" />
-                </div>
-              </div>
-              <div class="category-suggests">
-                <ul class="person" style="display: none"></ul>
-              </div>
-            </div>
-            <div class="filter-order-by">
-              <select
-                name=""
-                id="order-by"
-                class="custom select-box-filter"
-                autocomplete="off"
-              >
-                <option value="price,desc">Azalan Fiyat</option>
-                <option value="price,asc">Artan Fiyat</option>
-                <option selected="selected" value="soldcount,desc"
-                  >Çok Satan</option
-                >
-                <option value="newness,desc">Yeni</option>
-                <option value="newness,asc">Eski</option>
-                <option value="name.sortable,asc">A - Z</option>
-                <option value="name.sortable,desc">Z - A</option>
-                <option value="discount,desc">Azalan İndirim</option>
-                <option value="discount,asc">Artan İndirim</option>
-              </select>
-            </div>
-            <div class="pull-right status-check" id="productStatus">
-              <input type="checkbox" id="tukenleriGizle" />
-              <label for="tukenleriGizle">Tükenenleri Göster</label>
-            </div>
-          </div>
+            <v-col md="3" sm="12" cols="12">
+              <v-text-field
+                solo
+                readonly
+                label="Append"
+                append-icon="fa fa-search"
+              ></v-text-field>
+            </v-col>
+
+            <v-col md="2" sm="12" cols="12">
+              <v-combobox label="ÇOK SATAN" solo readonly></v-combobox>
+            </v-col>
+            <v-col md="2" sm="12" cols="12">
+              <v-checkbox readonly :label="`Tükenenleri göster`"></v-checkbox>
+            </v-col>
+          </v-row>
         </div>
       </div>
     </section>
 
     <div class="container pager-content">
-      <ul class="pager pager-list"></ul>
+      <ul class="pager pager-list">
+        <li>
+          <a class="active" style="text-decoration:none" href="javascript:;"
+            >1</a
+          >
+        </li>
+      </ul>
       <div class="list-count">
-        <span id="searchResultCount">47787 ADET</span>
+        <span id="searchResultCount">{{ totalCount }} ADET</span>
       </div>
     </div>
     <section class="shelf">
@@ -162,6 +102,15 @@ export default {
     return {
       Categories: [],
       Items: [],
+      cost: { text: "FİYAT", value: undefined },
+      costItems: [
+        { text: "FİYAT", value: undefined },
+        { text: "0 TL - 25 TL", value: "0,25" },
+        { text: "50 TL - 100 TL", value: "25,50" },
+        { text: "100 TL - 250 TL", value: "100,250" },
+        { text: "250 TL - 500 TL", value: "250,500" },
+        { text: "500 TL ve üzeri", value: "500,999999" },
+      ],
       event: false,
     };
   },
@@ -170,13 +119,38 @@ export default {
       let res = await axios.get(
         "http://localhost:7700/category/books/literature/all"
       );
+      if (res.err) throw new Error();
       this.Categories = res.data.Categories;
       this.Items = res.data.Books;
-      // document.getElementById("categories-1").classList.add("active")
       this.event = true;
     } catch (err) {
-      console.log("err", err);
+      console.log("err", err.message);
     }
+  },
+  computed: {
+    totalCount() {
+      return this.Items.length;
+    },
+  },
+  methods: {
+    async filterBooks() {
+      try {
+        console.log("this.cost.value", this.cost.value);
+        let res = await axios.get(
+          `http://localhost:7700/category/books/literature?price=${this.cost.value}`
+        );
+        if (res.err) throw new Error();
+        this.Items = res.data.Books;
+      } catch (err) {
+        console.log("err", err.message);
+      }
+    },
   },
 };
 </script>
+
+<style>
+.input[type="text"] {
+  border: none;
+}
+</style>

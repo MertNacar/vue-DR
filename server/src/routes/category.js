@@ -36,8 +36,8 @@ router.get('/books/literature', (req, res) => {
         let price = book.price * ((100 - book.discount) / 100)
         return (price > prices[0] && price < prices[1])
       })
-      res.json({ filteredCategory })
-    } else res.json({ ...categories.Books })
+      res.json({ Books: [...filteredCategory] })
+    } else res.json({ Books: [...categories.Books] })
   });
 });
 
