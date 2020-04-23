@@ -1,0 +1,41 @@
+{
+  "pays": [
+    {
+      "user": {
+        "email": "mertnacar2374@gmail.com",
+        "password": "mert2374"
+      },
+      "card": {
+        "name": "mert nacar",
+        "number": "4545454545454545",
+        "cvv": "342"
+      },
+      "boughts": [
+        {
+          "id": "Book-3",
+          "imgBig": "./assets/img/0001747075001-1 (1).jpg",
+          "img": "./assets/img/0001862956001-1.jpg",
+          "rate": null,
+          "title": "Yolun Sonundaki Okyanus",
+          "author": "Neil Gaiman",
+          "cover": "İnce Kapak",
+          "publisher": "İthaki Yayınları",
+          "publisherimgBig": "link",
+          "barcode": 9789751040756,
+          "description": "“Biz erkekler bazen en başından olmayanı oldurmaya çalışıyoruz. Böyle kodlanıyoruz. El attığımız her şeyi düzelteceğimize o kadar inanıyoruz ki ‘onu da’ düzelteceğimize emin oluyoruz. Ama eşek kadar adamlar değişmiyor, olmayandan da olmuyor. Ve evet ne yazık ki bizim bunu anlamamız için iyice sarsılmamız gerekiyor. Farkındayım çok zor; üzücü, gurur kırıcı, yorucu sıfırlanmak… Ama emin olun şahane yanları da var…”",
+          "descriptionContent": "Haluk Tatar ikinci romanında kendi ayakları üzerinde duran, hiç olmazsa buna çabalayan, sonunda “olmasa da olur” diyen delidolu bir kadının ayrıksı hikâyesine odaklanıyor.",
+          "descriptionFooter": "İmzalı Dikişler, Dikişler’in devamı olan eğlenceli, şen şakrak üslubuyla, roman kahramanının zihninde yarattığı hayali insanlarla, süratli ve nefis bir hikâye…",
+          "doughType": "2. Hamur",
+          "pageNumbers": "144",
+          "dimension": "13,7 x 21,5",
+          "firstEdition": "2020",
+          "editionNumber": "1. Basım",
+          "language": "Türkçe",
+          "quantity": 1,
+          "price": 21,
+          "discount": "35"
+        }
+      ]
+    }
+  ]
+}

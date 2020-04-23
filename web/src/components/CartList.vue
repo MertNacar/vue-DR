@@ -5,7 +5,9 @@
         <div class="check check-input-container">
           <input
             type="checkbox"
+            :value="checkAll"
             class="check-input-cart check-input-basket-product"
+            @click="select(item)"
           />
         </div>
         <div class="product" style="padding-left: 0px;">
@@ -17,10 +19,10 @@
           <div style="float: left;">
             <p class="product-name">
               <router-link :to="{ name: 'BookDetail', params: { item } }">
-                <a :title="item.title" href="#">{{ item.title }}</a>
+                <a style="text-align:left" :title="item.title" href="#">{{ item.title }}</a>
               </router-link>
             </p>
-            <h5 class="product-cat">Tip: {{ item.cover }}</h5>
+            <h5 style="text-align:left" class="product-cat">Tip: {{ item.cover }}</h5>
           </div>
         </div>
       </div>
@@ -52,6 +54,7 @@
               class="icon btnUpdateQuantity"
               title="Güncelle"
               @click="change(item)"
+              style="color:grey;text-decoration:none"
               >Güncelle</a
             >
           </article>
@@ -85,7 +88,20 @@
 <script>
 export default {
   name: "CartList",
-  props: ["items", "decrease", "increase", "change", "totalNew"]
+  props: [
+    "items",
+    "decrease",
+    "increase",
+    "change",
+    "totalNew",
+    "select",
+    "checked",
+  ],
+  computed: {
+    checkAll() {
+      return this.$props.checked;
+    },
+  },
 };
 </script>
 

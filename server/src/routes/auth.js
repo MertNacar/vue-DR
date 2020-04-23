@@ -37,7 +37,7 @@ router.post('/signup', (req, res) => {
       users.push({ id: newID, ...newUser });
       fs.writeFile(USER_DATA_FILE, JSON.stringify(users, null, 2), () => {
         res.setHeader('Cache-Control', 'no-cache');
-        res.json({ err: false, message: "Kullanıcı başarıyla eklenmiştir." })
+        res.json({ err: false, message: "Kaydınız başarıyla oluşturulmuştur." })
       });
     }
   });

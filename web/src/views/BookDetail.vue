@@ -5,7 +5,9 @@
         <div class="categories-path">
           <div class="container" style="text-align:left">
             <ul>
-              <li><a href="#">ANASAYFA</a></li>
+              <li>
+                <router-link :to="{ name: 'Home' }">ANASAYFA</router-link>
+              </li>
               <li><a href="#">Kitap</a></li>
               <li>
                 <a href="#">Edebiyat</a>
@@ -223,7 +225,7 @@
 
               <div class="social">
                 <div class="comment">
-                  <span class="comment-count">0</span>
+                  <span class="comment-count">{{ totalComment }}</span>
                   <a class="focusCommentForm" href="javascript:;" onclick=""
                     >YORUM YAZ</a
                   >
@@ -271,9 +273,12 @@
       <section class="comments">
         <div class="container">
           <header>
-            <h2>Yorumlar <span class="comment-count">0</span></h2>
+            <h2>
+              Yorumlar <span class="comment-count">{{ totalComment }}</span>
+            </h2>
           </header>
-          <div class="comment empty">
+          <CommentList v-if="showComment" :items="comments" />
+          <div v-if="!showComment" class="comment empty">
             <div class="comment-content">
               <p>Henüz yorum yapılmadı!</p>
             </div>
@@ -292,15 +297,31 @@
               <div class="row">
                 <div class="full">
                   <label for="header">Başlık</label>
-                  <input type="text" id="header" />
+                  <v-text-field
+                    v-model="header"
+                    type="text"
+                    maxlength="40"
+                    dense
+                    outlined
+                  ></v-text-field>
                 </div>
               </div>
               <div class="full">
                 <label for="message">Yorum</label>
-                <textarea name="message" id="message"></textarea>
+                <v-text-field
+                  v-model="body"
+                  type="text"
+                  maxlength="80"
+                  outlined
+                ></v-text-field>
               </div>
               <div class="text-center">
-                <input class="btn blue" type="button" value="GÖNDER" />
+                <input
+                  @click="addComment()"
+                  class="btn blue"
+                  type="button"
+                  value="GÖNDER"
+                />
               </div>
             </div>
           </div>
@@ -315,10 +336,10 @@
           >
         </v-card-actions>
         <div style="font-size:150px">
-          <i class="fa fa-check-circle " style="color:green"></i>
+          <i class="fa fa-check-circle" style="color:green"></i>
         </div>
         <v-card-text>
-          <b>Ürün başarıyla sepetinize eklendi.</b>
+          <b>{{ dialogText }}</b>
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -326,22 +347,53 @@
 </template>
 
 <script>
+import axios from "axios";
 import Ratings from "@/components/Ratings";
+import CommentList from "@/components/CommentList";
 export default {
   data() {
     return {
       item: this.$router.currentRoute.params.item,
       dialog: false,
       qty: 1,
+      comments: [],
+      header: "",
+      body: "",
+      dialogText: "",
     };
+  },
+  created() {
+    this.getComments();
   },
   components: {
     Ratings,
+    CommentList,
+  },
+  computed: {
+    totalComment() {
+      return this.comments.length;
+    },
+    showComment() {
+      return this.comments.length > 0;
+    },
   },
   methods: {
+    async getComments() {
+      try {
+        let res = await axios.get(
+          `http://localhost:7700/home/book/comments?id=${this.item.id}`
+        );
+        if (!res.data.err) {
+          this.comments = res.data.comments;
+        } else throw new Error();
+      } catch {
+        console.log("err");
+      }
+    },
     addToCart() {
       this.item.quantity = this.qty;
       this.$store.dispatch("addCart", this.item);
+      this.dialogText = "Ürün başarıyla sepetinize eklendi.";
       this.dialog = true;
     },
     increaseQty() {
@@ -349,6 +401,30 @@ export default {
     },
     decreaseQty() {
       if (this.qty > 1) this.qty--;
+    },
+    async addComment() {
+      try {
+        let validate = this.header.length > 0 && this.body.length > 0;
+        if (validate) {
+          let comment = {
+            id: this.item.id,
+            title: this.header,
+            description: this.body,
+          };
+          let res = await axios.post(
+            `http://localhost:7700/home/book/comment/add`,
+            comment
+          );
+          if (!res.data.err) {
+            console.log("res", res);
+            this.comments = res.data.comments;
+            this.dialogText = "Yorum başarıyla eklendi.";
+            this.dialog = true;
+          } else throw new Error();
+        } else throw new Error();
+      } catch {
+        console.log("err");
+      }
     },
   },
   beforeDestroy() {

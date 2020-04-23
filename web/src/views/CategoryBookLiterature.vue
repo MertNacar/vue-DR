@@ -102,11 +102,11 @@ export default {
     return {
       Categories: [],
       Items: [],
-      cost: { text: "FİYAT", value: undefined },
+      cost: { text: "FİYAT", value: "" },
       costItems: [
-        { text: "FİYAT", value: undefined },
+        { text: "FİYAT", value: "" },
         { text: "0 TL - 25 TL", value: "0,25" },
-        { text: "50 TL - 100 TL", value: "25,50" },
+        { text: "25 TL - 50 TL", value: "25,50" },
         { text: "100 TL - 250 TL", value: "100,250" },
         { text: "250 TL - 500 TL", value: "250,500" },
         { text: "500 TL ve üzeri", value: "500,999999" },

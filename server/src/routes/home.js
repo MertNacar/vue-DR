@@ -24,26 +24,43 @@ router.get('/menu', (req, res) => {
   });
 });
 
+router.get('/book/comments', (req, res) => {
+  fs.readFile(COMMENT_DATA_FILE, (err, data) => {
+    let comments = JSON.parse(data);
+    const id = req.query.id
+    let book = comments.filter(item => item.id === id)
+    return res.json({ comments: book.length != 0 ? book[0].comments : [] })
+  });
+});
+
 router.post('/book/comment/add', (req, res) => {
   fs.readFile(COMMENT_DATA_FILE, (err, data) => {
     let comments = JSON.parse(data);
     const newComment = { ...req.body }; //book id  - title  - description
     let commentExists = false;
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = dd + '.' + mm + '.' + yyyy;
     comments.map((item) => {
       if (item.id === newComment.id) {
-        item.comments.push({ id: item.comments.length + 1, title: newComment.title, description: newComment.description })
+        item.comments.push({ id: item.comments.length + 1, title: newComment.title, description: newComment.description, date: today })
         commentExists = true;
       }
     });
     if (!commentExists) {
       comments.push({
         id: newComment.id,
-        comments: [{ id: 1, title: newComment.title, description: newComment.description }]
+        comments: [{ id: 1, title: newComment.title, description: newComment.description, date: today }]
       });
     }
     fs.writeFile(COMMENT_DATA_FILE, JSON.stringify(comments, null, 2), () => {
       res.setHeader('Cache-Control', 'no-cache');
-      res.json(comments);
+      let book = comments.filter(item => item.id === newComment.id)
+      console.log('book', book)
+      return res.json({ comments: book[0].comments })
     });
   });
 });

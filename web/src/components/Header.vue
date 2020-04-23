@@ -7,7 +7,7 @@
         /></router-link>
       </figure>
 
-      <div id="header-login" class="head-menu">
+      <div v-if="payment" id="header-login" class="head-menu">
         <ul>
           <li v-if="loggedIn" class="giris"><a href="#">HESABIM</a></li>
           <li v-if="loggedIn" class="separator"></li>
@@ -23,7 +23,7 @@
           <li class="sepet">
             <a @click="openCart()">SEPETİM</a>
 
-            <i style="font-size:2em" class="fa fa-shopping-cart"></i>
+            <i style="font-size:22px" class="fa fa-shopping-cart"></i>
 
             <!-- icon-sepet -->
             <span class="items-count">{{ cartCount }}</span>
@@ -45,15 +45,16 @@
         </div>
       </div>
 
-      <div
+      <div v-if="payment"
         class="category-tab"
         style="display:flex;flex-direction:row;align-items:center;"
+        @click="showDialog = !showDialog"
       >
         <i id="menuSrc" style="padding-left:25px" class="fa fa-bars fa-2x"></i>
         <label>MENÜ</label>
       </div>
 
-      <div id="search-login" class="search-bar">
+      <div v-if="payment" id="search-login" class="search-bar">
         <i id="menuSrc" class="fa fa-search"></i>
         <!-- icon-arama -->
         <i id="menuCls" class="icon-close">X</i>
@@ -67,8 +68,8 @@
         <input type="button" value="ARA" id="searchIcon" />
         <div class="search-suggests"></div>
       </div>
-      <div class="categories">
-        <CategoryDialog />
+      <div v-if="payment" class="categories">
+        <CategoryDialog v-if="showDialog" :goCategory="goCategory" />
       </div>
     </div>
   </header>
@@ -86,6 +87,7 @@ export default {
   data() {
     return {
       show: false,
+      showDialog: false,
     };
   },
   methods: {
@@ -102,7 +104,12 @@ export default {
     goCart() {
       if (this.show === true) this.openCart();
       this.$router.push({ name: "Cart" });
-    }
+    },
+    goCategory() {
+      this.showDialog = false;
+      if (this.$router.history.current.name !== "CategoryBook")
+        this.$router.push({ name: "CategoryBook" });
+    },
   },
   computed: {
     loggedIn() {
@@ -118,6 +125,9 @@ export default {
     showCart() {
       return this.$store.getters.cart.length > 0 ? true : false;
     },
+    payment(){
+      return this.$router.history.current.name != "Payment"
+    }
   },
   beforeUpdate() {
     if (this.loggedIn) {

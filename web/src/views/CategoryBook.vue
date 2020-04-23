@@ -110,10 +110,6 @@ export default {
     } catch (err) {
       console.log("err", err);
     }
-  },
-  mounted(){
-    console.log('object', document.getElementById("Categories-1"))
-   
   }
 };
 </script>

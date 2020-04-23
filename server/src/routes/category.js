@@ -30,7 +30,7 @@ router.get('/books/literature', (req, res) => {
     res.setHeader('Cache-Control', 'no-cache');
     const categories = JSON.parse(data);
     let filteredCategory = []
-    if (price !== undefined) {
+    if (price !== "") {
       let prices = price.split(",")
       filteredCategory = categories.Books.filter(book => {
         let price = book.price * ((100 - book.discount) / 100)

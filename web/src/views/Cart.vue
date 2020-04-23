@@ -15,11 +15,16 @@
               <div class="cart-head">
                 <div class="half">
                   <div class="check check-input-container">
-                    <input type="checkbox" class="chkall" value="" />
+                    <input
+                      @click="checkedAll"
+                      v-model="checked"
+                      type="checkbox"
+                      class="chkall"
+                    />
                   </div>
-                  <div class="product">
+                  <div class="product" style="text-align:left">
                     <h5>ÜRÜN</h5>
-                    <span class="chk-title"> TÜMÜNÜ SEÇ</span>
+                    <span class="chk-title">TÜMÜNÜ SEÇ</span>
                   </div>
                 </div>
                 <div class="half">
@@ -35,6 +40,8 @@
                 :increase="increaseQty"
                 :change="changeQty"
                 :totalNew="totalNew"
+                :select="selectItem"
+                :checked="checked"
               />
 
               <div class="cta-row">
@@ -45,17 +52,17 @@
                     </li>
                     <li>
                       <a
-                        href="javascript:;"
                         id="choose-product-remove"
-                        title="SİL"
+                        style="text-decoration:none"
+                        @click="deleteItems()"
                         >SİL</a
                       >
                     </li>
                     <li>
                       <a
-                        href="javascript:;"
                         id="choose-product-favorite"
                         title="FAVORİLERİME EKLE"
+                        style="text-decoration:none"
                         >FAVORİLERİME EKLE</a
                       >
                     </li>
@@ -134,18 +141,19 @@ export default {
     BankPayment,
     BankImage,
     ArrowBanner,
-    EmptyCart
+    EmptyCart,
   },
   data() {
     return {
       cart: JSON.parse(JSON.stringify(this.$store.getters.cart)),
-      empty: this.$store.getters.cart.length === 0 ? true : false
+      empty: this.$store.getters.cart.length === 0 ? true : false,
+      checked: false,
     };
   },
   computed: {
     total() {
       let total = 0;
-      this.$store.getters.cart.forEach(item => {
+      this.$store.getters.cart.forEach((item) => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         total += calculated;
@@ -154,7 +162,7 @@ export default {
     },
     totalNew() {
       let totalNew = 0;
-      this.cart.forEach(item => {
+      this.cart.forEach((item) => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         totalNew += calculated;
@@ -163,9 +171,28 @@ export default {
     },
     totalCount() {
       return this.$store.getters.cart.length;
-    }
+    },
   },
   methods: {
+    checkedAll() {
+      this.cart.forEach((item) => {
+        item.select = !this.checked;
+      });
+    },
+    selectItem(item) {
+      item.select = item.select === true ? false : true;
+    },
+    selectAll() {
+      this.cart.forEach((item) => {
+        item.select = this.checkAll;
+      });
+    },
+    deleteItems() {
+      this.cart.forEach((item) => {
+        if (item.select === true) this.$store.dispatch("deleteCartItem", item);
+      });
+      this.cart = this.cart.filter((item) => item.select != true);
+    },
     changeQty(item) {
       this.$store.dispatch("changeQtyCart", item);
     },
@@ -177,8 +204,8 @@ export default {
     },
     goPayment() {
       this.$router.push({ name: "Payment" });
-    }
-  }
+    },
+  },
 };
 </script>
 <style>

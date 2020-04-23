@@ -9,11 +9,8 @@
 
           <div class="empty">
             <h3>Sepetinizde ürün bulunmuyor!</h3>
-            <figure>
-              <img
-                src="/Themes/DR/Content/assets/images/general/exclamation.png"
-                alt="Sepetinizde ürün bulunmuyor!"
-              />
+            <figure style="font-size:150px">
+              <i class="fas fa-exclamation-circle" style="color:red"></i>
             </figure>
           </div>
         </div>

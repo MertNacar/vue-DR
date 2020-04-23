@@ -5,17 +5,20 @@
       {
         "id": 1,
         "title": "Muhteşem",
-        "description": "kesinlikle yine farkını konuşturmus bir isim okurken süreklı bölünüp birseyler araştırmak muazzam bir sey"
+        "description": "kesinlikle yine farkını konuşturmus bir isim okurken süreklı bölünüp birseyler araştırmak muazzam bir sey",
+        "date": "07.02.2018"
       },
       {
         "id": 2,
         "title": "azra kohen farkı yine",
-        "description": "Hem tarih,hem aşk,hem kişisel gelişim, günümüzde yaşadığımız pekçok olayın dayandığı yerlere nokta atışı"
+        "description": "Hem tarih,hem aşk,hem kişisel gelişim, günümüzde yaşadığımız pekçok olayın dayandığı yerlere nokta atışı",
+        "date": "25.02.2019"
       },
       {
         "id": 3,
         "title": "Mükemmeldi",
-        "description": "Harika bir kitaptı. Tam Azra Kohen'in ellerinden çıkma. Tebrik ederim."
+        "description": "Harika bir kitaptı. Tam Azra Kohen'in ellerinden çıkma. Tebrik ederim.",
+        "date": "08.01.2019"
       }
     ]
   },
@@ -25,17 +28,20 @@
       {
         "id": 1,
         "title": "Muhteşem",
-        "description": "kesinlikle yine farkını konuşturmus bir isim okurken süreklı bölünüp birseyler araştırmak muazzam bir sey"
+        "description": "kesinlikle yine farkını konuşturmus bir isim okurken süreklı bölünüp birseyler araştırmak muazzam bir sey",
+        "date": "07.04.2019"
       },
       {
         "id": 2,
         "title": "azra kohen farkı yine",
-        "description": "Hem tarih,hem aşk,hem kişisel gelişim, günümüzde yaşadığımız pekçok olayın dayandığı yerlere nokta atışı"
+        "description": "Hem tarih,hem aşk,hem kişisel gelişim, günümüzde yaşadığımız pekçok olayın dayandığı yerlere nokta atışı",
+        "date": "12.01.2020"
       },
       {
         "id": 3,
         "title": "Mükemmeldi",
-        "description": "Harika bir kitaptı. Tam Azra Kohen'in ellerinden çıkma. Tebrik ederim."
+        "description": "Harika bir kitaptı. Tam Azra Kohen'in ellerinden çıkma. Tebrik ederim.",
+        "date": "08.03.2020"
       }
     ]
   }

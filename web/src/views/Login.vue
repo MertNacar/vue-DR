@@ -68,8 +68,8 @@
             </div>
           </div>
         </div>
-        <div class="half">
-          <div class="content">
+        <div class="half" >
+          <div class="content" style="height:585px">
             <h3>Üye Ol</h3>
             <hr />
             <p class="login-bottom-head">Üye değil misiniz?</p>
@@ -80,9 +80,10 @@
             <div class="form-row">
               <img src="assets/img/uye-ol-bg.jpg" alt="Üye Ol" />
             </div>
-            <div class="form-row">
+            <div class="form-row" style="margin-top:45px">
               <router-link :to="{ name: 'Register' }">
                 <input
+                
                   class="btn grey"
                   type="button"
                   value="ÜYE OLMAK İSTİYORUM"

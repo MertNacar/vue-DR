@@ -2,37 +2,37 @@
   "Menu": [
     {
       "id": "Menu-1",
-      "class": "fa fa-book-open",
+      "class": "fas fa-book-open",
       "title": "Kitap"
     },
     {
       "id": "Menu-2",
-      "class": "fa fa-book-medical",
+      "class": "fas fa-book-medical",
       "title": "E-Kitap"
     },
     {
       "id": "Menu-3",
-      "class": "fa fa-camera",
+      "class": "fas fa-camera",
       "title": "Elektronik"
     },
     {
       "id": "Menu-4",
-      "class": "fa fa-car-side",
+      "class": "fas fa-car-side",
       "title": "Hobi & Oyuncak"
     },
     {
       "id": "Menu-5",
-      "class": "fa fa-pencil-alt",
+      "class": "fas fa-pencil-alt",
       "title": "Kırtasiye"
     },
     {
       "id": "Menu-6",
-      "class": "fa fa-gamepad",
+      "class": "fas fa-gamepad",
       "title": "Oyun & Konsol"
     },
     {
-      "id": "Menu-7",
-      "class": "fa fa-music",
+      "id": "Menu-7", 
+      "class": "fas fa-music",
       "title": "Müzik"
     },
     {
@@ -42,32 +42,32 @@
     },
     {
       "id": "Menu-9",
-      "class": "fa fa-box",
+      "class": "fas fa-box",
       "title": "Hediyelik Eşyalar"
     },
     {
       "id": "Menu-10",
-      "class": "fa fa-skiing",
+      "class": "fas fa-skiing",
       "title": "Spor & Outdoor"
     },
     {
       "id": "Menu-11",
-      "class": "fa fa-crown",
+      "class": "fas fa-crown",
       "title": "Çok Satanlar"
     },
     {
       "id": "Menu-12",
-      "class": "fa fa-quran",
+      "class": "fas fa-quran",
       "title": "Yeni Çıkan Kitaplar"
     },
     {
       "id": "Menu-13",
-      "class": "fa fa-feather-alt",
+      "class": "fas fa-feather-alt",
       "title": "Yazarlar"
     },
     {
       "id": "Menu-14",
-      "class": "fa fa-laptop-house",
+      "class": "fas fa-laptop-house",
       "title": "Yayınevleri"
     }
   ]

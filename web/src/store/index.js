@@ -27,10 +27,8 @@ export default new Vuex.Store({
       })
     },
     deleteCartItem(state, payload) {
-      let newCart = state.cart.filter(item => {
-        item.id != payload.id
-      })
-      state.cart = newCart
+      let indx = state.cart.findIndex(item => item.id === payload.id)
+      state.cart.splice(indx, 1)
     },
     deleteAllCart(state) {
       state.cart = []
@@ -45,7 +43,7 @@ export default new Vuex.Store({
   actions: {
     addCart: ({ commit }, payload) => commit("addCart", payload),
     changeQtyCart: ({ commit }, payload) => commit("changeQtyCart", payload),
-    deleteItemCart: ({ commit }, payload) => commit("deleteItemCart", payload),
+    deleteCartItem: ({ commit }, payload) => commit("deleteCartItem", payload),
     deleteAllCart: ({ commit }) => commit("deleteAllCart"),
     addUser: ({ commit }, payload) => commit("addUser", payload),
     deleteUser: ({ commit }) => commit("deleteUser"),
