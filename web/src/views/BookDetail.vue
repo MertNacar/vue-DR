@@ -207,7 +207,7 @@
                     <div class="tbox">
                       <strong> Standart Teslimat</strong>
                       <div class="timeCell">
-                        24 - 26 Mart
+                        26 - 28 Nisan
                       </div>
                       <div class="t-free">* 100 TL üzeri bedava!</div>
                     </div>
@@ -350,6 +350,7 @@
 import axios from "axios";
 import Ratings from "@/components/Ratings";
 import CommentList from "@/components/CommentList";
+/* eslint-disable */
 export default {
   data() {
     return {
