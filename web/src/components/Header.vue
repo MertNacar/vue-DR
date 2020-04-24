@@ -76,6 +76,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import OpenCartList from "@/components/OpenCartList";
 import CategoryDialog from "@/components/CategoryDialog";
 export default {
