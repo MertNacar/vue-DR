@@ -45,7 +45,8 @@
         </div>
       </div>
 
-      <div v-if="payment"
+      <div
+        v-if="payment"
         class="category-tab"
         style="display:flex;flex-direction:row;align-items:center;"
         @click="showDialog = !showDialog"
@@ -126,9 +127,9 @@ export default {
     showCart() {
       return this.$store.getters.cart.length > 0 ? true : false;
     },
-    payment(){
-      return this.$router.apps[0]._route.name != "Payment"
-    }
+    payment() {
+      return this.$router.apps[0]._route.name != "Payment";
+    },
   },
   beforeUpdate() {
     if (this.loggedIn) {
