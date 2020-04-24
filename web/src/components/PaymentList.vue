@@ -75,7 +75,7 @@ export default {
   computed: {
     total() {
       let total = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         total += calculated;
@@ -85,15 +85,15 @@ export default {
     },
     cartCount() {
       let count = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         count += item.quantity;
       });
       return count || 0;
     },
     cargo() {
       return this.total >= 107.99;
-    },
-  },
+    }
+  }
 };
 </script>
 

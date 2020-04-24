@@ -126,7 +126,7 @@ export default {
       return this.$store.getters.cart.length > 0 ? true : false;
     },
     payment(){
-      return this.$router.history.current.name != "Payment"
+      return this.$router.apps[0]._route.name != "Payment"
     }
   },
   beforeUpdate() {

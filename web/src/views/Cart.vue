@@ -141,19 +141,19 @@ export default {
     BankPayment,
     BankImage,
     ArrowBanner,
-    EmptyCart,
+    EmptyCart
   },
   data() {
     return {
       cart: JSON.parse(JSON.stringify(this.$store.getters.cart)),
       empty: this.$store.getters.cart.length === 0 ? true : false,
-      checked: false,
+      checked: false
     };
   },
   computed: {
     total() {
       let total = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         total += calculated;
@@ -162,7 +162,7 @@ export default {
     },
     totalNew() {
       let totalNew = 0;
-      this.cart.forEach((item) => {
+      this.cart.forEach(item => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         totalNew += calculated;
@@ -171,11 +171,11 @@ export default {
     },
     totalCount() {
       return this.$store.getters.cart.length;
-    },
+    }
   },
   methods: {
     checkedAll() {
-      this.cart.forEach((item) => {
+      this.cart.forEach(item => {
         item.select = !this.checked;
       });
     },
@@ -183,15 +183,15 @@ export default {
       item.select = item.select === true ? false : true;
     },
     selectAll() {
-      this.cart.forEach((item) => {
+      this.cart.forEach(item => {
         item.select = this.checkAll;
       });
     },
     deleteItems() {
-      this.cart.forEach((item) => {
+      this.cart.forEach(item => {
         if (item.select === true) this.$store.dispatch("deleteCartItem", item);
       });
-      this.cart = this.cart.filter((item) => item.select != true);
+      this.cart = this.cart.filter(item => item.select != true);
     },
     changeQty(item) {
       this.$store.dispatch("changeQtyCart", item);
@@ -204,8 +204,8 @@ export default {
     },
     goPayment() {
       this.$router.push({ name: "Payment" });
-    },
-  },
+    }
+  }
 };
 </script>
 <style>

@@ -145,7 +145,11 @@
           <i id="dialog-icon" class="fa fa-times-circle" style="color:red"></i>
         </div>
         <div v-if="showIcon" style="font-size:150px">
-          <i id="dialog-icon" class="fa fa-check-circle" style="color:green"></i>
+          <i
+            id="dialog-icon"
+            class="fa fa-check-circle"
+            style="color:green"
+          ></i>
         </div>
         <v-card-text>
           <h2>
@@ -173,7 +177,7 @@ export default {
       checkContract: false,
       dialog: false,
       showIcon: false,
-      dialogText: "",
+      dialogText: ""
     };
   },
   methods: {
@@ -194,19 +198,16 @@ export default {
             name: this.name,
             surname: this.surname,
             email: this.email,
-            password: this.password,
+            password: this.password
           };
           let res = await axios.post("http://localhost:7700/auth/signup", data);
           if (!res.data.err) {
             this.showIcon = true;
-            this.dialogText = res.message;
+            this.dialogText =
+              "Başarıyla kaydınız gerçekleşti. yönlendiriliyorsunuz.";
             this.dialog = true;
             setTimeout(() => {
-              this.$store.dispatch("addUser", {
-                email: this.email,
-                password: this.password,
-              });
-              this.$router.push({ name: "Home" });
+              this.$router.push({ name: "Login" });
             }, 2000);
           } else throw new Error(res.data.message);
         } else throw new Error("Bilgilerinizi kontrol ediniz.");
@@ -215,7 +216,7 @@ export default {
         this.showIcon = false;
         this.dialog = true;
       }
-    },
-  },
+    }
+  }
 };
 </script>
