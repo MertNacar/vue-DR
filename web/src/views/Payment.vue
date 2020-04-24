@@ -265,6 +265,8 @@
 </template>
 
 <script>
+/* eslint-disable */
+
 import PaymentList from "@/components/PaymentList";
 import axios from "axios";
 export default {
@@ -330,22 +332,21 @@ export default {
           };
           let res = await axios.post(`http://localhost:7700/payment`, data);
           if (!res.data.err) {
-            this.dialogText =
-              "Ürünler başarıyla satın alındı. yönlendiriliyorsunuz.";
+            this.dialogText = "Ürünler başarıyla satın alındı.";
             this.showIcon = true;
             this.dialog = true;
             setTimeout(() => {
               this.$store.dispatch("deleteAllCart");
               this.$router.push({ name: "Home" });
-            }, 2000);
+            }, 7000);
           } else throw new Error();
         } else throw new Error();
-      } catch (err){
-        console.log('err', err)
+      } catch (err) {
+        console.log("err", err);
         this.dialogText =
           "Bir hatayla karşılaştık. Bilgilerinizi kontrol ediniz.";
         this.showIcon = false;
-        this.dialog = true;   
+        this.dialog = true;
       }
     },
   },
