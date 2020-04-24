@@ -49,7 +49,7 @@
               <v-text-field
                 solo
                 readonly
-                label="Append"
+                label="Yazar"
                 append-icon="fa fa-search"
               ></v-text-field>
             </v-col>
@@ -89,6 +89,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import CardList from "@/components/CardList";
 import CategoryList from "@/components/CategoryList";
 import axios from "axios";
