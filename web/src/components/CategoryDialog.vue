@@ -24,8 +24,8 @@ export default {
     try {
       let res = await axios.get("http://localhost:7700/home/menu");
       this.items = res.data;
-    } catch (err) {
-      console.log("err", err);
+    } catch {
+      console.log("err");
     }
   },
 };

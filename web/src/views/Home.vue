@@ -116,7 +116,9 @@ export default {
       this.HoobyToys = res.data.HoobyToys;
       this.GameConsole = res.data.GameConsole;
       this.event = true;
-    } catch { }
+    } catch { 
+      console.log("err")
+    }
   },
 };
 </script>

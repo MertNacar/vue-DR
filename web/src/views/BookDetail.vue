@@ -387,7 +387,7 @@ export default {
         if (!res.data.err) {
           this.comments = res.data.comments;
         } else throw new Error();
-      } catch { }
+      } catch {console.log("err") }
     },
     addToCart() {
       this.item.quantity = this.qty;
@@ -420,7 +420,9 @@ export default {
             this.dialog = true;
           } else throw new Error();
         } else throw new Error();
-      } catch { }
+      } catch { 
+        console.log("err")
+      }
     },
   },
   beforeDestroy() {

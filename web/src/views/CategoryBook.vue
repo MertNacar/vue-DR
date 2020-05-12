@@ -107,7 +107,9 @@ export default {
       this.News = res.data.News;
       this.ForYou = res.data.ForYou;
       this.event = true;
-    } catch {}
+    } catch {
+      console.log("err")
+    }
   }
 };
 </script>

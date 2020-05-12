@@ -124,7 +124,9 @@ export default {
       this.Categories = res.data.Categories;
       this.Items = res.data.Books;
       this.event = true;
-    } catch { }
+    } catch {
+      console.log("err")
+     }
   },
   computed: {
     totalCount() {
@@ -139,7 +141,9 @@ export default {
         );
         if (res.err) throw new Error();
         this.Items = res.data.Books;
-      } catch { }
+      } catch {
+        console.log("err")
+       }
     },
   },
 };
