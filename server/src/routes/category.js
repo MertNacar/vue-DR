@@ -1,44 +1,37 @@
 
-const fs = require('fs');
-const path = require('path');
 var express = require("express");
-
+const db = require("../database/models/index")
 var router = express.Router();
 
-
-const CATEGORY_DATA_FILE = path.join(__dirname, '../datas/category-data.json');
-const CATEGORY_2_DATA_FILE = path.join(__dirname, '../datas/category-2-data.json');
-
-router.get('/books', (req, res) => {
-  fs.readFile(CATEGORY_DATA_FILE, (err, data) => {
-    res.setHeader('Cache-Control', 'no-cache');
-    res.json(JSON.parse(data));
-  });
+router.get('/books', async (req, res) => {
+  try {
+    console.log('hey')
+    let categories = await db.category.findOne()
+    console.log('categories', categories)
+    res.json({ ...categories._doc });
+  } catch { }
 });
 
-
-router.get('/books/literature/all', (req, res) => {
-  fs.readFile(CATEGORY_2_DATA_FILE, (err, data) => {
-    res.setHeader('Cache-Control', 'no-cache');
-    res.json(JSON.parse(data));
-  });
+router.get('/books/literature/all', async (req, res) => {
+  try {
+    let literatures = await db.literature.findOne()
+    res.json({ ...literatures._doc });
+  } catch { }
 });
 
-router.get('/books/literature', (req, res) => {
-  let { price } = req.query
-  fs.readFile(CATEGORY_2_DATA_FILE, (err, data) => {
-    res.setHeader('Cache-Control', 'no-cache');
-    const categories = JSON.parse(data);
-    let filteredCategory = []
+router.get('/books/literature', async (req, res) => {
+  try {
+    let { price } = req.query
+    const categories = await db.literature.findOne()
     if (price !== "") {
       let prices = price.split(",")
-      filteredCategory = categories.Books.filter(book => {
+      let filtered = categories._doc.Books.filter(book => {
         let price = book.price * ((100 - book.discount) / 100)
         return (price > prices[0] && price < prices[1])
       })
-      res.json({ Books: [...filteredCategory] })
-    } else res.json({ Books: [...categories.Books] })
-  });
+      res.json({ Books: [...filtered] })
+    } else res.json({ Books: [...categories._doc.Books] })
+  } catch { }
 });
 
 module.exports = router

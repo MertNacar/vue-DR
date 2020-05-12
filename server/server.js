@@ -2,11 +2,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors')
-const cart = require("./src/routes/cart")
 const category = require("./src/routes/category")
 const home = require("./src/routes/home")
 const auth = require("./src/routes/auth")
 const payment = require("./src/routes/payment")
+require("./src/database/connection")
 
 const app = express();
 app.use(cors())
@@ -18,7 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/payment", payment)
 app.use("/auth", auth)
-app.use("/cart", cart)
 app.use("/category", category)
 app.use("/home", home)
 

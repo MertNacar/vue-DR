@@ -23,7 +23,7 @@ export default {
   async created() {
     try {
       let res = await axios.get("http://localhost:7700/home/menu");
-      this.items = res.data.Menu;
+      this.items = res.data;
     } catch (err) {
       console.log("err", err);
     }

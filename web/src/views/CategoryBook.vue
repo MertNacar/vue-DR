@@ -100,6 +100,7 @@ export default {
   async created() {
     try {
       let res = await axios.get("http://localhost:7700/category/books");
+      console.log('res', res)
       this.Categories = res.data.Categories;
       this.Carousels = res.data.Carousels;
       this.FullBanners = res.data.FullBanners;
