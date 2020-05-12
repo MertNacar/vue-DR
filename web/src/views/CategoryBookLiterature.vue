@@ -124,9 +124,7 @@ export default {
       this.Categories = res.data.Categories;
       this.Items = res.data.Books;
       this.event = true;
-    } catch (err) {
-      console.log("err", err.message);
-    }
+    } catch { }
   },
   computed: {
     totalCount() {
@@ -136,15 +134,12 @@ export default {
   methods: {
     async filterBooks() {
       try {
-        console.log("this.cost.value", this.cost.value);
         let res = await axios.get(
           `http://localhost:7700/category/books/literature?price=${this.cost.value}`
         );
         if (res.err) throw new Error();
         this.Items = res.data.Books;
-      } catch (err) {
-        console.log("err", err.message);
-      }
+      } catch { }
     },
   },
 };

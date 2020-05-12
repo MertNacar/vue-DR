@@ -387,9 +387,7 @@ export default {
         if (!res.data.err) {
           this.comments = res.data.comments;
         } else throw new Error();
-      } catch {
-        console.log("err");
-      }
+      } catch { }
     },
     addToCart() {
       this.item.quantity = this.qty;
@@ -417,15 +415,12 @@ export default {
             comment
           );
           if (!res.data.err) {
-            console.log("res", res);
             this.comments = res.data.comments;
             this.dialogText = "Yorum başarıyla eklendi.";
             this.dialog = true;
           } else throw new Error();
         } else throw new Error();
-      } catch {
-        console.log("err");
-      }
+      } catch { }
     },
   },
   beforeDestroy() {

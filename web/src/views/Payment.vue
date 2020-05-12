@@ -341,8 +341,7 @@ export default {
             }, 7000);
           } else throw new Error();
         } else throw new Error();
-      } catch (err) {
-        console.log("err", err);
+      } catch {
         this.dialogText =
           "Bir hatayla karşılaştık. Bilgilerinizi kontrol ediniz.";
         this.showIcon = false;
