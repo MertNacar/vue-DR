@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 var paymentSchema = new mongoose.Schema({
-  user: String,
-  card: String,
-  boughts: String
+  user: Object,
+  card: Object,
+  boughts: Array
 });
 
 var payment = mongoose.model('payments', paymentSchema);
