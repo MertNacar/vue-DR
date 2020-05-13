@@ -47,6 +47,6 @@ import Ratings from "./Ratings";
 export default {
   name: "CardList",
   components: { Ratings },
-  props: ["items"],
+  props: ["items"]
 };
 </script>

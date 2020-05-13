@@ -20,7 +20,7 @@
 <script>
 export default {
   name: "FullBanner",
-  props: ["items", "event"],
+  props: ["items", "event"]
 };
 </script>
 

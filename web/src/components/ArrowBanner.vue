@@ -17,7 +17,7 @@
 <script>
 export default {
   name: "ArrowBanner",
-  props: ["title"],
+  props: ["title"]
 };
 </script>
 

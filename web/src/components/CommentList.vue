@@ -16,8 +16,8 @@
 
 <script>
 export default {
-  name:"CommentList",
-  props:["items"]
+  name: "CommentList",
+  props: ["items"]
 };
 </script>
 

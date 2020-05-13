@@ -39,20 +39,20 @@ export default {
       banks: [
         {
           src:
-            "assets/img/img-new-bonus-logo.png assets/img/img-new-world-logo.png",
+            "assets/img/img-new-bonus-logo.png assets/img/img-new-world-logo.png"
         },
         {
           src:
-            "assets/img/img-new-maksimum-logo.png assets/img/cardfinans-logo.png",
+            "assets/img/img-new-maksimum-logo.png assets/img/cardfinans-logo.png"
         },
         {
           src:
-            "assets/img/img-new-acess-logo.png assets/img/img-new-advance-logo.png",
+            "assets/img/img-new-acess-logo.png assets/img/img-new-advance-logo.png"
         },
         { src: "assets/img/paraflogo.png" }
-      ],
+      ]
     };
-  },
+  }
 };
 </script>
 

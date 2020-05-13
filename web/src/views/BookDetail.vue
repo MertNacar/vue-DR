@@ -382,12 +382,14 @@ export default {
     async getComments() {
       try {
         let res = await axios.get(
-          `http://localhost:7700/home/book/comments?id=${this.item.id}`
+          `http://192.168.1.106:7700/home/book/comments?id=${this.item.id}`
         );
         if (!res.data.err) {
           this.comments = res.data.comments;
         } else throw new Error();
-      } catch {console.log("err") }
+      } catch {
+        this.comments = [];
+      }
     },
     addToCart() {
       this.item.quantity = this.qty;
@@ -411,7 +413,7 @@ export default {
             description: this.body,
           };
           let res = await axios.post(
-            `http://localhost:7700/home/book/comment/add`,
+            `http://192.168.1.106:7700/home/book/comment/add`,
             comment
           );
           if (!res.data.err) {
@@ -420,8 +422,8 @@ export default {
             this.dialog = true;
           } else throw new Error();
         } else throw new Error();
-      } catch { 
-        console.log("err")
+      } catch {
+        this.dialogText = "";
       }
     },
   },

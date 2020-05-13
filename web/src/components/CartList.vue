@@ -19,10 +19,14 @@
           <div style="float: left;">
             <p class="product-name">
               <router-link :to="{ name: 'BookDetail', params: { item } }">
-                <a style="text-align:left" :title="item.title" href="#">{{ item.title }}</a>
+                <a style="text-align:left" :title="item.title" href="#">{{
+                  item.title
+                }}</a>
               </router-link>
             </p>
-            <h5 style="text-align:left" class="product-cat">Tip: {{ item.cover }}</h5>
+            <h5 style="text-align:left" class="product-cat">
+              Tip: {{ item.cover }}
+            </h5>
           </div>
         </div>
       </div>
@@ -95,13 +99,13 @@ export default {
     "change",
     "totalNew",
     "select",
-    "checked",
+    "checked"
   ],
   computed: {
     checkAll() {
       return this.$props.checked;
-    },
-  },
+    }
+  }
 };
 </script>
 

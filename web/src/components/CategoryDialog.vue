@@ -13,20 +13,20 @@
 import axios from "axios";
 export default {
   name: "CategoryDialog",
-  props:["goCategory"],
+  props: ["goCategory"],
   data() {
     return {
       dialog: true,
-      items: [],
+      items: []
     };
   },
   async created() {
     try {
-      let res = await axios.get("http://localhost:7700/home/menu");
+      let res = await axios.get("http://192.168.1.106:7700/home/menu");
       this.items = res.data;
     } catch {
-      console.log("err");
+      this.items = [];
     }
-  },
+  }
 };
 </script>

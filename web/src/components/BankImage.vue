@@ -33,23 +33,23 @@ export default {
           title: "halk bankası",
           src: "assets/img/hblogo.jpg",
           desc:
-            "20 TL üzeri işlemlerde 2 ve 4 taksitli işlemlerde ilave +3 taksit eklenecektir.",
+            "20 TL üzeri işlemlerde 2 ve 4 taksitli işlemlerde ilave +3 taksit eklenecektir."
         },
         {
           title: "akbank",
           src: "assets/img/akbank-logo.jpg",
           desc:
-            "20 TL üzeri işlemlerde 2 ve 4 taksitli işlemlerde ilave +2 taksit eklenecektir.",
+            "20 TL üzeri işlemlerde 2 ve 4 taksitli işlemlerde ilave +2 taksit eklenecektir."
         },
         {
           title: "iş bankası",
           src: "assets/img/isbankasi-logo.jpg",
           desc:
-            "100 TL üzeri işlemlerde 2 ve 3 taksitli işlemlerde ilave +2 taksit eklenecektir.",
-        },
-      ],
+            "100 TL üzeri işlemlerde 2 ve 3 taksitli işlemlerde ilave +2 taksit eklenecektir."
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

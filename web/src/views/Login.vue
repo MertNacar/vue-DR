@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="half" >
+        <div class="half">
           <div class="content" style="height:585px">
             <h3>Üye Ol</h3>
             <hr />
@@ -83,7 +83,6 @@
             <div class="form-row" style="margin-top:45px">
               <router-link :to="{ name: 'Register' }">
                 <input
-                
                   class="btn grey"
                   type="button"
                   value="ÜYE OLMAK İSTİYORUM"
@@ -125,14 +124,14 @@ export default {
       checked: false,
       dialog: false,
       showIcon: false,
-      dialogText: "",
+      dialogText: ""
     };
   },
   methods: {
     async goLogin() {
       try {
         let res = await axios.get(
-          `http://localhost:7700/auth/login?email=${this.email}&password=${this.password}`
+          `http://192.168.1.106:7700/auth/login?email=${this.email}&password=${this.password}`
         );
         if (!res.data.err) {
           this.showIcon = false;
@@ -141,7 +140,7 @@ export default {
           setTimeout(() => {
             this.$store.dispatch("addUser", {
               email: this.email,
-              password: this.password,
+              password: this.password
             });
             this.$router.push({ name: "Home" });
           }, 2000);
@@ -151,7 +150,7 @@ export default {
         this.showIcon = true;
         this.dialog = true;
       }
-    },
-  },
+    }
+  }
 };
 </script>

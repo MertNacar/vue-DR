@@ -118,14 +118,14 @@ export default {
   async created() {
     try {
       let res = await axios.get(
-        "http://localhost:7700/category/books/literature/all"
+        "http://192.168.1.106:7700/category/books/literature/all"
       );
       if (res.err) throw new Error();
       this.Categories = res.data.Categories;
       this.Items = res.data.Books;
       this.event = true;
     } catch {
-      console.log("err")
+       this.event = false;
      }
   },
   computed: {
@@ -137,12 +137,12 @@ export default {
     async filterBooks() {
       try {
         let res = await axios.get(
-          `http://localhost:7700/category/books/literature?price=${this.cost.value}`
+          `http://192.168.1.106:7700/category/books/literature?price=${this.cost.value}`
         );
         if (res.err) throw new Error();
         this.Items = res.data.Books;
       } catch {
-        console.log("err")
+        this.Items = []
        }
     },
   },

@@ -20,9 +20,12 @@
 export default {
   data() {
     return {
-      show : this.$props.rating === null && this.$props.readonly === true ? false : true
+      show:
+        this.$props.rating === null && this.$props.readonly === true
+          ? false
+          : true
     };
   },
-  props: ["hover", "rating", "readonly"],
+  props: ["hover", "rating", "readonly"]
 };
 </script>

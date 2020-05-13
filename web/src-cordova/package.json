@@ -1,0 +1,15 @@
+{
+  "devDependencies": {},
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-whitelist": "^1.3.4"
+  }
+}

@@ -7,7 +7,9 @@
       <div class="container">
         <header>
           <h2>Kitap</h2>
-       <router-link :to="{ name: 'CategoryBook' }">TÜMÜNÜ GÖRÜNTÜLE</router-link>
+          <router-link :to="{ name: 'CategoryBook' }"
+            >TÜMÜNÜ GÖRÜNTÜLE</router-link
+          >
         </header>
         <CardList v-bind:items="Book" />
       </div>
@@ -94,18 +96,18 @@ export default {
       Electronic: [],
       HoobyToys: [],
       GameConsole: [],
-      event: false,
+      event: false
     };
   },
   components: {
     SubHeader,
     ArrowBanner,
     FullBanner,
-    CardList,
+    CardList
   },
   async created() {
     try {
-      let res = await axios.get("http://localhost:7700/home");
+      let res = await axios.get("http://192.168.1.106:7700/home");
       this.PopularSearch = res.data.PopularSearch;
       this.SubHeader = res.data.SubHeader;
       this.Book = res.data.Book;
@@ -116,9 +118,9 @@ export default {
       this.HoobyToys = res.data.HoobyToys;
       this.GameConsole = res.data.GameConsole;
       this.event = true;
-    } catch { 
-      console.log("err")
+    } catch {
+      this.event = false;
     }
-  },
+  }
 };
 </script>

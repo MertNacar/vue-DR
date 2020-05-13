@@ -7,7 +7,7 @@ import Login from "../views/Login";
 import BookDetail from "../views/BookDetail";
 import Cart from "../views/Cart";
 import Register from "../views/Register";
-import Payment from '../views/Payment'
+import Payment from "../views/Payment";
 Vue.use(VueRouter);
 
 const routes = [

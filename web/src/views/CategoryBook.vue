@@ -84,7 +84,7 @@ export default {
     CardList,
     Carousel,
     ArrowBanner,
-    CategoryList,
+    CategoryList
   },
   data() {
     return {
@@ -94,12 +94,12 @@ export default {
       Interested: [],
       News: [],
       ForYou: [],
-      event: false,
+      event: false
     };
   },
   async created() {
     try {
-      let res = await axios.get("http://localhost:7700/category/books");
+      let res = await axios.get("http://192.168.1.106:7700/category/books");
       this.Categories = res.data.Categories;
       this.Carousels = res.data.Carousels;
       this.FullBanners = res.data.FullBanners;
@@ -108,7 +108,7 @@ export default {
       this.ForYou = res.data.ForYou;
       this.event = true;
     } catch {
-      console.log("err")
+      this.event = false;
     }
   }
 };

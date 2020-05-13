@@ -43,13 +43,13 @@
 export default {
   data() {
     return {
-      items: this.$store.getters.cart,
+      items: this.$store.getters.cart
     };
   },
   computed: {
     total() {
       let total = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         let calculated =
           (item.price - item.price * (item.discount / 100)) * item.quantity;
         total += calculated;
@@ -58,12 +58,12 @@ export default {
     },
     totalCount() {
       let count = 0;
-      this.$store.getters.cart.forEach((item) => {
+      this.$store.getters.cart.forEach(item => {
         count += item.quantity;
       });
       return count || 0;
-    },
-  },
+    }
+  }
 };
 </script>
 

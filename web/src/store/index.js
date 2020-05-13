@@ -10,34 +10,34 @@ export default new Vuex.Store({
   },
   mutations: {
     addCart(state, payload) {
-      let isExist = false
+      let isExist = false;
       state.cart.map(item => {
         if (item.id === payload.id) {
-          item.quantity += payload.quantity
-          isExist = true
+          item.quantity += payload.quantity;
+          isExist = true;
         }
-      })
-      if (isExist === false) state.cart.push(payload)
+      });
+      if (isExist === false) state.cart.push(payload);
     },
     changeQtyCart(state, payload) {
       state.cart.map(item => {
         if (item.id === payload.id) {
-          item.quantity = payload.quantity
+          item.quantity = payload.quantity;
         }
-      })
+      });
     },
     deleteCartItem(state, payload) {
-      let indx = state.cart.findIndex(item => item.id === payload.id)
-      state.cart.splice(indx, 1)
+      let indx = state.cart.findIndex(item => item.id === payload.id);
+      state.cart.splice(indx, 1);
     },
     deleteAllCart(state) {
-      state.cart = []
+      state.cart = [];
     },
     addUser(state, payload) {
-      state.user = payload
+      state.user = payload;
     },
     deleteUser(state) {
-      state.user = {}
+      state.user = {};
     }
   },
   actions: {
@@ -46,7 +46,7 @@ export default new Vuex.Store({
     deleteCartItem: ({ commit }, payload) => commit("deleteCartItem", payload),
     deleteAllCart: ({ commit }) => commit("deleteAllCart"),
     addUser: ({ commit }, payload) => commit("addUser", payload),
-    deleteUser: ({ commit }) => commit("deleteUser"),
+    deleteUser: ({ commit }) => commit("deleteUser")
   },
   getters: {
     cart: state => state.cart,

@@ -4,7 +4,9 @@
       <div class="row">
         <ul>
           <li v-for="item in items" :key="item.id">
-            <a :id="item.id" :class="item.class" @click="goPage(item.link)">{{ item.title }}</a>
+            <a :id="item.id" :class="item.class" @click="goPage(item.link)">{{
+              item.title
+            }}</a>
           </li>
           <li class="toggle"></li>
         </ul>
@@ -22,9 +24,9 @@ export default {
   },
   methods: {
     goPage(link) {
-      if(link === "#") return
+      if (link === "#") return;
       this.$router.push({ name: link });
-    },
-  },
+    }
+  }
 };
 </script>
