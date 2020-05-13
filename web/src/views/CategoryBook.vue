@@ -99,7 +99,7 @@ export default {
   },
   async created() {
     try {
-      let res = await axios.get("http://192.168.1.106:7700/category/books");
+      let res = await axios.get(`${process.env.VUE_APP_API}/category/books`);
       this.Categories = res.data.Categories;
       this.Carousels = res.data.Carousels;
       this.FullBanners = res.data.FullBanners;

@@ -382,7 +382,7 @@ export default {
     async getComments() {
       try {
         let res = await axios.get(
-          `http://192.168.1.106:7700/home/book/comments?id=${this.item.id}`
+          `${process.env.VUE_APP_API}/home/book/comments?id=${this.item.id}`
         );
         if (!res.data.err) {
           this.comments = res.data.comments;
@@ -413,7 +413,7 @@ export default {
             description: this.body,
           };
           let res = await axios.post(
-            `http://192.168.1.106:7700/home/book/comment/add`,
+            `${process.env.VUE_APP_API}/home/book/comment/add`,
             comment
           );
           if (!res.data.err) {

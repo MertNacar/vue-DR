@@ -131,7 +131,7 @@ export default {
     async goLogin() {
       try {
         let res = await axios.get(
-          `http://192.168.1.106:7700/auth/login?email=${this.email}&password=${this.password}`
+          `${process.env.VUE_APP_API}/auth/login?email=${this.email}&password=${this.password}`
         );
         if (!res.data.err) {
           this.showIcon = false;

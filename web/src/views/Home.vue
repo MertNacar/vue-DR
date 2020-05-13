@@ -107,7 +107,7 @@ export default {
   },
   async created() {
     try {
-      let res = await axios.get("http://192.168.1.106:7700/home");
+      let res = await axios.get(`${process.env.VUE_APP_API}/home`);
       this.PopularSearch = res.data.PopularSearch;
       this.SubHeader = res.data.SubHeader;
       this.Book = res.data.Book;

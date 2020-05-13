@@ -118,7 +118,7 @@ export default {
   async created() {
     try {
       let res = await axios.get(
-        "http://192.168.1.106:7700/category/books/literature/all"
+        `${process.env.VUE_APP_API}/category/books/literature/all`
       );
       if (res.err) throw new Error();
       this.Categories = res.data.Categories;
@@ -137,7 +137,7 @@ export default {
     async filterBooks() {
       try {
         let res = await axios.get(
-          `http://192.168.1.106:7700/category/books/literature?price=${this.cost.value}`
+          `${process.env.VUE_APP_API}/category/books/literature?price=${this.cost.value}`
         );
         if (res.err) throw new Error();
         this.Items = res.data.Books;

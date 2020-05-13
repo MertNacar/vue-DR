@@ -330,7 +330,7 @@ export default {
             card: { name: this.name, number: this.number, cvv: this.cvv },
             boughts: this.$store.getters.cart,
           };
-          let res = await axios.post(`http://192.168.1.106:7700/payment`, data);
+          let res = await axios.post(`${process.env.VUE_APP_API}/payment`, data);
           if (!res.data.err) {
             this.dialogText = "Ürünler başarıyla satın alındı.";
             this.showIcon = true;

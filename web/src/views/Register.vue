@@ -200,7 +200,10 @@ export default {
             email: this.email,
             password: this.password
           };
-          let res = await axios.post("http://192.168.1.106:7700/auth/signup", data);
+          let res = await axios.post(
+            `${process.env.VUE_APP_API}/auth/signup`,
+            data
+          );
           if (!res.data.err) {
             this.showIcon = true;
             this.dialogText =

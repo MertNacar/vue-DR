@@ -22,7 +22,7 @@ export default {
   },
   async created() {
     try {
-      let res = await axios.get("http://192.168.1.106:7700/home/menu");
+      let res = await axios.get(`${process.env.VUE_APP_API}/home/menu`);
       this.items = res.data;
     } catch {
       this.items = [];

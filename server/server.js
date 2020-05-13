@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors')
+const ngrok = require('ngrok');
 const category = require("./src/routes/category")
 const home = require("./src/routes/home")
 const auth = require("./src/routes/auth")
@@ -26,3 +27,7 @@ app.use("/home", home)
 app.listen(app.get('port'), () => {
   console.log(`Find the server at: http://localhost:${app.get('port')}`); // eslint-disable-line no-console
 });
+
+ ngrok.connect(7700).then(item => {
+  console.log('item', item)
+})
