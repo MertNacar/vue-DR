@@ -25,9 +25,9 @@ app.use("/home", home)
 
 
 app.listen(app.get('port'), () => {
-  console.log(`Find the server at: http://localhost:${app.get('port')}`); // eslint-disable-line no-console
+  console.log(`Bağlantı başarılı: http://localhost:${app.get('port')}`); // eslint-disable-line no-console
 });
 
  ngrok.connect(7700).then(item => {
-  console.log('item', item)
+  console.log('Sunucu dışarıya açıldı :', item)
 })

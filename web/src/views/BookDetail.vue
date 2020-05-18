@@ -207,7 +207,7 @@
                     <div class="tbox">
                       <strong> Standart Teslimat</strong>
                       <div class="timeCell">
-                        26 - 28 Nisan
+                        19 - 21 Mayıs
                       </div>
                       <div class="t-free">* 100 TL üzeri bedava!</div>
                     </div>
